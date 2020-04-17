@@ -1,49 +1,19 @@
-<div id="app">
-  <div style="margin-left: 10%; margin-right: 10%;">
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-forms',
+  template: `
     <p-grid>
-      <p-grid-item size="12">
-        <p-headline variant="headline-1" [align]="'center'">Example usage of the Porsche-Design-System Angular
-        </p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-3">Buttons</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-4">{{clickMessage}}</p-headline>
-      </p-grid-item>
-      <p-grid-item size="2">
-        <p-button (click)="onButtonClick()">Submit</p-button>
-        <br>
-        <br>
-        <p-button-pure (click)="onButtonPureClick()">Dismiss</p-button-pure>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
-      </p-grid-item>
       <p-grid-item size="12">
         <p-headline variant="headline-3">Form Examples</p-headline>
       </p-grid-item>
       <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
+        <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
         <p-headline variant="headline-4">{{selectInput}}</p-headline>
       </p-grid-item>
-      <p-grid-item size="3">
+      <p-grid-item size="5">
         <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false"><select
           [name]="'PDS Select'" (change)="handleSelectChange($event)">
           <option value="Headline A">Headline A</option>
@@ -52,9 +22,7 @@
         </select></p-select-wrapper>
       </p-grid-item>
       <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
+        <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
         <p-headline *ngIf="checkBox" variant="headline-4">Checkbox Worked</p-headline>
@@ -62,7 +30,6 @@
                                                                      [name]="'Check me for Headline'"
                                                                      (change)="handleCheckbox()">
         </p-checkbox-wrapper>
-        <br>
         <p-headline *ngIf="radioButton" variant="headline-4">Radio Worked</p-headline>
         <p-radio-button-wrapper [label]="'Click me for Headline'"><input [type]="'radio'"
                                                                          [name]="'Click me for Headline'"
@@ -70,9 +37,7 @@
         </p-radio-button-wrapper>
       </p-grid-item>
       <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
+        <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="6">
         <p-textarea-wrapper [label]="'PDS Textarea'" [hideLabel]="false">
@@ -84,41 +49,41 @@
                                                                                                   name="some-name"
                                                                                                   (keyup)="handleTextField($event)">
         </p-text-field-wrapper>
-        <br>
         <p-headline variant="headline-4">{{textFieldHeadline}}</p-headline>
-        <br>
         <p-text-field-wrapper><span [slot]="'label'">Textfield with a <a
           [href]="'#slottedLink'">Slotted Link</a>.</span><input [type]="'text'" [name]="'Slotted input'">
         </p-text-field-wrapper>
       </p-grid-item>
-      <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-3">Links</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <br>
-        <hr>
-        <br>
-      </p-grid-item>
-      <p-grid-item size="3">
-        <a href="#aWrappedLink" class="link">
-          <p-link>a Wrapped Link</p-link>
-        </a>
-        <br>
-        <br>
-        <a href="#aWrappedLinkPure" class="link">
-          <p-link-pure>a Wrapped p-link-pure</p-link-pure>
-        </a>
-        <br>
-        <p-link-pure href="#pLinkPure">p-link-pure with href</p-link-pure>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-pagination [activePage]="activePage"></p-pagination>
-      </p-grid-item>
     </p-grid>
-  </div>
-</div>
+  `,
+  styleUrls: ['../app.component.css']
+})
+
+export class FormsComponent {
+  selectInput = 'Headline A';
+  checkBox = false;
+  radioButton = false;
+  textFieldHeadline = 'Change me';
+  textValue = '';
+
+  handleSelectChange(event) {
+    this.selectInput = event.target.value;
+  }
+
+  handleCheckbox() {
+    this.checkBox = this.checkBox === false;
+  }
+
+  handleRadio() {
+    this.radioButton = this.radioButton === false;
+  }
+
+  handleTextField(event: KeyboardEvent) {
+    this.textValue = (event.target as HTMLInputElement).value;
+    if (this.textValue === '') {
+      this.textFieldHeadline = 'Change me';
+    } else {
+      this.textFieldHeadline = this.textValue;
+    }
+  }
+}
