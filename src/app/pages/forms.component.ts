@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-4">{{selectInput}}</p-headline>
+        <p-headline variant="headline-4" data-test-id="selectHeadline">{{selectInput}}</p-headline>
       </p-grid-item>
       <p-grid-item size="5">
         <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false"><select
@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline *ngIf="checkBox" variant="headline-4">Checkbox Worked</p-headline>
+        <p-headline *ngIf="checkBox" variant="headline-4" data-test-id="checkboxHeadline">Checkbox Worked</p-headline>
         <p-checkbox-wrapper [label]="'Check me for Headline'"><input [type]="'checkbox'"
                                                                      [name]="'Check me for Headline'"
                                                                      (change)="handleCheckbox()">
