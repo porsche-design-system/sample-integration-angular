@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
           </p-headline>
         </p-grid-item>
         <p-grid-item class="contentWrapperBig" size="3">
-          <a [routerLink]="['collection']" class="link">
-            <p-link-pure>Collection</p-link-pure>
+          <a [routerLink]="['componentsCollection']" class="link">
+            <p-link-pure>Components Collection</p-link-pure>
           </a>
           <a [routerLink]="['forms']" class="link">
             <p-link-pure>Forms</p-link-pure>

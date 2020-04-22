@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
 import { CollectionComponent } from './pages/collection.component';
 import { FormsComponent } from './pages/forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,11 +14,12 @@ import { FormsComponent } from './pages/forms.component';
     CollectionComponent,
     FormsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PorscheDesignSystemModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        PorscheDesignSystemModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

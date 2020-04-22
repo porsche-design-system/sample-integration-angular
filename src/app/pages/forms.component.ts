@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
       </p-grid-item>
       <p-grid-item size="5">
         <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false"><select
-          [name]="'PDS Select'" (change)="handleSelectChange($event)">
+          [name]="'PDS Select'" (change)="handleSelectChange($event)" [value]="selectInput">
           <option value="Headline A">Headline A</option>
           <option value="Headline B">Headline B</option>
           <option value="Headline C">Headline C</option>
@@ -28,7 +28,10 @@ import { Component } from '@angular/core';
         <p-headline *ngIf="checkBox" variant="headline-4" data-test-id="checkboxHeadline">Checkbox Worked</p-headline>
         <p-checkbox-wrapper [label]="'Check me for Headline'"><input [type]="'checkbox'"
                                                                      [name]="'Check me for Headline'"
-                                                                     (change)="handleCheckbox()">
+                                                                     (change)="handleCheckbox()"
+                                                                     data-test-id="checkbox"
+                                                                     [checked]="checkBox"
+        >
         </p-checkbox-wrapper>
         <p-headline *ngIf="radioButton" variant="headline-4">Radio Worked</p-headline>
         <p-radio-button-wrapper [label]="'Click me for Headline'"><input [type]="'radio'"

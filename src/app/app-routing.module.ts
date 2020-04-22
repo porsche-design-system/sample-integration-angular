@@ -7,11 +7,11 @@ import { FormsComponent } from './pages/forms.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'collection',
+    redirectTo: 'componentsCollection',
     pathMatch: 'full'
   },
   {
-    path: 'collection',
+    path: 'componentsCollection',
     component: CollectionComponent
   },
   {

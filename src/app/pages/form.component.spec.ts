@@ -19,29 +19,14 @@ describe('Forms', () => {
     }).compileComponents();
   }));
 
-  it('should display headline after selected Value', async () => {
-    const fixture = TestBed.createComponent(FormsComponent);
-    const compiled = fixture.nativeElement;
-    const selectEl = fixture.debugElement.query(By.css('p-select-wrapper'));
-    selectEl.nativeElement.click();
-    fixture.detectChanges();
-    await componentsReady();
-    const option = fixture.debugElement.query(By.css('option[value="Headline B"]'));
-    option.nativeElement.click();
-    fixture.detectChanges();
-    await componentsReady();
-    expect(compiled.querySelector('p-headline[data-test-id="selectHeadline"]').textContent).toContain('Headline B');
-  });
-
   it('Headline should appear after Checkbox Click', async () => {
     const fixture = TestBed.createComponent(FormsComponent);
-    const compiled = fixture.nativeElement;
     fixture.detectChanges();
-    await componentsReady();
-    const checkBoxEl = fixture.debugElement.query(By.css('p-checkbox-wrapper')).nativeElement;
+    const compiled = fixture.nativeElement;
+    const checkBoxEl = compiled.querySelector('p-checkbox-wrapper > input');
     checkBoxEl.click();
     fixture.detectChanges();
-    expect(compiled.querySelector('p-headline[data-test-id=checkboxHeadline]').textContent).toContain('Checkbox Worked');
+    expect(fixture.debugElement.query(By.css('p-headline[data-test-id=checkboxHeadline]'))).toBeTruthy();
   });
 
 });
