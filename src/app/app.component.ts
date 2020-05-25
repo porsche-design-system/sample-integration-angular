@@ -9,12 +9,15 @@ import { Component } from '@angular/core';
           <p-headline variant="headline-1" [align]="'center'">Example usage of the Porsche-Design-System Angular
           </p-headline>
         </p-grid-item>
-        <p-grid-item class="contentWrapperBig" size="3">
+        <p-grid-item class="contentWrapperBig" size="12">
           <a [routerLink]="['componentsCollection']" class="link">
             <p-link-pure>Components Collection</p-link-pure>
           </a>
           <a [routerLink]="['forms']" class="link">
             <p-link-pure>Forms</p-link-pure>
+          </a>
+          <a [routerLink]="['phn-header']" class="link">
+            <p-link-pure>Phn Header</p-link-pure>
           </a>
         </p-grid-item>
         <p-grid-item size="12">

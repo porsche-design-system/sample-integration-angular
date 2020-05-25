@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CollectionComponent } from './pages/collection.component';
 import { FormsComponent } from './pages/forms.component';
-
+import { PageWithPhnHeaderComponent } from './pages/page-with-phn-header.component';
 
 const routes: Routes = [
   {
@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'forms',
     component: FormsComponent
+  },
+  {
+    path: 'phn-header',
+    component: PageWithPhnHeaderComponent
   },
 ];
 
