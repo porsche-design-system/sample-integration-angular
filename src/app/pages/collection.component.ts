@@ -29,12 +29,12 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="3">
-        <a href="#aWrappedLink" class="link">
+        <a href="#aWrappedLink" class="removeLinkStyle">
           <p-link>a Wrapped Link</p-link>
         </a>
         <br>
         <br>
-        <a href="/form" class="link">
+        <a href="/form" class="removeLinkStyle">
           <p-link-pure>a Wrapped p-link-pure</p-link-pure>
         </a>
         <br>
