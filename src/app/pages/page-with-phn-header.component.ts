@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <phn-header style="position: absolute; left: 0; right: 0;"></phn-header>
 
-    <div style="paddingTop: 150px">
+    <div style="padding-top: 150px">
       <div>
         <p-button>Some PButton</p-button>
       </div>
