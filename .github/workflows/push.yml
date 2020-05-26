@@ -30,12 +30,12 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: sample-build
-          path: ./build
+          path: ./dist/sample-integration-angular
   deployment:
     name: "Deployment"
     needs: [build]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    # if: github.ref == 'refs/heads/master'
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
@@ -43,7 +43,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: sample-build
-          path: ./build
+          path: ./dist/sample-integration-angular
       - name: "Deploy"
         uses: ./docker/node/
         env:
