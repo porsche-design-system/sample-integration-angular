@@ -11,6 +11,9 @@ ENV PATH="/opt/sample-integration/bin:${PATH}"
 #     libgtk2.0-0 xvfb && \
 #     rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends chromium
+
 COPY ./entrypoint.sh "/opt/sample-integration/entrypoint.sh"
 COPY ./bin "/opt/sample-integration/bin"
 COPY ./shared "/opt/sample-integration/shared"

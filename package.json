@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:ci": "CHROME_BIN=chromium ng test --browsers=ChromeHeadlessCI --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "serve": "ng build --prod && serve -s dist/sample-integration-angular"
