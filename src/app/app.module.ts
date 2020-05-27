@@ -4,17 +4,15 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
-import { CollectionComponent } from './pages/collection.component';
-import { FormsComponent } from './pages/forms.component';
+import { CollectionPage, FormsPage, PhnHeaderPage } from './pages';
 import { FormsModule } from '@angular/forms';
-import { PageWithPhnHeaderComponent } from './pages/page-with-phn-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CollectionComponent,
-    FormsComponent,
-    PageWithPhnHeaderComponent
+    CollectionPage,
+    FormsPage,
+    PhnHeaderPage
   ],
     imports: [
         BrowserModule,

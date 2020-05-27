@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-forms',
+  selector: 'forms-page',
   template: `
     <p-grid>
       <p-grid-item size="12">
@@ -62,7 +62,7 @@ import { Component } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 
-export class FormsComponent {
+export class FormsPage {
   selectInput = 'Headline A';
   checkBox = false;
   radioButton = false;

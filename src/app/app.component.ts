@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
           <p-divider class="divider"></p-divider>
         </p-grid-item>
         <p-grid-item size="12">
-          <a [routerLink]="['componentsCollection']" class="removeLinkStyle">
+          <a [routerLink]="['collection']" class="removeLinkStyle">
             <p-link-pure>Components Collection</p-link-pure>
           </a>
           <a [routerLink]="['forms']" class="removeLinkStyle">

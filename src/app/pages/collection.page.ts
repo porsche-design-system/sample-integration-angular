@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-collection',
+  selector: 'collection-page',
   template: `
     <p-grid>
       <p-grid-item size="12">
@@ -46,7 +46,7 @@ import { Component } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 
-export class CollectionComponent {
+export class CollectionPage {
   clickMessage = '';
   activePage = 1;
 

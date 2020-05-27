@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'page-with-phn-header',
+  selector: 'phn-header-page',
   template: `
     <phn-header style="position: absolute; left: 0; right: 0;"></phn-header>
 
@@ -20,4 +20,4 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class PageWithPhnHeaderComponent {}
+export class PhnHeaderPage {}
