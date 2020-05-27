@@ -3,4 +3,4 @@
 set -o errexit
 set -o pipefail
 
-yarn build --prod
+yarn build
