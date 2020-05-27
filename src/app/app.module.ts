@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
-import { CollectionComponent } from './pages/collection.component';
-import { FormsComponent } from './pages/forms.component';
+import { CollectionPage, FormsPage, PhnHeaderPage } from './pages';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CollectionComponent,
-    FormsComponent
+    CollectionPage,
+    FormsPage,
+    PhnHeaderPage
   ],
     imports: [
         BrowserModule,
@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
         FormsModule
     ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

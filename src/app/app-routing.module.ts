@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CollectionComponent } from './pages/collection.component';
-import { FormsComponent } from './pages/forms.component';
-
+import { CollectionPage, FormsPage, PhnHeaderPage } from './pages';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'componentsCollection',
+    redirectTo: 'collection',
     pathMatch: 'full'
   },
   {
-    path: 'componentsCollection',
-    component: CollectionComponent
+    path: 'collection',
+    component: CollectionPage
   },
   {
     path: 'forms',
-    component: FormsComponent
+    component: FormsPage
+  },
+  {
+    path: 'phn-header',
+    component: PhnHeaderPage
   },
 ];
 
