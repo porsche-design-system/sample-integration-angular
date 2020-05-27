@@ -66,6 +66,29 @@ deploy_to_gh_pages() {
   popd
 }
 
+verify_deployment() {
+  echo "task: [$(date)] \"verify_deployment\" (${1})"
+  local n=1
+  local max=20
+  local delay=60
+  local http_response=""
+  while true
+  do
+    http_response="$(curl -s -H "Cache-Control: no-cache" "https://porscheui.github.io/"${GITHUB_REPOSITORY/porscheui\//}"/${1}/version.md")"
+    echo "Check deployment status (${1}). Attempt ${n}/${max} (${http_response}). [$(date)]"
+    if [[ "${http_response}" == "${GITHUB_SHA}" ]]; then
+      echo "All right, deployment was verified (${1})."
+      break
+    elif [[ ${n} -lt ${max} ]]; then
+      ((n++))
+    else
+      echo "Deployment could not be verified after ${n} attempts (${1})."
+      exit 1
+    fi
+    sleep ${delay}
+  done
+}
+
 isCurrentBranchMasterBranch() {
   if [[ "${P_CURRENT_BRANCH}" == "master" ]]; then
     return 0
@@ -85,6 +108,7 @@ if isCurrentBranchMasterBranch; then
   copy_sample "latest"
   add_deployment_version "latest"
   deploy_to_gh_pages
+  verify_deployment "latest"
 else
   setup
   checkout_gh_pages
@@ -92,4 +116,5 @@ else
   copy_sample "${P_CURRENT_BRANCH}"
   add_deployment_version "${P_CURRENT_BRANCH}"
   deploy_to_gh_pages
+  verify_deployment "${P_CURRENT_BRANCH}"
 fi
