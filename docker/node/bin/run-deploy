@@ -42,7 +42,8 @@ checkout_gh_pages() {
 
 prepare_deployment() {
   echo "task: [$(date)] \"prepare_deployment\" (${1})"
-  rm -rf "/opt/sample-integration-gh-pages/${1}"
+  # * in the end in order to not delete hidden files and folders like ".git" when working on root
+  rm -rf /opt/sample-integration-gh-pages/${1}*
 }
 
 copy_sample() {
@@ -104,11 +105,11 @@ source "${SCRIPT_DIR}/../shared/ensure-github-credentials.sh"
 if isCurrentBranchMasterBranch; then
   setup
   checkout_gh_pages
-  prepare_deployment "latest"
-  copy_sample "latest"
-  add_deployment_version "latest"
+  prepare_deployment # no folder is specified to host app in root
+  copy_sample # no folder is specified to host app in root
+  add_deployment_version # no folder is specified to host app in root
   deploy_to_gh_pages
-  verify_deployment "latest"
+  verify_deployment # no folder is specified to host app in root
 else
   setup
   checkout_gh_pages
