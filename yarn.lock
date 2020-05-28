@@ -1007,7 +1007,7 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.4.0.tgz#56bd2e05c770b5a8093cfaee2d79ddd98042b5a7"
   integrity sha1-Vr0uBcdwtagJPPruLXnd2YBCtac=
 
-"@porschehn/navigation@^1.2.0":
+"@porschehn/navigation@^1.2.1":
   version "1.2.1"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.2.1.tgz#c68ddb8839a0c3ecfbc5e2fb3dbc01f26fd4a8c5"
   integrity sha1-xo3biDmgw+z7xeL7PbwB8m/UqMU=

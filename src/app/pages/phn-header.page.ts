@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'phn-header-page',
   template: `
-    <phn-header style="position: absolute; left: 0; right: 0;"></phn-header>
+    <phn-header env="preview" style="position: absolute; left: 0; right: 0;"></phn-header>
 
     <div style="padding-top: 150px">
       <div>
