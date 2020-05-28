@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --prod --base-href /sample-integration-angular/",
     "test": "ng test",
     "test:ci": "CHROME_BIN=chromium ng test --browsers=ChromeHeadlessCI --watch=false",
     "lint": "ng lint",
