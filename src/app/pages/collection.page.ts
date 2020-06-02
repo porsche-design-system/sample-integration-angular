@@ -11,12 +11,12 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-4">{{clickMessage}}</p-headline>
+        <p-headline variant="headline-4">{{ clickMessage }}</p-headline>
       </p-grid-item>
       <p-grid-item size="2">
         <p-button (click)="onButtonClick()">Submit</p-button>
-        <br>
-        <br>
+        <br />
+        <br />
         <p-button-pure (click)="onButtonPureClick()">Dismiss</p-button-pure>
       </p-grid-item>
       <p-grid-item size="12">
@@ -32,20 +32,19 @@ import { Component } from '@angular/core';
         <a href="#aWrappedLink" class="removeLinkStyle">
           <p-link>a Wrapped Link</p-link>
         </a>
-        <br>
-        <br>
+        <br />
+        <br />
         <a href="/form" class="removeLinkStyle">
           <p-link-pure>a Wrapped p-link-pure</p-link-pure>
         </a>
-        <br>
+        <br />
         <p-link-pure href="#pLinkPure">p-link-pure with href</p-link-pure>
       </p-grid-item>
     </p-grid>
     <p-pagination [activePage]="activePage"></p-pagination>
   `,
-  styleUrls: ['../app.component.css']
+  styleUrls: ['../app.component.css'],
 })
-
 export class CollectionPage {
   clickMessage = '';
   activePage = 1;
@@ -58,9 +57,3 @@ export class CollectionPage {
     this.clickMessage = '';
   }
 }
-
-
-
-
-
-

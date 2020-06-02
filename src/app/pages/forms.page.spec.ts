@@ -5,17 +5,11 @@ import { By } from '@angular/platform-browser';
 import { FormsPage } from './forms.page';
 import { componentsReady } from '@porsche-design-system/components-js';
 
-
 describe('Forms', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        PorscheDesignSystemModule
-      ],
-      declarations: [
-        FormsPage
-      ],
+      imports: [RouterTestingModule, PorscheDesignSystemModule],
+      declarations: [FormsPage],
     }).compileComponents();
   }));
 
@@ -28,5 +22,4 @@ describe('Forms', () => {
     fixture.detectChanges();
     expect(fixture.debugElement.query(By.css('p-headline[data-test-id=checkboxHeadline]'))).toBeTruthy();
   });
-
 });

@@ -6,13 +6,8 @@ import { PorscheDesignSystemModule } from '@porsche-design-system/components-ang
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        PorscheDesignSystemModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule, PorscheDesignSystemModule],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 
@@ -26,6 +21,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('p-headline').textContent).toContain('Example usage of the Porsche-Design-System Angular');
+    expect(compiled.querySelector('p-headline').textContent).toContain(
+      'Example usage of the Porsche-Design-System Angular'
+    );
   });
 });

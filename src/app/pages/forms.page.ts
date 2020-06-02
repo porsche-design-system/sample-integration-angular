@@ -11,32 +11,34 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-4" data-test-id="selectHeadline">{{selectInput}}</p-headline>
+        <p-headline variant="headline-4" data-test-id="selectHeadline">{{ selectInput }}</p-headline>
       </p-grid-item>
       <p-grid-item size="5">
-        <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false"><select
-          [name]="'PDS Select'" (change)="handleSelectChange($event)" [value]="selectInput">
-          <option value="Headline A">Headline A</option>
-          <option value="Headline B">Headline B</option>
-          <option value="Headline C">Headline C</option>
-        </select></p-select-wrapper>
+        <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false">
+          <select [name]="'PDS Select'" (change)="handleSelectChange($event)" [value]="selectInput">
+            <option value="Headline A">Headline A</option>
+            <option value="Headline B">Headline B</option>
+            <option value="Headline C">Headline C</option>
+          </select></p-select-wrapper
+        >
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
         <p-headline *ngIf="checkBox" variant="headline-4" data-test-id="checkboxHeadline">Checkbox Worked</p-headline>
-        <p-checkbox-wrapper [label]="'Check me for Headline'"><input [type]="'checkbox'"
-                                                                     [name]="'Check me for Headline'"
-                                                                     (change)="handleCheckbox()"
-                                                                     data-test-id="checkbox"
-                                                                     [checked]="checkBox"
-        >
+        <p-checkbox-wrapper [label]="'Check me for Headline'">
+          <input
+            [type]="'checkbox'"
+            [name]="'Check me for Headline'"
+            (change)="handleCheckbox()"
+            data-test-id="checkbox"
+            [checked]="checkBox"
+          />
         </p-checkbox-wrapper>
         <p-headline *ngIf="radioButton" variant="headline-4">Radio Worked</p-headline>
-        <p-radio-button-wrapper [label]="'Click me for Headline'"><input [type]="'radio'"
-                                                                         [name]="'Click me for Headline'"
-                                                                         (change)="handleRadio()">
+        <p-radio-button-wrapper [label]="'Click me for Headline'">
+          <input [type]="'radio'" [name]="'Click me for Headline'" (change)="handleRadio()" />
         </p-radio-button-wrapper>
       </p-grid-item>
       <p-grid-item size="12">
@@ -48,20 +50,19 @@ import { Component } from '@angular/core';
         </p-textarea-wrapper>
       </p-grid-item>
       <p-grid-item size="6">
-        <p-text-field-wrapper label="Write here to Change Text beneath" hide-label="false"><input type="text"
-                                                                                                  name="some-name"
-                                                                                                  (keyup)="handleTextField($event)">
+        <p-text-field-wrapper label="Write here to Change Text beneath" hide-label="false">
+          <input type="text" name="some-name" (keyup)="handleTextField($event)" />
         </p-text-field-wrapper>
-        <p-headline variant="headline-4">{{textFieldHeadline}}</p-headline>
-        <p-text-field-wrapper><span [slot]="'label'">Textfield with a <a
-          [href]="'#slottedLink'">Slotted Link</a>.</span><input [type]="'text'" [name]="'Slotted input'">
+        <p-headline variant="headline-4">{{ textFieldHeadline }}</p-headline>
+        <p-text-field-wrapper>
+          <span [slot]="'label'">Textfield with a <a [href]="'#slottedLink'">Slotted Link</a>.</span>
+          <input [type]="'text'" [name]="'Slotted input'" />
         </p-text-field-wrapper>
       </p-grid-item>
     </p-grid>
   `,
-  styleUrls: ['../app.component.css']
+  styleUrls: ['../app.component.css'],
 })
-
 export class FormsPage {
   selectInput = 'Headline A';
   checkBox = false;

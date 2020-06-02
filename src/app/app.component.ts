@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
     <div class="pageLayout">
       <p-grid>
         <p-grid-item size="12">
-          <p-headline variant="headline-2" [align]="'center'">Example usage of the Porsche-Design-System Angular</p-headline>
+          <p-headline variant="headline-2" [align]="'center'"
+            >Example usage of the Porsche-Design-System Angular</p-headline
+          >
         </p-grid-item>
         <p-grid-item size="12">
           <p-divider class="divider"></p-divider>
@@ -24,14 +26,12 @@ import { Component } from '@angular/core';
         </p-grid-item>
         <p-grid-item size="12">
           <p-divider class="divider"></p-divider>
-        </p-grid-item>  
+        </p-grid-item>
       </p-grid>
 
       <router-outlet></router-outlet>
     </div>
   `,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-
-export class AppComponent {
-}
+export class AppComponent {}

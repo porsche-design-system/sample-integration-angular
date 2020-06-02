@@ -6,25 +6,24 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'collection',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'collection',
-    component: CollectionPage
+    component: CollectionPage,
   },
   {
     path: 'forms',
-    component: FormsPage
+    component: FormsPage,
   },
   {
     path: 'phn-header',
-    component: PhnHeaderPage
+    component: PhnHeaderPage,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}

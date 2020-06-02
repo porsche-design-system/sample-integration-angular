@@ -8,20 +8,10 @@ import { CollectionPage, FormsPage, PhnHeaderPage } from './pages';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CollectionPage,
-    FormsPage,
-    PhnHeaderPage
-  ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        PorscheDesignSystemModule,
-        FormsModule
-    ],
+  declarations: [AppComponent, CollectionPage, FormsPage, PhnHeaderPage],
+  imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
