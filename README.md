@@ -20,7 +20,7 @@
 * [Docker](https://www.docker.com) ([see below](#docker-installation-steps))
 
 ### Getting started
-1. Clone [`sample-integration-angular` repository](https://github.com/porscheui/porsche-sample-integration-angular)
+1. Clone [`sample-integration-angular` repository](https://github.com/porscheui/sample-integration-angular)
 1. Switch to __project root directory__
 1. Execute command `npm login --registry=https://porscheui.jfrog.io/porscheui/api/npm/npm/`
 1. Enter username, password (Artifactory API Key, __not__ Artifactory password!) and e-mail address when asked in terminal
