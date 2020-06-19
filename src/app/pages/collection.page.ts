@@ -11,10 +11,10 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-button (click)="onButtonClick()" [disabled]="isDisabled">Submit</p-button>
+        <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperSmall">
-        <p-button-pure (click)="onButtonPureClick()" [disabled]="!isDisabled">Dismiss</p-button-pure>
+        <p-button-pure [disabled]="!isDisabled" (click)="onButtonPureClick()">Dismiss</p-button-pure>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperSmall">
         <p-headline id="headline" variant="headline-4">{{ headlineText }}</p-headline>
