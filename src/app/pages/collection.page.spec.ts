@@ -16,9 +16,10 @@ describe('Collection', () => {
     const fixture = TestBed.createComponent(CollectionPage);
     const compiled = fixture.nativeElement;
     const submitButton = fixture.debugElement.query(By.css('p-button'));
+
     submitButton.nativeElement.click();
     fixture.detectChanges();
-    expect(compiled.querySelector('p-headline[variant="headline-4"]').textContent).toContain(
+    expect(compiled.querySelector('p-headline[id="headline"]').textContent).toContain(
       'Headline appears through Button click'
     );
   });
@@ -28,13 +29,14 @@ describe('Collection', () => {
     const compiled = fixture.nativeElement;
     const submitButton = compiled.querySelector('p-button');
     const dismissButton = compiled.querySelector('p-button-pure');
+
     submitButton.click();
     fixture.detectChanges();
-    expect(compiled.querySelector('p-headline[variant="headline-4"]').textContent).toContain(
+    expect(compiled.querySelector('p-headline[id="headline"]').textContent).toContain(
       'Headline appears through Button click'
     );
     dismissButton.click();
     fixture.detectChanges();
-    expect(compiled.querySelector('p-headline[variant="headline-4"]').textContent).toBe('');
+    expect(compiled.querySelector('p-headline[id="headline"]').textContent).toBe('');
   });
 });
