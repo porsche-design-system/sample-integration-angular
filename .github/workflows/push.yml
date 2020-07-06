@@ -27,7 +27,7 @@ jobs:
         with:
           entrypoint: run-build
       - name: "Store build artifact"
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: sample-build
           path: ./dist/sample-integration-angular
@@ -40,7 +40,7 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v2
       - name: "Restore build artifact"
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v2
         with:
           name: sample-build
           path: ./dist/sample-integration-angular
