@@ -5,55 +5,89 @@ import { Component } from '@angular/core';
   template: `
     <p-grid>
       <p-grid-item size="12">
-        <p-headline variant="headline-3">Buttons</p-headline>
+        <p-headline variant="headline-4">Buttons</p-headline>
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-4">{{ clickMessage }}</p-headline>
+        <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
       </p-grid-item>
-      <p-grid-item size="2">
-        <p-button (click)="onButtonClick()">Submit</p-button>
-        <br />
-        <br />
-        <p-button-pure (click)="onButtonPureClick()">Dismiss</p-button-pure>
+      <p-grid-item size="12" class="contentWrapperSmall">
+        <p-button-pure [disabled]="!isDisabled" (click)="onButtonPureClick()">Dismiss</p-button-pure>
+      </p-grid-item>
+      <p-grid-item size="12" class="contentWrapperSmall">
+        <p-headline id="headline" variant="headline-4">{{ headlineText }}</p-headline>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-headline variant="headline-4">Links</p-headline>
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-3">Links</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="3">
-        <a href="#aWrappedLink" class="removeLinkStyle">
-          <p-link>a Wrapped Link</p-link>
+        <a href="https://www.porsche.com" class="removeLinkStyle">
+          <p-link>porsche.com</p-link>
         </a>
-        <br />
-        <br />
-        <a href="/form" class="removeLinkStyle">
-          <p-link-pure>a Wrapped p-link-pure</p-link-pure>
+      </p-grid-item>
+      <p-grid-item size="12" class="contentWrapperBig">
+        <a href="#hashTest" class="removeLinkStyle">
+          <p-link-pure>Test PLinkPure</p-link-pure>
         </a>
-        <br />
-        <p-link-pure href="#pLinkPure">p-link-pure with href</p-link-pure>
+        <p-link-pure href="#propHashTest">Test propHash</p-link-pure>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-headline variant="headline-4">Icons</p-headline>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-spinner size="small"></p-spinner>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-icon size="medium" name="highway" role="img"></p-icon>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-pagination
+          totalItemsCount="11"
+          itemsPerPage="3"
+          [activePage]="activePage"
+          (pageChange)="handleActivePage($event)"
+        ></p-pagination>
       </p-grid-item>
     </p-grid>
-    <p-pagination [activePage]="activePage"></p-pagination>
   `,
   styleUrls: ['../app.component.css'],
 })
 export class CollectionPage {
-  clickMessage = '';
+  headlineText = '';
   activePage = 1;
+  isDisabled = false;
 
   onButtonClick() {
-    this.clickMessage = 'Headline appears through Button click';
+    this.headlineText = 'Headline appears through Button click';
+    this.isDisabled = !this.isDisabled;
   }
 
   onButtonPureClick() {
-    this.clickMessage = '';
+    this.headlineText = '';
+    this.isDisabled = !this.isDisabled;
+  }
+
+  handleActivePage(event: CustomEvent) {
+    this.activePage = event.detail.page;
   }
 }
