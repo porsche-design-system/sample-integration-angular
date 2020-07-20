@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "serve": "ng build --prod && serve -s dist/sample-integration-angular",
-    "prettier": "prettier --write 'src/**/*.{ts,tsx}'"
+    "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
+    "ngcc": "ngcc",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
