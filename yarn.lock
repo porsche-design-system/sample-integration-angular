@@ -1140,18 +1140,18 @@
     form-data "^3.0.0"
     opener "^1.5.1"
 
-"@porsche-design-system/components-angular@^1.5.0-rc.2":
-  version "1.5.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-1.5.1.tgz#456cc8923a65f805556ad0e00caed3a701528d50"
-  integrity sha1-RWzIkjpl+AVVatDgDK7TpwFSjVA=
+"@porsche-design-system/components-angular@^1.5.2":
+  version "1.5.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-1.5.2.tgz#ab745f51dd0d96d75847f2477814798b77cd20f4"
+  integrity sha1-q3RfUd0NltdYR/JHeBR5i3fNIPQ=
   dependencies:
-    "@porsche-design-system/components-js" "1.5.1"
+    "@porsche-design-system/components-js" "1.5.2"
     tslib "^2.0.0"
 
-"@porsche-design-system/components-js@1.5.1":
-  version "1.5.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.1.tgz#e4da48e161a91cd3e50e8f7bc465f27ca5ce384b"
-  integrity sha1-5NpI4WGpHNPlDo97xGXyfKXOOEs=
+"@porsche-design-system/components-js@1.5.2":
+  version "1.5.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.2.tgz#25d5b34e58a09db6ff2e3c6fa9fd1b16761c0695"
+  integrity sha1-JdWzTlignbb/Ljxvqf0bFnYcBpU=
 
 "@porschehn/navigation@^1.3.1":
   version "1.3.1"
