@@ -44,6 +44,9 @@ SEE LICENSE IN https://designsystem.porsche.com
 @porsche-design-system/components-js
 SEE LICENSE IN https://designsystem.porsche.com
 
+@porsche-design-system/utilities
+SEE LICENSE IN https://designsystem.porsche.com
+
 @porschehn/navigation
 UNLICENSED
 
