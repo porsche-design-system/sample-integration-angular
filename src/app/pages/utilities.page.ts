@@ -13,7 +13,6 @@ import { color, text } from '@porsche-design-system/utilities';
   <div style="width: 50px; height: 50px;" class="backgroundColorPds"></div>`,
   styleUrls: ['./utilities.page.scss']
 })
-
 export class UtilitiesPage {
   public backgroundColor = color.brand;
   public textMedium = text.medium;

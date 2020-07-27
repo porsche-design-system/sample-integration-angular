@@ -20,6 +20,9 @@ import { Component } from '@angular/core';
           <a [routerLink]="['forms']" class="removeLinkStyle">
             <p-link-pure>Forms</p-link-pure>
           </a>
+          <a [routerLink]="['utilities']" class="removeLinkStyle">
+            <p-link-pure>Utilities</p-link-pure>
+          </a>
           <a [routerLink]="['phn-header']" class="removeLinkStyle">
             <p-link-pure>Phn Header</p-link-pure>
           </a>
