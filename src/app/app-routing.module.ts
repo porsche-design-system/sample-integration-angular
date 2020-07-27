@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CollectionPage, FormsPage, PhnHeaderPage } from './pages';
+import { CollectionPage, FormsPage, PhnHeaderPage, UtilitiesPage } from './pages';
+
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'forms',
     component: FormsPage,
+  },
+  {
+    path: 'utilities',
+    component: UtilitiesPage,
   },
   {
     path: 'phn-header',

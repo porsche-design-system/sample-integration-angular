@@ -61,7 +61,7 @@ import { Component } from '@angular/core';
       </p-grid-item>
     </p-grid>
   `,
-  styleUrls: ['../app.component.css'],
+  styleUrls: ['../app.component.scss'],
 })
 export class FormsPage {
   selectInput = 'Headline A';

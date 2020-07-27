@@ -1153,6 +1153,13 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.2.tgz#25d5b34e58a09db6ff2e3c6fa9fd1b16761c0695"
   integrity sha1-JdWzTlignbb/Ljxvqf0bFnYcBpU=
 
+"@porsche-design-system/utilities@1.0.5-rc.1":
+  version "1.0.5-rc.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-1.0.5-rc.1.tgz#a228237a50601527b8a00286a4eb324fcc0f391d"
+  integrity sha1-oigjelBgFSe4oAKGpOsyT8wPOR0=
+  dependencies:
+    csstype "^2.6.11"
+
 "@porschehn/navigation@^1.3.1":
   version "1.3.1"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.3.1.tgz#0dd7905e73fe4b11c722fbaa638b85043a83d2e2"
@@ -3104,6 +3111,11 @@ csso@^4.0.2:
   integrity sha512-NL3spysxUkcrOgnpsT4Xdl2aiEiBG6bXswAABQVHcMrfjjBisFOKwLDOmf4wf32aPdcJws1zds2B0Rg+jqMyHQ==
   dependencies:
     css-tree "1.0.0-alpha.39"
+
+csstype@^2.6.11:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.11.tgz#452f4d024149ecf260a852b025e36562a253ffc5"
+  integrity sha512-l8YyEC9NBkSm783PFTvh0FmJy7s5pFKrDp49ZL7zBGX3fWkO+N4EEyan1qqp8cwPLDcD0OSdyY6hAMoxp34JFw==
 
 custom-event@~1.0.0:
   version "1.0.1"
