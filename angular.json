@@ -124,7 +124,7 @@
   "defaultProject": "sample-integration-angular",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "style": "scss"
     }
   }
 }
