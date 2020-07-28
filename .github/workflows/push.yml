@@ -5,7 +5,7 @@ on:
       - feature/*
       - housekeeping/*
       - issue/*
-      - dependabot/*
+      - dependabot/**
 name: "Sample Integration Angular"
 jobs:
   build:
