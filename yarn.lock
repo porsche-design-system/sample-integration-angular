@@ -1194,10 +1194,10 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/scss-utils/-/@porsche-design-system/scss-utils-1.0.1.tgz#41dde3d8c426b182e23fe668fcb9f559eb5d5613"
   integrity sha1-Qd3j2MQmsYLiP+Zo/Ln1WetdVhM=
 
-"@porsche-design-system/utilities@1.0.5":
-  version "1.0.5"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-1.0.5.tgz#15a456144653158c538189f9b445ef0d9d156a42"
-  integrity sha1-FaRWFEZTFYxTgYn5tEXvDZ0VakI=
+"@porsche-design-system/utilities@1.0.6":
+  version "1.0.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-1.0.6.tgz#ec1aa0b51598f40a3cf4efda949acb6c757359ec"
+  integrity sha1-7BqgtRWY9Ao89O/alJrLbHVzWew=
   dependencies:
     csstype "^2.6.11"
 
@@ -5649,12 +5649,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
-
-lodash@^4.17.19:
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
