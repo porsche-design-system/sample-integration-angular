@@ -1176,6 +1176,11 @@
     form-data "^3.0.0"
     opener "^1.5.1"
 
+"@porsche-design-system/browser-notification-banner@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification-banner/-/@porsche-design-system/browser-notification-banner-1.0.0-alpha.6.tgz#e63f116f77ca5edcff2ca4a5bfe5002356bb88ec"
+  integrity sha1-5j8Rb3fKXtz/LKSlv+UAI1a7iOw=
+
 "@porsche-design-system/components-angular@^1.5.2":
   version "1.5.2"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-1.5.2.tgz#ab745f51dd0d96d75847f2477814798b77cd20f4"

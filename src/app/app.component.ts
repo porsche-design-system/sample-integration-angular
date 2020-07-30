@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { CDN_BASE_URL, JS_MANIFEST } from '@porsche-design-system/browser-notification-banner';
 
 @Component({
   selector: 'app-root',
@@ -38,4 +39,22 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {}
+export class AppComponent {
+  loadAPI: Promise<any>;
+
+  constructor() {
+    this.loadAPI = new Promise((resolve) => {
+      this.loadScript();
+      resolve(true);
+    });
+  }
+
+  public loadScript(): void {
+    const url = CDN_BASE_URL;
+    const initFileName = JS_MANIFEST.init;
+    const body = document.getElementsByTagName('body')[0];
+    const notificationBanner = document.createElement('script');
+    notificationBanner.src = `${url}/${initFileName}`;
+    body.appendChild(notificationBanner);
+  }
+}
