@@ -1,5 +1,10 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
+type Route = {
+  name: string;
+  path: string;
+};
+
 @Component({
   selector: 'app-root',
   template: `
@@ -14,28 +19,27 @@ import { Component, ViewEncapsulation } from '@angular/core';
           <p-divider class="divider"></p-divider>
         </p-grid-item>
         <p-grid-item size="12">
-          <a [routerLink]="['collection']" class="removeLinkStyle">
-            <p-link-pure>Components Collection</p-link-pure>
-          </a>
-          <a [routerLink]="['forms']" class="removeLinkStyle">
-            <p-link-pure>Forms</p-link-pure>
-          </a>
-          <a [routerLink]="['utilities']" class="removeLinkStyle">
-            <p-link-pure>Utilities</p-link-pure>
-          </a>
-          <a [routerLink]="['phn-header']" class="removeLinkStyle">
-            <p-link-pure>Phn Header</p-link-pure>
-          </a>
+          <ng-container *ngFor="let route of routes">
+            <p-link-pure>
+              <a [routerLink]="route.path">{{route.name}}</a>
+            </p-link-pure>
+          </ng-container>
         </p-grid-item>
         <p-grid-item size="12">
           <p-divider class="divider"></p-divider>
         </p-grid-item>
       </p-grid>
-
       <router-outlet></router-outlet>
     </div>
   `,
   styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {}
+export class AppComponent {
+  public routes: Route[] = [
+    { path: 'collection', name: 'Components Collection' },
+    { path: 'forms', name: 'Forms' },
+    { path: 'utilities', name: 'Utilities' },
+    { path: 'phn-header', name: 'Phn Header' },
+  ];
+}
