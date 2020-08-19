@@ -1,9 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { Route } from '@angular/router';
-
-type ExtendedRoute = Route & {
-  name: string;
-};
+import { ExtendedRoute, routes } from './app-routing.module';
 
 @Component({
   selector: 'app-root',
@@ -36,11 +32,5 @@ type ExtendedRoute = Route & {
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  public routes: ExtendedRoute[] = [
-    { path: 'collection', name: 'Components Collection' },
-    { path: 'forms', name: 'Forms' },
-    { path: 'utilities', name: 'Utilities' },
-    { path: 'performance', name: 'Performance' },
-    { path: 'phn-header', name: 'Phn Header' },
-  ];
+  public routes: ExtendedRoute[] = routes;
 }
