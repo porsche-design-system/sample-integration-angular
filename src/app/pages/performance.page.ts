@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 type SelectableElement = 'text' | 'checkbox' | 'button';
+const SELECTABLE_ELEMENTS: SelectableElement[] = ['text', 'checkbox', 'button'];
+const SELECTABLE_COUNTS = [25, 50, 100];
 
 @Component({
   selector: 'performance',
@@ -11,14 +13,14 @@ type SelectableElement = 'text' | 'checkbox' | 'button';
       <p-grid-item size="4"
         ><p-select-wrapper
           ><select [value]="element" (change)="onElementChange($event)">
-            <option *ngFor="let element of SELECTABLE_ELEMENTS" [value]="element">{{ element }}</option>
+            <option *ngFor="let element of selectableElements" [value]="element">{{ element }}</option>
           </select></p-select-wrapper
         ></p-grid-item
       >
       <p-grid-item size="4"
         ><p-select-wrapper
           ><select (change)="onCountChange($event)" [value]="count">
-            <option *ngFor="let count of SELECTABLE_COUNTS" [value]="count">{{ count }}</option>
+            <option *ngFor="let count of selectableCounts" [value]="count">{{ count }}</option>
           </select></p-select-wrapper
         ></p-grid-item
       >
@@ -35,15 +37,15 @@ type SelectableElement = 'text' | 'checkbox' | 'button';
             <p-checkbox-wrapper *ngSwitchCase="'checkbox'" [label]="content + i">
               <input type="checkbox" />
             </p-checkbox-wrapper>
-            <p-button *ngSwitchCase="'button'" [variant]="'primary'">{{ content + i }}</p-button>
+            <p-button *ngSwitchCase="'button'" variant="primary">{{ content + i }}</p-button>
           </ng-container>
         </ng-container>
       </p-grid-item>
     </p-grid>`,
 })
 export class PerformancePage {
-  public SELECTABLE_ELEMENTS: SelectableElement[] = ['text', 'checkbox', 'button'];
-  public SELECTABLE_COUNTS = [25, 50, 100];
+  public selectableElements = SELECTABLE_ELEMENTS;
+  public selectableCounts = SELECTABLE_COUNTS;
 
   public count = 25;
   public element = 'text';
@@ -52,14 +54,14 @@ export class PerformancePage {
   public content = 'Lorem Ipsum ';
   public shouldRender = true;
 
-  onElementChange = (e: Event): void => {
+  public onElementChange = (e: Event): void => {
     this.element = (e.target as HTMLSelectElement).value as SelectableElement;
   };
-  onCountChange = (e: Event): void => {
+  public onCountChange = (e: Event): void => {
     this.count = +(e.target as HTMLSelectElement).value;
     this.elementsOnPage = Array(this.count);
   };
-  onShouldRender = (e: Event): void => {
+  public onShouldRender = (e: Event): void => {
     this.shouldRender = (e.target as HTMLInputElement).checked;
   };
 }
