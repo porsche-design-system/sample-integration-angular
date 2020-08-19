@@ -21,7 +21,7 @@ type Route = {
         <p-grid-item size="12">
           <ng-container *ngFor="let route of routes">
             <p-link-pure>
-              <a [routerLink]="route.path">{{route.name}}</a>
+              <a [routerLink]="route.path">{{ route.name }}</a>
             </p-link-pure>
           </ng-container>
         </p-grid-item>
@@ -40,6 +40,7 @@ export class AppComponent {
     { path: 'collection', name: 'Components Collection' },
     { path: 'forms', name: 'Forms' },
     { path: 'utilities', name: 'Utilities' },
+    { path: 'performance', name: 'Performance' },
     { path: 'phn-header', name: 'Phn Header' },
   ];
 }

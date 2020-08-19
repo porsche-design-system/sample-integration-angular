@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CollectionPage, FormsPage, PhnHeaderPage, UtilitiesPage } from './pages';
+import * as fromPages from './pages';
 
 
 const routes: Routes = [
@@ -11,20 +11,24 @@ const routes: Routes = [
   },
   {
     path: 'collection',
-    component: CollectionPage,
+    component: fromPages.CollectionPage,
   },
   {
     path: 'forms',
-    component: FormsPage,
+    component: fromPages.FormsPage,
   },
   {
-    path: 'utilities',
-    component: UtilitiesPage,
+    path: 'performance',
+    component: fromPages.PerformancePage,
   },
   {
     path: 'phn-header',
-    component: PhnHeaderPage,
+    component: fromPages.PhnHeaderPage,
   },
+  {
+    path: 'utilities',
+    component: fromPages.UtilitiesPage,
+  }
 ];
 
 @NgModule({

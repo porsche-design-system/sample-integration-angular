@@ -4,11 +4,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
-import { CollectionPage, FormsPage, PhnHeaderPage, UtilitiesPage } from './pages';
+import * as fromPages from './pages';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, CollectionPage, FormsPage, UtilitiesPage, PhnHeaderPage],
+  declarations: [AppComponent, ...fromPages.pages],
   imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
