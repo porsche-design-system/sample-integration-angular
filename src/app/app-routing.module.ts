@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, Route } from '@angular/router';
+import { RouterModule, Route } from '@angular/router';
 import * as fromPages from './pages';
 
 export type ExtendedRoute = Route & {
-  name: string;
+  name?: string;
 };
 
 export const routes: ExtendedRoute[] = [
   {
     path: '',
     redirectTo: 'collection',
-    pathMatch: 'full',
-    name: 'Collection Page'
+    pathMatch: 'full'
   },
   {
     path: 'collection',

@@ -32,5 +32,5 @@ import { ExtendedRoute, routes } from './app-routing.module';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  public routes: ExtendedRoute[] = routes;
+  public routes = routes;
 }
