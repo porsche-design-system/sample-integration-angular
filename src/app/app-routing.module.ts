@@ -1,30 +1,42 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { CollectionPage, FormsPage, PhnHeaderPage, UtilitiesPage } from './pages';
+import { RouterModule, Route } from '@angular/router';
+import * as fromPages from './pages';
 
+export type ExtendedRoute = Route & {
+  name?: string;
+};
 
-const routes: Routes = [
+export const routes: ExtendedRoute[] = [
   {
     path: '',
     redirectTo: 'collection',
-    pathMatch: 'full',
+    pathMatch: 'full'
   },
   {
     path: 'collection',
-    component: CollectionPage,
+    component: fromPages.CollectionPage,
+    name: 'Collection Page'
   },
   {
     path: 'forms',
-    component: FormsPage,
+    component: fromPages.FormsPage,
+    name: 'Forms'
   },
   {
-    path: 'utilities',
-    component: UtilitiesPage,
+    path: 'performance',
+    component: fromPages.PerformancePage,
+    name: 'Performance'
   },
   {
     path: 'phn-header',
-    component: PhnHeaderPage,
+    component: fromPages.PhnHeaderPage,
+    name: 'Phn Header'
   },
+  {
+    path: 'utilities',
+    component: fromPages.UtilitiesPage,
+    name: 'Utilities'
+  }
 ];
 
 @NgModule({
