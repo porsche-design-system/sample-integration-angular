@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { ExtendedRoute, routes } from './app-routing.module';
+import { routes } from './app-routing.module';
 
 @Component({
   selector: 'app-root',
