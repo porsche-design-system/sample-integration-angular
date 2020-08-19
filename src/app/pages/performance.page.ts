@@ -52,14 +52,14 @@ export class PerformancePage {
   public content = 'Lorem Ipsum ';
   public shouldRender = true;
 
-  onElementChange = (e) => {
-    this.element = e.target.value;
+  onElementChange = (e: Event): void => {
+    this.element = (e.target as HTMLSelectElement).value as SelectableElement;
   };
-  onCountChange = (e) => {
-    this.count = +e.target.value;
+  onCountChange = (e: Event): void => {
+    this.count = +(e.target as HTMLSelectElement).value;
     this.elementsOnPage = Array(this.count);
   };
-  onShouldRender = (e) => {
-    this.shouldRender = e.target.checked;
+  onShouldRender = (e: Event): void => {
+    this.shouldRender = (e.target as HTMLInputElement).checked;
   };
 }
