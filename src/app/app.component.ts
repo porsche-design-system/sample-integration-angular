@@ -16,7 +16,7 @@ import { routes } from './app-routing.module';
         </p-grid-item>
         <p-grid-item size="12">
           <ng-container *ngFor="let route of routes">
-            <p-link-pure>
+            <p-link-pure *ngIf="route.path !== ''">
               <a [routerLink]="route.path">{{ route.name }}</a>
             </p-link-pure>
           </ng-container>
