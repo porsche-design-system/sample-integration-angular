@@ -60,7 +60,7 @@ import { Component } from '@angular/core';
         </p-text-field-wrapper>
       </p-grid-item>
     </p-grid>
-  `
+  `,
 })
 export class FormsPage {
   selectInput = 'Headline A';

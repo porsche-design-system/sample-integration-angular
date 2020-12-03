@@ -10,33 +10,33 @@ export const routes: ExtendedRoute[] = [
   {
     path: '',
     redirectTo: 'collection',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'collection',
     component: fromPages.CollectionPage,
-    name: 'Collection Page'
+    name: 'Collection Page',
   },
   {
     path: 'forms',
     component: fromPages.FormsPage,
-    name: 'Forms'
+    name: 'Forms',
   },
   {
     path: 'performance',
     component: fromPages.PerformancePage,
-    name: 'Performance'
+    name: 'Performance',
   },
   {
     path: 'phn-header',
     component: fromPages.PhnHeaderPage,
-    name: 'Phn Header'
+    name: 'Phn Header',
   },
   {
     path: 'utilities',
     component: fromPages.UtilitiesPage,
-    name: 'Utilities'
-  }
+    name: 'Utilities',
+  },
 ];
 
 @NgModule({

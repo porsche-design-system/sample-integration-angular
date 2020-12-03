@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
         ></p-pagination>
       </p-grid-item>
     </p-grid>
-  `
+  `,
 })
 export class CollectionPage {
   headlineText = '';

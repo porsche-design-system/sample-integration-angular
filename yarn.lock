@@ -1164,18 +1164,18 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@porsche-design-system/components-angular@2.0.0-alpha.6":
-  version "2.0.0-alpha.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.6.tgz#0a71d4b4ee0308f6334d64091be904b81c250f7d"
-  integrity sha1-CnHUtO4DCPYzTWQJG+kEuBwlD30=
+"@porsche-design-system/components-angular@2.0.0-alpha.7":
+  version "2.0.0-alpha.7"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.7.tgz#7211f290b544c1bcbe327dba9e2b195af9416631"
+  integrity sha1-chHykLVEwby+Mn26nisZWvlBZjE=
   dependencies:
-    "@porsche-design-system/components-js" "2.0.0-alpha.6"
+    "@porsche-design-system/components-js" "2.0.0-alpha.7"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.0.0-alpha.6":
-  version "2.0.0-alpha.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.6.tgz#2d307d7629dc983881cc552aa427ca0af501c2bd"
-  integrity sha1-LTB9dincmDiBzFUqpCfKCvUBwr0=
+"@porsche-design-system/components-js@2.0.0-alpha.7":
+  version "2.0.0-alpha.7"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.7.tgz#670007fd9bbb34696da75baa029fcef09868fbbb"
+  integrity sha1-ZwAH/Zu7NGltp1uqAp/O8Jho+7s=
 
 "@porsche-design-system/utilities@2.0.0":
   version "2.0.0"
@@ -6994,10 +6994,10 @@ prepend-http@^1.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+prettier@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
+  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
