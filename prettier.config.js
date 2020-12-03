@@ -1,8 +1,19 @@
 module.exports = {
   semi: true,
   tabWidth: 2,
-  proseWrap: "never",
+  proseWrap: 'never',
   printWidth: 120,
-  arrowParens: "always",
+  arrowParens: 'always',
   singleQuote: true,
+  trailingComma: 'es5',
+  vueIndentScriptAndStyle: true,
+  quoteProps: 'consistent',
+  overrides: [
+    {
+      files: [',**/*.css', ',**/*.scss'],
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
 };
