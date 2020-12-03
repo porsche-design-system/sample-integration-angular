@@ -14,6 +14,7 @@
     "ngcc": "ngcc"
   },
   "private": true,
+  "prettier": "@porsche-design-system/prettier-config",
   "dependencies": {
     "@angular/animations": "~10.0.5",
     "@angular/common": "~10.0.5",
@@ -35,6 +36,7 @@
     "@angular/cli": "~10.0.4",
     "@angular/compiler-cli": "~10.0.5",
     "@angular/language-service": "~10.0.5",
+    "@porsche-design-system/prettier-config": "^1.0.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
