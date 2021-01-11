@@ -11,10 +11,10 @@
     "e2e": "ng e2e",
     "serve": "ng build --prod && serve -s dist/sample-integration-angular",
     "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
-    "ngcc": "ngcc",
-    "postinstall": "ngcc"
+    "ngcc": "ngcc"
   },
   "private": true,
+  "prettier": "@porsche-design-system/prettier-config",
   "dependencies": {
     "@angular/animations": "~11.0.2",
     "@angular/common": "~11.0.2",
@@ -25,6 +25,7 @@
     "@angular/platform-browser-dynamic": "~11.0.2",
     "@angular/router": "~11.0.2",
     "@porsche-design-system/components-angular": "2.0.0-alpha.6",
+    "@porsche-design-system/prettier-config": "^1.0.0",
     "@porsche-design-system/utilities": "2.0.0",
     "@porschehn/navigation": "^1.12.0",
     "rxjs": "~6.6.3",
@@ -47,7 +48,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "prettier": "^2.2.0",
+    "prettier": "^2.2.1",
     "protractor": "~7.0.0",
     "serve": "^11.3.1",
     "ts-node": "~9.0.0",
