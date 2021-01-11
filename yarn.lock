@@ -1165,6 +1165,11 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@porsche-design-system/browser-notification@^2.0.0":
+  version "2.0.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-2.0.0.tgz#4767d7d2bc1fedb226bc9766059947b0d8951151"
+  integrity sha1-R2fX0rwf7bImvJdmBZlHsNiVEVE=
+
 "@porsche-design-system/components-angular@2.0.0-alpha.10":
   version "2.0.0-alpha.10"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.10.tgz#363c0ff253bc68dae369058fe8f7d9babaa4ed28"
