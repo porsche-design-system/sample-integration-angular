@@ -125,14 +125,14 @@
     ora "5.1.0"
     rxjs "6.6.3"
 
-"@angular/animations@~11.0.2":
+"@angular/animations@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-11.0.7.tgz#d71ebb581da4e2805df1b35c75a331192063846a"
   integrity sha512-P3cluDGIsaj7vqvqIGW7xFCIXWa1lJDsHsmY3Fexk+ZVCncokftp5ZUANb2+DwOD3BPgd/WjBdXVjwzFQFsoVA==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/cli@~11.0.2":
+"@angular/cli@11.0.6":
   version "11.0.6"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-11.0.6.tgz#8d65d3ad3841aabe23ff38a41fa6c4f38dd12f66"
   integrity sha512-bwrXXyU23HjUlFl0CNCU+XMGa/enooqpMLcTAA15StVpKFHyaA4c57il/aqu+1IuB+zR6rGDzhAABuvRcHd+mQ==
@@ -158,14 +158,14 @@
     universal-analytics "0.4.23"
     uuid "8.3.1"
 
-"@angular/common@~11.0.2":
+"@angular/common@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-11.0.7.tgz#bc76452161bc0728563bbf05fe10cac492dcfdad"
   integrity sha512-9VuT9qrSP7Q91Wp276DDieCIZiTBrpLNoJzK/RygQShTymCVPg4Dsl3tQUKaHBPx9MexeqRG/HjN02DVpeqtsA==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/compiler-cli@~11.0.2":
+"@angular/compiler-cli@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-11.0.7.tgz#661c788a9493f61fcba5cb2165399ffe5a843e9d"
   integrity sha512-04agqIPmw1exMeZjJmRzeYFgTEXYJ7gKD8TZipsGlu99uU/NQJIsetpzR7/bhPAKDH6YO0p/uavxV0nRpSTIQw==
@@ -186,15 +186,22 @@
     tslib "^2.0.0"
     yargs "^16.1.1"
 
+"@angular/compiler@11.0.7":
+  version "11.0.7"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-11.0.7.tgz#994251520cb4b810240e8081dddb4baddae7551c"
+  integrity sha512-U+aGn6lP3iB184D2Z+OSK5vCwNtxtsF59T7nNJBMCCwcN7Qc5tfDBbSj1GI11XrIiuuoOxXbAp9BKS0dAyNCWw==
+  dependencies:
+    tslib "^2.0.0"
+
 "@angular/compiler@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.0.0.tgz#87e0bef4c369b6cadae07e3a4295778fc93799d5"
   integrity sha512-ctjwuntPfZZT2mNj2NDIVu51t9cvbhl/16epc5xEwyzyDt76pX9UgwvY+MbXrf/C/FWwdtmNtfP698BKI+9leQ==
 
-"@angular/compiler@~11.0.2":
+"@angular/core@11.0.7":
   version "11.0.7"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-11.0.7.tgz#994251520cb4b810240e8081dddb4baddae7551c"
-  integrity sha512-U+aGn6lP3iB184D2Z+OSK5vCwNtxtsF59T7nNJBMCCwcN7Qc5tfDBbSj1GI11XrIiuuoOxXbAp9BKS0dAyNCWw==
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.7.tgz#4d81b1a49d3d4aaeb0ef9908695a3cc06707cfd9"
+  integrity sha512-Kj5uRZoK5+xfMTjkP3tw8oIF5hKTnoF9Bwh5m9GUKqg1wHVKOJcT5JBIEMc8qPyiFgALREA01reIzQdGMjX36A==
   dependencies:
     tslib "^2.0.0"
 
@@ -203,40 +210,33 @@
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.0.0.tgz#227dc53e1ac81824f998c6e76000b7efc522641e"
   integrity sha512-6Pxgsrf0qF9iFFqmIcWmjJGkkCaCm6V5QNnxMy2KloO3SDq6QuMVRbN9RtC8Urmo25LP+eZ6ZgYqFYpdD8Hd9w==
 
-"@angular/core@~11.0.2":
-  version "11.0.7"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.7.tgz#4d81b1a49d3d4aaeb0ef9908695a3cc06707cfd9"
-  integrity sha512-Kj5uRZoK5+xfMTjkP3tw8oIF5hKTnoF9Bwh5m9GUKqg1wHVKOJcT5JBIEMc8qPyiFgALREA01reIzQdGMjX36A==
-  dependencies:
-    tslib "^2.0.0"
-
-"@angular/forms@~11.0.2":
+"@angular/forms@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-11.0.7.tgz#958558b92d2e524e08b447c16b17b2ae42717657"
   integrity sha512-+3A+SciMyHTdUwkKUz4XzC1DSYexQEbFLe0PKQIFSFOROmbssjnWJv7yO2HbzCpGa7oGKPYNlE5twYWyLxpvFg==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/language-service@~11.0.2":
+"@angular/language-service@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-11.0.7.tgz#78a912eaf025c2d01181dc72ff4fb99ca598ae49"
   integrity sha512-1IiJNwy/phjpYfqLVlhOp4Gr/A89joydwqPB7Nf7hbhl3xFnT98GOp/nsoZCwMBKotXYNk93m025LbJ++augfQ==
 
-"@angular/platform-browser-dynamic@~11.0.2":
+"@angular/platform-browser-dynamic@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-11.0.7.tgz#8ee8c72799a96eee3967596ae52b69ee90ac3df0"
   integrity sha512-pUXCum1Z2DZV/34WR4Vfmkc5nWxbmVdwAA9pXbAarwAYqHIqOzX8rpRaHsuHBAR+SK+VH+xjproeLgsVfV8FSA==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/platform-browser@~11.0.2":
+"@angular/platform-browser@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-11.0.7.tgz#1475540b38d1e2d19dbd9242e0a9ddf6d9bf7873"
   integrity sha512-W8Wt8jMUjcbpqGtqrNWAj0p7CLdjOxgVlbrgBXTbaoqdchvXH85YzGr7ohA3MuE61H90OcVK9OhfYQk5o6joSg==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/router@~11.0.2":
+"@angular/router@11.0.7":
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-11.0.7.tgz#c5d0cacb927018eb495a4538ab1f81c088f5b7f1"
   integrity sha512-oh/MOPRSOCLRPsM/3CVUNYZ3pz3g+CzLOk5Vad/zFJmnGwjA/lQGJo2pl7VXVq3RF7MieaHlDWG5TexGlXAP5w==
@@ -1165,30 +1165,35 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@porsche-design-system/components-angular@2.0.0-alpha.6":
-  version "2.0.0-alpha.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.6.tgz#0a71d4b4ee0308f6334d64091be904b81c250f7d"
-  integrity sha1-CnHUtO4DCPYzTWQJG+kEuBwlD30=
+"@porsche-design-system/components-angular@2.0.0-alpha.10":
+  version "2.0.0-alpha.10"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.10.tgz#363c0ff253bc68dae369058fe8f7d9babaa4ed28"
+  integrity sha1-NjwP8lO8aNrjaQWP6PfZurqk7Sg=
   dependencies:
-    "@porsche-design-system/components-js" "2.0.0-alpha.6"
+    "@porsche-design-system/components-js" "2.0.0-alpha.10"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.0.0-alpha.6":
-  version "2.0.0-alpha.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.6.tgz#2d307d7629dc983881cc552aa427ca0af501c2bd"
-  integrity sha1-LTB9dincmDiBzFUqpCfKCvUBwr0=
+"@porsche-design-system/components-js@2.0.0-alpha.10":
+  version "2.0.0-alpha.10"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.10.tgz#72c61e06e9418ce0329343076c1a4876fa086cd0"
+  integrity sha1-csYeBulBjOAyk0MHbBpIdvoIbNA=
+
+"@porsche-design-system/partials@^2.2.0":
+  version "2.2.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/partials/-/@porsche-design-system/partials-2.2.0.tgz#623e40a693314ef22f165cfa4acf96c2d5f86867"
+  integrity sha1-Yj5AppMxTvIvFlz6Ss+WwtX4aGc=
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.0"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porsche-design-system/utilities@2.0.0":
-  version "2.0.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-2.0.0.tgz#b31d92eb7946635ece626e921387bd0eba86a195"
-  integrity sha1-sx2S63lGY17OYm6SE4e9DrqGoZU=
+"@porsche-design-system/utilities@4.0.0":
+  version "4.0.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-4.0.0.tgz#01535d364b55f32d1d94d12837758db74fce2df3"
+  integrity sha1-AVNdNktV8y0dlNEoN3WNt0/OLfM=
   dependencies:
-    csstype "^3.0.2"
+    csstype "^3.0.5"
 
 "@porschehn/navigation@^1.12.0":
   version "1.12.0"
@@ -2845,6 +2850,11 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+create-require@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
+  integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -3061,7 +3071,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "^1.1.2"
 
-csstype@^3.0.2:
+csstype@^3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
   integrity sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
@@ -8566,12 +8576,13 @@ tree-kill@1.2.2:
   resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
-ts-node@~9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"
-  integrity sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
+ts-node@~9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"
+  integrity sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
   dependencies:
     arg "^4.1.0"
+    create-require "^1.1.0"
     diff "^4.0.1"
     make-error "^1.1.1"
     source-map-support "^0.5.17"
