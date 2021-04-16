@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
     <p-grid>
       <p-grid-item size="12">
         <p-headline variant="headline-4">Buttons</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
+
       <p-grid-item size="12">
         <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
       </p-grid-item>
@@ -19,15 +18,23 @@ import { Component } from '@angular/core';
       <p-grid-item size="12" class="contentWrapperSmall">
         <p-headline id="headline" variant="headline-4">{{ headlineText }}</p-headline>
       </p-grid-item>
+      <p-grid-item size="12" class="contentWrapperSmall">
+        <p-button (click)="openModal()">Open Modal</p-button>
+        <p-modal [heading]="'Some Heading'" [open]="isModalOpen" (close)="handleModalClose($event)">
+          <p-text>Some Content</p-text>
+          <p-button-group class="footer">
+            <p-button>Save</p-button>
+            <p-button variant="tertiary" (click)="handleModalClose($event)">Close</p-button>
+          </p-button-group>
+        </p-modal>
+      </p-grid-item>
+
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-headline variant="headline-4">Links</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
+
       <p-grid-item size="12">
         <a href="https://www.porsche.com" class="removeLinkStyle">
           <p-link>porsche.com</p-link>
@@ -39,25 +46,22 @@ import { Component } from '@angular/core';
         </a>
         <p-link-pure href="#propHashTest">Test propHash</p-link-pure>
       </p-grid-item>
+
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-headline variant="headline-4">Icons</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
+
       <p-grid-item size="12">
         <p-spinner size="small"></p-spinner>
       </p-grid-item>
       <p-grid-item size="12">
         <p-icon size="medium" name="highway" role="img"></p-icon>
       </p-grid-item>
+
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
         <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
       </p-grid-item>
       <p-grid-item size="12">
@@ -70,11 +74,19 @@ import { Component } from '@angular/core';
       </p-grid-item>
     </p-grid>
   `,
+  styles: [
+    `
+      .footer {
+        padding: 2rem 0 0;
+      }
+    `,
+  ],
 })
 export class CollectionPage {
   headlineText = '';
   activePage = 1;
   isDisabled = false;
+  isModalOpen = false;
 
   onButtonClick() {
     this.headlineText = 'Headline appears through Button click';
@@ -84,6 +96,15 @@ export class CollectionPage {
   onButtonPureClick() {
     this.headlineText = '';
     this.isDisabled = !this.isDisabled;
+  }
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  handleModalClose(ev: CustomEvent<void>) {
+    console.log(ev);
+    this.isModalOpen = false;
   }
 
   handleActivePage(event: CustomEvent) {
