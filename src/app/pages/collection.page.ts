@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageChangeEvent, TabChangeEvent } from '@porsche-design-system/components-angular/lib/types';
 
 @Component({
   selector: 'collection-page',
@@ -7,9 +8,6 @@ import { Component } from '@angular/core';
       <p-grid-item size="12">
         <p-headline variant="headline-4">Buttons</p-headline>
         <p-divider class="divider"></p-divider>
-      </p-grid-item>
-
-      <p-grid-item size="12">
         <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperSmall">
@@ -33,9 +31,7 @@ import { Component } from '@angular/core';
         <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">Links</p-headline>
         <p-divider class="divider"></p-divider>
-      </p-grid-item>
 
-      <p-grid-item size="12">
         <a href="https://www.porsche.com" class="removeLinkStyle">
           <p-link>porsche.com</p-link>
         </a>
@@ -49,11 +45,19 @@ import { Component } from '@angular/core';
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Icons</p-headline>
+        <p-headline variant="headline-4">Tabs</p-headline>
         <p-divider class="divider"></p-divider>
+        <p-tabs-bar [activeTabIndex]="activeTab" (tabChange)="handleTabChange($event)">
+          <button>Tab 1</button>
+          <button>Tab 2</button>
+          <button>Tab 3</button>
+        </p-tabs-bar>
       </p-grid-item>
 
       <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+        <p-headline variant="headline-4">Icons</p-headline>
+        <p-divider class="divider"></p-divider>
         <p-spinner size="small"></p-spinner>
       </p-grid-item>
       <p-grid-item size="12">
@@ -63,13 +67,12 @@ import { Component } from '@angular/core';
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
         <p-pagination
           totalItemsCount="11"
           itemsPerPage="3"
           [activePage]="activePage"
-          (pageChange)="handleActivePage($event)"
+          (pageChange)="handlePageChange($event)"
         ></p-pagination>
       </p-grid-item>
     </p-grid>
@@ -84,6 +87,7 @@ import { Component } from '@angular/core';
 })
 export class CollectionPage {
   headlineText = '';
+  activeTab = 0;
   activePage = 1;
   isDisabled = false;
   isModalOpen = false;
@@ -107,7 +111,13 @@ export class CollectionPage {
     this.isModalOpen = false;
   }
 
-  handleActivePage(event: CustomEvent) {
-    this.activePage = event.detail.page;
+  handlePageChange(ev: CustomEvent<PageChangeEvent>) {
+    console.log(ev);
+    this.activePage = ev.detail.page;
+  }
+
+  handleTabChange(ev: CustomEvent<TabChangeEvent>) {
+    console.log(ev);
+    this.activeTab = ev.detail.activeTabIndex;
   }
 }
