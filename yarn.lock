@@ -1230,18 +1230,18 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-2.0.0.tgz#4767d7d2bc1fedb226bc9766059947b0d8951151"
   integrity sha1-R2fX0rwf7bImvJdmBZlHsNiVEVE=
 
-"@porsche-design-system/components-angular@2.2.0-beta.1":
-  version "2.2.0-beta.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.2.0-beta.1.tgz#b203208d85e0e15944c5815acc9463793cff857b"
-  integrity sha1-sgMgjYXg4VlExYFazJRjeTz/hXs=
+"@porsche-design-system/components-angular@2.2.1":
+  version "2.2.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.2.1.tgz#31905e4998b4e469a9a423a234ad4d082604f729"
+  integrity sha1-MZBeSZi05GmppCOiNK1NCCYE9yk=
   dependencies:
-    "@porsche-design-system/components-js" "2.2.0-beta.1"
+    "@porsche-design-system/components-js" "2.2.1"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.2.0-beta.1":
-  version "2.2.0-beta.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.2.0-beta.1.tgz#31adccced74416051909ddd266f2f7bedc4cc999"
-  integrity sha1-Ma3MztdEFgUZCd3SZvL3vtxMyZk=
+"@porsche-design-system/components-js@2.2.1":
+  version "2.2.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.2.1.tgz#c9a330f6e16235cac2c7da53f7aca22f39895393"
+  integrity sha1-yaMw9uFiNcrCx9pT96yiLzmJU5M=
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.0"
@@ -1316,15 +1316,20 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/jasmine@*", "@types/jasmine@~3.6.10":
+"@types/jasmine@*":
   version "3.6.11"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.6.11.tgz#4b1d77aa9dfc757407cb9e277216d8e83553f09d"
   integrity sha512-S6pvzQDvMZHrkBz2Mcn/8Du7cpr76PlRJBAoHnSDNbulULsH5dp0Gns+WRyNX5LHejz/ljxK4/vIHK/caHt6SQ==
 
-"@types/jasminewd2@~2.0.3":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@types/jasminewd2/-/jasminewd2-2.0.8.tgz#67afe5098d5ef2386073a7b7384b69a840dfe93b"
-  integrity sha512-d9p31r7Nxk0ZH0U39PTH0hiDlJ+qNVGjlt1ucOoTUptxb2v+Y5VMnsxfwN+i3hK4yQnqBi3FMmoMFcd1JHDxdg==
+"@types/jasmine@~3.7.7":
+  version "3.7.7"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.7.7.tgz#56718af036be3c9f86eca560a22e39440b2b0784"
+  integrity sha512-yZzGe1d1T0y+imXDZ79F030nn8qbmiwpWKCZKvKN0KbTzwXAVYShUxkIxu1ba+vhIdabTGVGCfbtZC0oOam8TQ==
+
+"@types/jasminewd2@~2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@types/jasminewd2/-/jasminewd2-2.0.9.tgz#db3946314605deea9d5c7aea0b61d807089ba76d"
+  integrity sha512-Oz+Faunpe2SimFvkMYMXxpK89WXl7rZHG8abTOKcGndu4xOoSbUZ+jUdZ0LQpmDqPEGLBWXF/yZP1tlsplGhzw==
   dependencies:
     "@types/jasmine" "*"
 
@@ -1338,10 +1343,15 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.4.tgz#f0ec25dbf2f0e4b18647313ac031134ca5b24b21"
   integrity sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
 
-"@types/node@*", "@types/node@>=10.0.0", "@types/node@^15.0.1":
+"@types/node@*", "@types/node@>=10.0.0":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
   integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
+
+"@types/node@^15.12.2":
+  version "15.12.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
+  integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -5237,10 +5247,10 @@ karma-coverage-istanbul-reporter@~3.0.2:
     istanbul-reports "^3.0.2"
     minimatch "^3.0.4"
 
-karma-jasmine-html-reporter@^1.5.0:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/karma-jasmine-html-reporter/-/karma-jasmine-html-reporter-1.5.4.tgz#669f33d694d88fce1b0ccfda57111de716cb0192"
-  integrity sha512-PtilRLno5O6wH3lDihRnz0Ba8oSn0YUJqKjjux1peoYGwo0AQqrWRbdWk/RLzcGlb+onTyXAnHl6M+Hu3UxG/Q==
+karma-jasmine-html-reporter@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/karma-jasmine-html-reporter/-/karma-jasmine-html-reporter-1.6.0.tgz#586e17025a1b4128e9fba55d5f1e8921bfc3bc1e"
+  integrity sha512-ELO9yf0cNqpzaNLsfFgXd/wxZVYkE2+ECUwhMHUD4PZ17kcsPsYsVyjquiRqyMn2jkd2sHt0IeMyAyq1MC23Fw==
 
 karma-jasmine@~4.0.1:
   version "4.0.1"
@@ -5256,10 +5266,10 @@ karma-source-map-support@1.4.0:
   dependencies:
     source-map-support "^0.5.5"
 
-karma@~6.3.2:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/karma/-/karma-6.3.2.tgz#24b62fbae3e8b5218cc32a0dac49ad08a541e76d"
-  integrity sha512-fo4Wt0S99/8vylZMxNj4cBFyOBBnC1bewZ0QOlePij/2SZVWxqbyLeIddY13q6URa2EpLRW8ixvFRUMjkmo1bw==
+karma@~6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/karma/-/karma-6.3.3.tgz#bd04c7c533f8de99b3c3e85e191d0a6ae2621ad1"
+  integrity sha512-JRAujkKWaOtO2LmyPH7K2XXRhrxuFAn9loIL9+iiah6vjz+ZLkqdKsySV9clRITGhj10t9baIfbCl6CJ5hu9gQ==
   dependencies:
     body-parser "^1.19.0"
     braces "^3.0.2"
@@ -6824,10 +6834,10 @@ postcss@8.2.13, postcss@^8.1.4:
     nanoid "^3.1.22"
     source-map "^0.6.1"
 
-prettier@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
-  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
+prettier@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.1.tgz#76903c3f8c4449bc9ac597acefa24dc5ad4cbea6"
+  integrity sha512-p+vNbgpLjif/+D+DwAZAbndtRrR0md0MwfmOVN9N+2RgyACMT+7tfaRnT+WDPkqnuVwleyuBIG2XBxKDme3hPA==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
@@ -7437,10 +7447,10 @@ rxjs@^6.5.3, rxjs@^6.6.0:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@~7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.0.0.tgz#c55d67c52aee8804d32ab60965e335bd41e2dc2d"
-  integrity sha512-I1V/ArAtGJg4kmCfms8fULm0SwYgEsAf2d5WPCBGzTYm2qTjO3Tx4EDFaGjbOox8CeEsC69jQK22mnmfyA26sw==
+rxjs@~7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.1.0.tgz#94202d27b19305ef7b1a4f330277b2065df7039e"
+  integrity sha512-gCFO5iHIbRPwznl6hAYuwNFld8W4S2shtSJIqG27ReWXo9IWrCyEICxUA+6vJHwSR/OakoenC4QsDxq50tzYmw==
   dependencies:
     tslib "~2.1.0"
 
