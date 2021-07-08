@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { PageChangeEvent, TabChangeEvent } from '@porsche-design-system/components-angular/lib/types';
+import {
+  AccordionChangeEvent,
+  PageChangeEvent,
+  TabChangeEvent,
+} from '@porsche-design-system/components-angular/lib/types';
 
 @Component({
   selector: 'collection-page',
@@ -66,6 +70,34 @@ import { PageChangeEvent, TabChangeEvent } from '@porsche-design-system/componen
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
+        <p-headline variant="headline-4">Accordion</p-headline>
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <div class="accordion-wrapper">
+          <p-accordion
+            heading="Some Heading"
+            tag="h3"
+            [open]="isAccordion1Open"
+            (accordionChange)="onAccordion1Change($event)"
+          >
+            <p-text>{{ content }}</p-text>
+            <p-text>{{ content }}</p-text>
+          </p-accordion>
+          <p-accordion
+            heading="Some Heading"
+            tag="h3"
+            [open]="isAccordion2Open"
+            (accordionChange)="onAccordion2Change($event)"
+          >
+            <p-text>{{ content }}</p-text>
+            <p-text>{{ content }}</p-text>
+          </p-accordion>
+        </div>
+      </p-grid-item>
+
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
         <p-divider class="divider"></p-divider>
         <p-pagination
@@ -82,6 +114,9 @@ import { PageChangeEvent, TabChangeEvent } from '@porsche-design-system/componen
       .footer {
         padding: 2rem 0 0;
       }
+      .accordion-wrapper {
+        max-width: 800px;
+      }
     `,
   ],
 })
@@ -91,6 +126,18 @@ export class CollectionPage {
   activePage = 1;
   isDisabled = false;
   isModalOpen = false;
+  isAccordion1Open = false;
+  isAccordion2Open = false;
+
+  content =
+    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et  dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.';
+
+  onAccordion1Change(e: CustomEvent<AccordionChangeEvent>) {
+    this.isAccordion1Open = e.detail.open;
+  }
+  onAccordion2Change(e: CustomEvent<AccordionChangeEvent>) {
+    this.isAccordion2Open = e.detail.open;
+  }
 
   onButtonClick() {
     this.headlineText = 'Headline appears through Button click';
