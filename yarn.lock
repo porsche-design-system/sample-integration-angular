@@ -1252,10 +1252,10 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porsche-design-system/utilities@4.1.0":
-  version "4.1.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-4.1.0.tgz#d506df084403adb577547b85dbcdf55c0a842adf"
-  integrity sha1-1QbfCEQDrbV3VHuF2831XAqEKt8=
+"@porsche-design-system/utilities@5.0.0":
+  version "5.0.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-5.0.0.tgz#a19c1099907910c041690d3ecd556c4590223420"
+  integrity sha1-oZwQmZB5EMBBaQ0+zVVsRZAiNCA=
   dependencies:
     csstype "^3.0.8"
 
