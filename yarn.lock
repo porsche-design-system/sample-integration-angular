@@ -1241,42 +1241,42 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-2.0.0.tgz#4767d7d2bc1fedb226bc9766059947b0d8951151"
   integrity sha1-R2fX0rwf7bImvJdmBZlHsNiVEVE=
 
-"@porsche-design-system/components-angular@2.4.0-beta.2":
-  version "2.4.0-beta.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.4.0-beta.2.tgz#e6a2704c92ff1b5436dd9c2647c94f00f279cf59"
-  integrity sha1-5qJwTJL/G1Q23ZwmR8lPAPJ5z1k=
+"@porsche-design-system/components-angular@2.6.1":
+  version "2.6.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.6.1.tgz#91769ed6835a29e84def1f58431273cd23e558ab"
+  integrity sha1-kXae1oNaKehN7x9YQxJzzSPlWKs=
   dependencies:
-    "@porsche-design-system/components-js" "2.4.0-beta.2"
+    "@porsche-design-system/components-js" "2.6.1"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.2.0":
-  version "2.2.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.2.0.tgz#87e5dc5f780e16a500a3d1c011032509655a5842"
-  integrity sha1-h+XcX3gOFqUAo9HAEQMlCWVaWEI=
+"@porsche-design-system/components-js@2.5.0":
+  version "2.5.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.5.0.tgz#f081daaa2a1387c93c27660771bd944fde4fe381"
+  integrity sha1-8IHaqioTh8k8J2YHcb2UT95P44E=
 
-"@porsche-design-system/components-js@2.4.0-beta.2":
-  version "2.4.0-beta.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.4.0-beta.2.tgz#11f599b5526b00164e947abc6a967ee11f3b69af"
-  integrity sha1-EfWZtVJrABZOlHq8apZ+4R87aa8=
+"@porsche-design-system/components-js@2.6.1":
+  version "2.6.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.6.1.tgz#d6e45219194b7354591838026e1e896df3765c5f"
+  integrity sha1-1uRSGRlLc1RZGDgCbh6JbfN2XF8=
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.0"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porsche-design-system/utilities@5.0.0":
-  version "5.0.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-5.0.0.tgz#a19c1099907910c041690d3ecd556c4590223420"
-  integrity sha1-oZwQmZB5EMBBaQ0+zVVsRZAiNCA=
+"@porsche-design-system/utilities@5.1.0":
+  version "5.1.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-5.1.0.tgz#e4bdc04cc77accb2bee05d4161a653a633c7ad75"
+  integrity sha1-5L3ATMd6zLK+4F1BYaZTpjPHrXU=
   dependencies:
-    csstype "^3.0.8"
+    csstype "^3.0.9"
 
-"@porschehn/navigation@^2.5.0":
-  version "2.5.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.5.0.tgz#497c0e0cb85e6cfc16ddca7789eb0445b601a3ac"
-  integrity sha1-SXwODLhebPwW3cp3iesERbYBo6w=
+"@porschehn/navigation@^2.10.3":
+  version "2.10.3"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.10.3.tgz#2aac95007ab99bb8e791552c198667e431bff28c"
+  integrity sha1-KqyVAHq5m7jnkVUsGYZn5DG/8ow=
   dependencies:
-    "@porsche-design-system/components-js" "2.2.0"
+    "@porsche-design-system/components-js" "2.5.0"
     "@stencil/core" "2.6.0"
 
 "@schematics/angular@12.1.1":
@@ -2983,10 +2983,10 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
-csstype@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
-  integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
+csstype@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
+  integrity sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==
 
 custom-event@~1.0.0:
   version "1.0.1"
