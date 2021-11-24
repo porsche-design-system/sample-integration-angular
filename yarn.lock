@@ -1596,15 +1596,20 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-3.0.0.tgz#57684e3d1d2c1f6e0b0929bde982bc29edd99e1f"
   integrity sha1-V2hOPR0sH24LCSm96YK8Ke3Znh8=
 
-"@porsche-design-system/components-angular@2.6.1":
-  version "2.6.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.6.1.tgz#91769ed6835a29e84def1f58431273cd23e558ab"
-  integrity sha1-kXae1oNaKehN7x9YQxJzzSPlWKs=
+"@porsche-design-system/components-angular@2.7.0-beta.2":
+  version "2.7.0-beta.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.7.0-beta.2.tgz#9debdfa960c640839fe2f05be586cf1d68c8646f"
+  integrity sha1-nevfqWDGQIOf4vBb5YbPHWjIZG8=
   dependencies:
-    "@porsche-design-system/components-js" "2.6.1"
+    "@porsche-design-system/components-js" "2.7.0-beta.2"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.6.1", "@porsche-design-system/components-js@^2.6.1":
+"@porsche-design-system/components-js@2.7.0-beta.2":
+  version "2.7.0-beta.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.7.0-beta.2.tgz#99ab87dde087d1a0b5a3d1e6734ef097e70a7cd0"
+  integrity sha1-mauH3eCH0aC1o9Hmc07wl+cKfNA=
+
+"@porsche-design-system/components-js@^2.6.1":
   version "2.6.1"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.6.1.tgz#d6e45219194b7354591838026e1e896df3765c5f"
   integrity sha1-1uRSGRlLc1RZGDgCbh6JbfN2XF8=

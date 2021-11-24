@@ -14,7 +14,7 @@ export const routes: ExtendedRoute[] = [
   },
   {
     path: 'collection',
-    component: fromPages.CollectionPage,
+    component: fromPages.CollectionPageComponent,
     name: 'Collection Page',
   },
   {

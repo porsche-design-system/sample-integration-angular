@@ -1,10 +1,10 @@
-import { CollectionPage } from './collection.page';
+import { CollectionPageComponent } from './collection.page';
 import { FormsPage } from './forms.page';
 import { PerformancePage } from './performance.page';
 import { PhnHeaderPage } from './phn-header.page';
 import { UtilitiesPage } from './utilities.page';
 
-export const pages = [CollectionPage, FormsPage, PerformancePage, PhnHeaderPage, UtilitiesPage];
+export const pages = [CollectionPageComponent, FormsPage, PerformancePage, PhnHeaderPage, UtilitiesPage];
 
 export * from './collection.page';
 export * from './forms.page';

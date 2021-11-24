@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { CollectionPage } from './collection.page';
+import { CollectionPageComponent } from './collection.page';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
 import { By } from '@angular/platform-browser';
 
@@ -8,12 +8,12 @@ describe('Collection', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, PorscheDesignSystemModule],
-      declarations: [CollectionPage],
+      declarations: [CollectionPageComponent],
     }).compileComponents();
   }));
 
   it('should display headline after button Click', () => {
-    const fixture = TestBed.createComponent(CollectionPage);
+    const fixture = TestBed.createComponent(CollectionPageComponent);
     const compiled = fixture.nativeElement;
     const submitButton = fixture.debugElement.query(By.css('p-button'));
 
@@ -25,7 +25,7 @@ describe('Collection', () => {
   });
 
   it('should dismiss headline after button Click', () => {
-    const fixture = TestBed.createComponent(CollectionPage);
+    const fixture = TestBed.createComponent(CollectionPageComponent);
     const compiled = fixture.nativeElement;
     const submitButton = compiled.querySelector('p-button');
     const dismissButton = compiled.querySelector('p-button-pure');

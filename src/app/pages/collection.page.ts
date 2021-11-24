@@ -4,6 +4,7 @@ import {
   PageChangeEvent,
   TabChangeEvent,
 } from '@porsche-design-system/components-angular/lib/types';
+import {ToastManager} from "@porsche-design-system/components-angular";
 
 @Component({
   selector: 'collection-page',
@@ -29,6 +30,9 @@ import {
             <p-button variant="tertiary" (click)="handleModalClose($event)">Close</p-button>
           </p-button-group>
         </p-modal>
+      </p-grid-item>
+      <p-grid-item size="12" class="contentWrapperSmall">
+        <p-button (click)="queueToast()">Queue Toast</p-button>
       </p-grid-item>
 
       <p-grid-item size="12">
@@ -120,7 +124,7 @@ import {
     `,
   ],
 })
-export class CollectionPage {
+export class CollectionPageComponent {
   headlineText = '';
   activeTab = 0;
   activePage = 1;
@@ -128,9 +132,12 @@ export class CollectionPage {
   isModalOpen = false;
   isAccordion1Open = false;
   isAccordion2Open = false;
+  private toastCounter = 1;
 
   content =
     'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et  dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.';
+
+  constructor(private toastManager: ToastManager){}
 
   onAccordion1Change(e: CustomEvent<AccordionChangeEvent>) {
     this.isAccordion1Open = e.detail.open;
@@ -151,6 +158,11 @@ export class CollectionPage {
 
   openModal() {
     this.isModalOpen = true;
+  }
+
+  queueToast() {
+    this.toastManager.addMessage({ text: `Some message ${this.toastCounter}`, state: 'neutral' });
+    this.toastCounter++;
   }
 
   handleModalClose(ev: CustomEvent<void>) {
