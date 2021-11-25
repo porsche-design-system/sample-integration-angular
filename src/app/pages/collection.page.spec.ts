@@ -4,7 +4,7 @@ import { CollectionPage } from './collection.page';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
 import { By } from '@angular/platform-browser';
 
-describe('Collection', () => {
+xdescribe('Collection', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, PorscheDesignSystemModule],

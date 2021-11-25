@@ -5,7 +5,7 @@ import { By } from '@angular/platform-browser';
 import { FormsPage } from './forms.page';
 import { componentsReady } from '@porsche-design-system/components-js';
 
-describe('Forms', () => {
+xdescribe('Forms', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, PorscheDesignSystemModule],
