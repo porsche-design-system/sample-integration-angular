@@ -39,10 +39,9 @@ import {ToastManager} from "@porsche-design-system/components-angular";
         <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">Links</p-headline>
         <p-divider class="divider"></p-divider>
-
-        <a href="https://www.porsche.com" class="removeLinkStyle">
-          <p-link>porsche.com</p-link>
-        </a>
+        <p-link>
+          <a href="https://www.porsche.com" class="removeLinkStyle">porsche.com</a>
+        </p-link>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperBig">
         <a href="#hashTest" class="removeLinkStyle">
