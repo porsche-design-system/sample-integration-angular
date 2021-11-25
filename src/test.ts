@@ -14,20 +14,21 @@ declare const require: {
     <T>(id: string): T;
   };
 };
-
+afterAll(() => {
+  console.log('afterAll');
+});
+console.log('-> before initTestEnvironment');
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting(), {
-  teardown: { destroyAfterEach: true },
+  teardown: { destroyAfterEach: true, rethrowErrors: true },
 });
+console.log('-> find tests');
 // Then we find all the tests.
 const context = require.context('./', true, /\.spec\.ts$/);
+console.log('-> load modules');
 // And load the modules.
 context.keys().map(context);
 
 beforeAll(() => {
   console.log('beforeAll');
-});
-
-afterAll(() => {
-  console.log('afterAll');
 });
