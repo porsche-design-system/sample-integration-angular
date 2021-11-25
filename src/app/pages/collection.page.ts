@@ -4,7 +4,7 @@ import {
   PageChangeEvent,
   TabChangeEvent,
 } from '@porsche-design-system/components-angular/lib/types';
-import {ToastManager} from "@porsche-design-system/components-angular";
+import { ToastManager } from '@porsche-design-system/components-angular';
 
 @Component({
   selector: 'collection-page',
@@ -39,10 +39,9 @@ import {ToastManager} from "@porsche-design-system/components-angular";
         <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">Links</p-headline>
         <p-divider class="divider"></p-divider>
-
-        <a href="https://www.porsche.com" class="removeLinkStyle">
-          <p-link>porsche.com</p-link>
-        </a>
+        <p-link>
+          <a href="https://www.porsche.com" class="removeLinkStyle">porsche.com</a>
+        </p-link>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperBig">
         <a href="#hashTest" class="removeLinkStyle">
@@ -137,7 +136,7 @@ export class CollectionPageComponent {
   content =
     'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et  dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.';
 
-  constructor(private toastManager: ToastManager){}
+  constructor(private toastManager: ToastManager) {}
 
   onAccordion1Change(e: CustomEvent<AccordionChangeEvent>) {
     this.isAccordion1Open = e.detail.open;
