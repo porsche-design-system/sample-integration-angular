@@ -123,7 +123,7 @@ import {ToastManager} from "@porsche-design-system/components-angular";
     `,
   ],
 })
-export class CollectionPageComponent {
+export class CollectionPage {
   headlineText = '';
   activeTab = 0;
   activePage = 1;
