@@ -26,6 +26,7 @@ import { routes } from './app-routing.module';
         </p-grid-item>
       </p-grid>
       <router-outlet></router-outlet>
+      <p-toast></p-toast>
     </div>
   `,
   styleUrls: ['./app.component.scss'],
