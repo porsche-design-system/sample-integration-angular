@@ -1603,23 +1603,23 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/browser-notification@^3.0.0":
-  version "3.0.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-3.0.0.tgz#57684e3d1d2c1f6e0b0929bde982bc29edd99e1f"
-  integrity sha1-V2hOPR0sH24LCSm96YK8Ke3Znh8=
+"@porsche-design-system/browser-notification@^4.0.0":
+  version "4.0.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-4.0.0.tgz#8f1c082d682ba2c9a68dcdfaa9d3c6ba4142b900"
+  integrity sha1-jxwILWgrosmmjc36qdPGukFCuQA=
 
-"@porsche-design-system/components-angular@2.7.0-beta.2":
-  version "2.7.0-beta.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.7.0-beta.2.tgz#9debdfa960c640839fe2f05be586cf1d68c8646f"
-  integrity sha1-nevfqWDGQIOf4vBb5YbPHWjIZG8=
+"@porsche-design-system/components-angular@2.7.0-beta.6":
+  version "2.7.0-beta.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.7.0-beta.6.tgz#7621bc81705c92f6f5c92708833ec5b2dc0ad567"
+  integrity sha1-diG8gXBckvb1yScIgz7FstwK1Wc=
   dependencies:
-    "@porsche-design-system/components-js" "2.7.0-beta.2"
+    "@porsche-design-system/components-js" "2.7.0-beta.6"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.7.0-beta.2":
-  version "2.7.0-beta.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.7.0-beta.2.tgz#99ab87dde087d1a0b5a3d1e6734ef097e70a7cd0"
-  integrity sha1-mauH3eCH0aC1o9Hmc07wl+cKfNA=
+"@porsche-design-system/components-js@2.7.0-beta.6":
+  version "2.7.0-beta.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.7.0-beta.6.tgz#bfe1c6b926fec56f39db9e274bf0efff96a208d6"
+  integrity sha1-v+HGuSb+xW85254nS/Dv/5aiCNY=
 
 "@porsche-design-system/components-js@^2.6.1":
   version "2.6.1"
@@ -1631,21 +1631,21 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porsche-design-system/utilities@5.1.0", "@porsche-design-system/utilities@^5.1.0":
-  version "5.1.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-5.1.0.tgz#e4bdc04cc77accb2bee05d4161a653a633c7ad75"
-  integrity sha1-5L3ATMd6zLK+4F1BYaZTpjPHrXU=
+"@porsche-design-system/utilities@5.2.0", "@porsche-design-system/utilities@^5.2.0":
+  version "5.2.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-5.2.0.tgz#3cc1fbb3e4d781d397802f30e3c799f90721a9d6"
+  integrity sha1-PMH7s+TXgdOXgC8w48eZ+QchqdY=
   dependencies:
     csstype "^3.0.9"
 
-"@porschehn/navigation@^2.10.4":
-  version "2.10.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.10.6.tgz#b27127c6764be0b02df6ede1d63f77ef68b25631"
-  integrity sha1-snEnxnZL4LAt9u3h1j9372iyVjE=
+"@porschehn/navigation@^2.10.9":
+  version "2.10.9"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.10.9.tgz#5110a1ab6fa3b3eb4042b0f0094fa8715fff4d68"
+  integrity sha1-URChq2+js+tAQrDwCU+ocV//TWg=
   dependencies:
     "@openid/appauth" "^1.2.6"
     "@porsche-design-system/components-js" "^2.6.1"
-    "@porsche-design-system/utilities" "^5.1.0"
+    "@porsche-design-system/utilities" "^5.2.0"
     "@stencil/core" "2.9.0"
     "@stencil/store" "^1.5.0"
     gsap "^3.4.2"
@@ -1798,10 +1798,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.4.tgz#e1cf817d70a1e118e81922c4ff6683ce9d422e26"
   integrity sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==
 
-"@types/node@>=10.0.0", "@types/node@^16.11.7":
+"@types/node@>=10.0.0":
   version "16.11.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.10.tgz#2e3ad0a680d96367103d3e670d41c2fed3da61ae"
   integrity sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==
+
+"@types/node@^16.11.12":
+  version "16.11.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
+  integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -7196,10 +7201,10 @@ postcss@^8.3.5, postcss@^8.3.7:
     picocolors "^1.0.0"
     source-map-js "^0.6.2"
 
-prettier@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
