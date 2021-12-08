@@ -98,6 +98,21 @@ import { ToastManager } from '@porsche-design-system/components-angular';
           </p-accordion>
         </div>
       </p-grid-item>
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+        <p-headline variant="headline-4">Popover</p-headline>
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-text>
+          Lorem ipsum dolor sit amet, <p-popover>Some descriptive content</p-popover> consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<p-popover
+            [description]="'Short info opened top'"
+            [direction]="'top'"
+          ></p-popover>
+          sed diam voluptua.
+        </p-text>
+      </p-grid-item>
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
