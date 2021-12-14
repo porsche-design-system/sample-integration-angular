@@ -36,7 +36,7 @@
     "@angular/platform-browser-dynamic": "12.2.13",
     "@angular/router": "12.2.13",
     "@porsche-design-system/browser-notification": "^4.0.0",
-    "@porsche-design-system/components-angular": "2.7.0-beta.6",
+    "@porsche-design-system/components-angular": "2.7.0-rc.0",
     "@porsche-design-system/utilities": "5.2.0",
     "@porschehn/navigation": "^2.10.9",
     "rxjs": "^7.4.0",
