@@ -24,12 +24,12 @@
     "@angular/platform-browser-dynamic": "12.2.13",
     "@angular/router": "12.2.13",
     "@porsche-design-system/browser-notification": "^4.1.1",
-    "@porsche-design-system/components-angular": "2.9.0-rc.1",
+    "@porsche-design-system/components-angular": "2.9.2",
     "@porsche-design-system/utilities": "5.2.0",
-    "@porschehn/navigation": "^2.10.9",
-    "rxjs": "^7.4.0",
+    "@porschehn/navigation": "~2.10.9",
+    "rxjs": "^7.5.5",
     "tslib": "^2.3.1",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^12.1.3",
@@ -44,15 +44,15 @@
     "codelyzer": "^6.0.2",
     "jasmine-core": "~3.10.1",
     "jasmine-spec-reporter": "~7.0.0",
-    "karma": "~6.3.8",
-    "karma-chrome-launcher": "~3.1.0",
+    "karma": "~6.3.17",
+    "karma-chrome-launcher": "~3.1.1",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.7.0",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.0",
     "protractor": "~7.0.0",
     "serve": "^13.0.2",
-    "ts-node": "~10.4.0",
+    "ts-node": "~10.7.0",
     "tslint": "~6.1.3",
     "typescript": "~4.3.5"
   }
