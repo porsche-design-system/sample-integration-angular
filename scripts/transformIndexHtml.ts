@@ -5,7 +5,20 @@ import * as notificationPartials from '@porsche-design-system/browser-notificati
 export default (targetOptions: TargetOptions, indexHtml: string): string => {
   const headPartials = [
     partials.getComponentChunkLinks({ components: ['button', 'marque'] }),
-    partials.getInitialStyles(),
+    partials.getInitialStyles({
+      skeletonTagNames: [
+        'p-button',
+        'p-button-pure',
+        'p-checkbox-wrapper',
+        'p-fieldset-wrapper',
+        'p-link',
+        'p-link-pure',
+        'p-radio-button-wrapper',
+        'p-select-wrapper',
+        'p-textarea-wrapper',
+        'p-text-field-wrapper',
+      ],
+    }),
     partials.getFontFaceStylesheet(),
     partials.getFontLinks({ weights: ['regular', 'semi-bold'] }),
     partials.getIconLinks({ icons: ['arrowHeadRight', 'plus'] }),
