@@ -1,19 +1,21 @@
 import type { TargetOptions } from '@angular-builders/custom-webpack';
-import * as partials from '@porsche-design-system/components-angular/partials';
+import * as pdsPartials from '@porsche-design-system/components-angular/partials';
 import * as notificationPartials from '@porsche-design-system/browser-notification';
+import * as phnPartials from '@porschehn/navigation/dist/porsche-navigation/partials';
 
 export default (targetOptions: TargetOptions, indexHtml: string): string => {
   const headPartials = [
-    partials.getComponentChunkLinks({ components: ['button', 'marque'] }),
-    partials.getInitialStyles(),
-    partials.getFontFaceStylesheet(),
-    partials.getFontLinks({ weights: ['regular', 'semi-bold'] }),
-    partials.getIconLinks({ icons: ['arrowHeadRight', 'plus'] }),
-    partials.getMetaTagsAndIconLinks({ appTitle: 'Sample Integration Angular' }),
+    pdsPartials.getComponentChunkLinks({ components: ['button', 'marque'] }),
+    pdsPartials.getInitialStyles(),
+    pdsPartials.getFontFaceStylesheet(),
+    pdsPartials.getFontLinks({ weights: ['regular', 'semi-bold'] }),
+    pdsPartials.getIconLinks({ icons: ['arrowHeadRight', 'plus'] }),
+    pdsPartials.getMetaTagsAndIconLinks({ appTitle: 'Sample Integration Angular' }),
+    phnPartials.partials(),
   ].join('\n');
 
   const bodyPartials = [
-    partials.getLoaderScript(),
+    pdsPartials.getLoaderScript(),
     notificationPartials.includeBanner(),
     notificationPartials.includeCookieOverlay(),
     notificationPartials.includeOverlay(),
