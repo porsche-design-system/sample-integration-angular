@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, ...fromPages.pages],
-  imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule.load({ prefix: '' }), FormsModule],
+  imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
