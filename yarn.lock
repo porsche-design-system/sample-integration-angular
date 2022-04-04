@@ -1429,15 +1429,20 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-4.1.1.tgz#f553e114b2fa4903dfe38ea4add682d13a47ec72"
   integrity sha1-9VPhFLL6SQPf446krdaC0TpH7HI=
 
-"@porsche-design-system/components-angular@2.9.2":
-  version "2.9.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.9.2.tgz#e1943f80941ebb6353f85cc1b27b0e3de5efb4be"
-  integrity sha512-XlNjvd4DW5qptxCM6/QVp7FDf8XAEefIjuEcrL/OvUo5BrI+oD40we7WNQ6el7Y/EDk1TGNM3YCrMkbb6oJs3w==
+"@porsche-design-system/components-angular@2.9.3-rc.0-skeletons":
+  version "2.9.3-rc.0-skeletons"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.9.3-rc.0-skeletons.tgz#6c68742190886a0958d11ff9f965f755b8a80788"
+  integrity sha512-NVO8LxYcivbou1JUlXLJQ0W4GJk9J/DQ3beU1eisE3SU7peqrA+kBnDzwowKlyBTe8utK+mnlqigbFXGLfOPew==
   dependencies:
-    "@porsche-design-system/components-js" "2.9.2"
+    "@porsche-design-system/components-js" "2.9.3-rc.0-skeletons"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.9.2", "@porsche-design-system/components-js@^2.9.1":
+"@porsche-design-system/components-js@2.9.3-rc.0-skeletons":
+  version "2.9.3-rc.0-skeletons"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.9.3-rc.0-skeletons.tgz#c5532ed10027245e9bd7ed1e5fa9ce21c832d6f3"
+  integrity sha512-KHJhmCzHpXB+ZXQwj0ZwUT+iGRWGUEUzM7MCGmdFZIyVvTC2zBi1SPTG2js4/4TZIfck1Z8RkWe13BCDbMMdlA==
+
+"@porsche-design-system/components-js@^2.6.1":
   version "2.9.2"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.9.2.tgz#81e2b0cc22629922157068e431d168cecfc67862"
   integrity sha512-8KNzr/j+CBni3zoBXWZsKm5PZIMVChvQcG66SEB4u3nu5tztrDlpExkRZlDQEKDed2B0mHj7WxTpx2yfyqcq8g==
@@ -1454,16 +1459,17 @@
   dependencies:
     csstype "^3.0.9"
 
-"@porschehn/navigation@^2.10.9":
-  version "2.14.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.14.1.tgz#184cd68a64f1baf031cd3d3d6d119e81c86a5d5f"
-  integrity sha512-9uQXw2J6ihJrmflk5GJdXbj6bC5hVvJgGVrUJakOBW7PM1tqMPs5k6UgQcvre4EDEz0e2WWPIcRKGXhj+wnO2Q==
+"@porschehn/navigation@~2.10.9":
+  version "2.10.9"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.10.9.tgz#5110a1ab6fa3b3eb4042b0f0094fa8715fff4d68"
+  integrity sha1-URChq2+js+tAQrDwCU+ocV//TWg=
   dependencies:
     "@openid/appauth" "^1.2.6"
-    "@porsche-design-system/components-js" "^2.9.1"
+    "@porsche-design-system/components-js" "^2.6.1"
     "@porsche-design-system/utilities" "^5.2.0"
-    "@stencil/core" "2.13.0"
+    "@stencil/core" "2.9.0"
     "@stencil/store" "^1.5.0"
+    gsap "^3.4.2"
     uuid "^8.1.0"
 
 "@schematics/angular@12.2.13":
@@ -1480,10 +1486,10 @@
   resolved "https://registry.yarnpkg.com/@socket.io/base64-arraybuffer/-/base64-arraybuffer-1.0.2.tgz#568d9beae00b0d835f4f8c53fd55714986492e61"
   integrity sha512-dOlCBKnDw4iShaIsH/bxujKTM18+2TOAsYz+KSc11Am38H4q5Xw8Bbz97ZYdrVNM+um3p7w86Bvvmcn9q+5+eQ==
 
-"@stencil/core@2.13.0":
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.13.0.tgz#993fd74a5c7c8fe8af75848ca9df2211cd05b818"
-  integrity sha512-EEKHOHgYpg3/iFUKMXTZJjUayRul7sXDwNw0OGgkEOe4t7JWiibDkzUHuruvpbqEydX+z1+ez5K2bMMY76c2wA==
+"@stencil/core@2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.9.0.tgz#cbac84b996475b8fc983931539ed1261174e2df3"
+  integrity sha512-kY3xYolZoJO1MKslL0NQccHy72R3TIl1prHgfmIrEoGcnMgc6uiskdWaGMuI5/sCGz9T+QuTVz76B1H2ySyBZg==
 
 "@stencil/store@^1.5.0":
   version "1.5.0"
@@ -4278,6 +4284,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
   version "4.2.9"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
+
+gsap@^3.4.2:
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.10.2.tgz#a3b0a842c398099fc7a80313bfb42253a3dc2b6b"
+  integrity sha512-exJVOda3O1NpgGjM4dzZONmSODWFP+JF/DwfiBfCPQPr15nm3M0TQczYKLZlMdBNdWxHMvRPKVqc1e1/6YD+zA==
 
 handle-thing@^2.0.0:
   version "2.0.1"
