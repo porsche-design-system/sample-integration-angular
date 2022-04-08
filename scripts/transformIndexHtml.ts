@@ -6,7 +6,20 @@ import * as phnPartials from '@porschehn/navigation/dist/porsche-navigation/part
 export default (targetOptions: TargetOptions, indexHtml: string): string => {
   const headPartials = [
     pdsPartials.getComponentChunkLinks({ components: ['button', 'marque'] }),
-    pdsPartials.getInitialStyles(),
+    pdsPartials.getInitialStyles({
+      skeletonTagNames: [
+        'p-button',
+        'p-button-pure',
+        'p-checkbox-wrapper',
+        'p-fieldset-wrapper',
+        'p-link',
+        'p-link-pure',
+        'p-radio-button-wrapper',
+        'p-select-wrapper',
+        'p-textarea-wrapper',
+        'p-text-field-wrapper',
+      ],
+    }),
     pdsPartials.getFontFaceStylesheet(),
     pdsPartials.getFontLinks({ weights: ['regular', 'semi-bold'] }),
     pdsPartials.getIconLinks({ icons: ['arrowHeadRight', 'plus'] }),

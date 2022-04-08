@@ -44,7 +44,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
         </p-link>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperBig">
-        <p-link-pure [stretch]="true"><a href="#hashTest">Test PLinkPure</a></p-link-pure>
+        <p-link-pure [stretch]="true"><a href="#hashTest" class="removeLinkStyle">Test PLinkPure</a></p-link-pure>
         <p-link-pure href="#propHashTest">Test propHash</p-link-pure>
       </p-grid-item>
 
