@@ -6,6 +6,7 @@ export default (targetOptions: TargetOptions, indexHtml: string): string => {
   const headPartials = [
     partials.getComponentChunkLinks({ components: ['button', 'marque'] }),
     partials.getInitialStyles({
+      // @ts-ignore
       skeletonTagNames: [
         'p-button',
         'p-button-pure',
