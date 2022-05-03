@@ -26,7 +26,7 @@
     "@porsche-design-system/browser-notification": "^4.1.1",
     "@porsche-design-system/components-angular": "2.11.0",
     "@porsche-design-system/utilities": "5.2.0",
-    "@porschehn/navigation": "~2.15.0",
+    "@porschehn/navigation": "^2.15.0",
     "rxjs": "^7.5.5",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.5"
