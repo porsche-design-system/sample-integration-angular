@@ -65,13 +65,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 @porsche-design-system/components-angular
-SEE LICENSE IN https://designsystem.porsche.com
+SEE LICENSE IN ./LICENSE
 
 @porsche-design-system/components-js
-SEE LICENSE IN https://designsystem.porsche.com
+SEE LICENSE IN ./LICENSE
 
 @porsche-design-system/utilities
-SEE LICENSE IN https://designsystem.porsche.com
+SEE LICENSE IN ./LICENSE
 
 @porschehn/navigation
 UNLICENSED
