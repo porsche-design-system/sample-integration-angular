@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SegmentedControlChangeEvent } from '@porsche-design-system/components-angular';
 
 @Component({
   selector: 'forms-page',
@@ -22,6 +23,22 @@ import { Component } from '@angular/core';
           </select></p-select-wrapper
         >
       </p-grid-item>
+      <p-grid-item size="12">
+        <p-segmented-control
+          style="margin-top: 1rem"
+          [value]="currentValue"
+          (segmentedControlChange)="onSegmentedControlChange($event)"
+          aria-label="Choose an Option"
+        >
+          <p-segmented-control-item [value]="1">Option 1</p-segmented-control-item>
+          <p-segmented-control-item [value]="2">Option 2</p-segmented-control-item>
+          <p-segmented-control-item [value]="3">Option 3</p-segmented-control-item>
+          <p-segmented-control-item [value]="4">Option 4</p-segmented-control-item>
+          <p-segmented-control-item [value]="5">Option 5</p-segmented-control-item>
+        </p-segmented-control>
+
+        <p-text>Current value of segmented-control: {{ currentValue }}</p-text></p-grid-item
+      >
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
@@ -68,6 +85,11 @@ export class FormsPage {
   radioButton = false;
   textFieldHeadline = 'Change me';
   textValue = '';
+  currentValue = 1;
+
+  onSegmentedControlChange(e: CustomEvent<SegmentedControlChangeEvent>) {
+    this.currentValue = e.detail.value as number;
+  }
 
   handleSelectChange(event) {
     this.selectInput = event.target.value;
