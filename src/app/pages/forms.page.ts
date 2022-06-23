@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { SegmentedControlChangeEvent } from '@porsche-design-system/components-angular';
+import {Component} from '@angular/core';
+import type {StepperState} from '@porsche-design-system/components-angular';
+import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-system/components-angular';
 
 @Component({
   selector: 'forms-page',
@@ -39,6 +40,41 @@ import { SegmentedControlChangeEvent } from '@porsche-design-system/components-a
 
         <p-text>Current value of segmented-control: {{ currentValue }}</p-text></p-grid-item
       >
+      <p-grid-item size="12">
+        <p-divider class="divider"></p-divider>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-stepper-horizontal (stepChange)="onStepChange($event)">
+          <ng-container *ngFor="let step of steps">
+            <p-stepper-horizontal-item [state]="step.state">
+              {{ step.name }}
+            </p-stepper-horizontal-item>
+          </ng-container>
+        </p-stepper-horizontal>
+
+        <ng-container *ngFor="let content of stepContent; let i = index">
+          <p-text *ngIf="getActiveStepIndex(steps) === i">{{ content }}</p-text>
+        </ng-container>
+
+        <p-button-group>
+          <p-button
+            [icon]="'arrow-head-left'"
+            [variant]="'tertiary'"
+            [disabled]="getActiveStepIndex(steps) === 0"
+            (click)="onNextPrevStep('prev')"
+          >
+            Previous Step
+          </p-button>
+
+          <p-button
+            [variant]="'primary'"
+            [disabled]="getActiveStepIndex(steps) === steps.length - 1"
+            (click)="onNextPrevStep('next')"
+          >
+            Next Step
+          </p-button>
+        </p-button-group>
+      </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
@@ -86,6 +122,23 @@ export class FormsPage {
   textFieldHeadline = 'Change me';
   textValue = '';
   currentValue = 1;
+  steps: StepperHorizontalItemProps[] = [
+    {
+      state: 'current',
+      name: 'Enter personal details',
+    },
+    {
+      name: 'Confirm e-mail',
+    },
+    {
+      name: 'Set password',
+    },
+  ];
+  stepContent: string[] = [
+    'A form with personal details could be displayed here.',
+    'A form with a verification code input field could be displayed here.',
+    'A form with a password input field could be displayed here.',
+  ];
 
   onSegmentedControlChange(e: CustomEvent<SegmentedControlChangeEvent>) {
     this.currentValue = e.detail.value as number;
@@ -111,4 +164,40 @@ export class FormsPage {
       this.textFieldHeadline = this.textValue;
     }
   }
+  getActiveStepIndex(steps: StepperHorizontalItemProps[]): number {
+    return steps.findIndex((step) => step.state === 'current');
+  }
+
+  onNextPrevStep(direction: 'next' | 'prev'): void {
+    const newState = [...this.steps];
+    const activeStepIndex = this.getActiveStepIndex(newState);
+
+    if (direction === 'next') {
+      newState[activeStepIndex].state = 'complete';
+      newState[activeStepIndex + 1].state = 'current';
+    } else {
+      delete newState[activeStepIndex].state;
+      newState[activeStepIndex - 1].state = 'current';
+    }
+
+    this.steps = newState;
+  }
+
+  onStepChange(e: CustomEvent<StepChangeEvent>): void {
+    const { activeStepIndex } = e.detail;
+
+    const newState = [...this.steps];
+    for (let i = activeStepIndex + 1; i < newState.length; i++) {
+      // reset step state when going back via stepper horizontal item click
+      delete newState[i].state;
+    }
+    newState[activeStepIndex].state = 'current';
+
+    this.steps = newState;
+  }
 }
+
+type StepperHorizontalItemProps = {
+  state?: StepperState;
+  name: string;
+};
