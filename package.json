@@ -25,7 +25,7 @@
     "@angular/router": "12.2.16",
     "@porsche-design-system/components-angular": "2.16.2",
     "@porsche-design-system/utilities": "5.3.1",
-    "@porschehn/navigation": "2.16.0",
+    "@porschehn/navigation": "2.21.1",
     "rxjs": "^7.5.6",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.8"
@@ -39,7 +39,7 @@
     "@porsche-design-system/prettier-config": "^1.0.0",
     "@types/jasmine": "~4.3.0",
     "@types/jasminewd2": "~2.0.10",
-    "@types/node": "^17.0.43",
+    "@types/node": "^18.8.2",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~4.4.0",
     "jasmine-spec-reporter": "~7.0.0",
