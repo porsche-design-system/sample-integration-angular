@@ -73,9 +73,8 @@ verify_deployment() {
   local max=20
   local delay=60
   local http_response=""
-  while true
-  do
-    http_response="$(curl -s -H "Cache-Control: no-cache" "https://porscheui.github.io/"${GITHUB_REPOSITORY/porscheui\//}"/${1}/version.md")"
+  while true; do
+    http_response="$(curl -s -H "Cache-Control: no-cache" "https://porsche-design-system.github.io/"${GITHUB_REPOSITORY/porsche-design-system\//}"/${1}/version.md")"
     echo "Check deployment status (${1}). Attempt ${n}/${max} (${http_response}). [$(date)]"
     if [[ "${http_response}" == "${GITHUB_SHA}" ]]; then
       echo "All right, deployment was verified (${1})."
@@ -105,8 +104,8 @@ source "${SCRIPT_DIR}/../shared/ensure-github-credentials.sh"
 if isCurrentBranchMasterBranch; then
   setup
   checkout_gh_pages
-  prepare_deployment # no folder is specified to host app in root
-  copy_sample # no folder is specified to host app in root
+  prepare_deployment     # no folder is specified to host app in root
+  copy_sample            # no folder is specified to host app in root
   add_deployment_version # no folder is specified to host app in root
   deploy_to_gh_pages
   verify_deployment # no folder is specified to host app in root
