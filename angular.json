@@ -104,10 +104,12 @@
       }
     }
   },
-  "defaultProject": "sample-integration-angular",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
