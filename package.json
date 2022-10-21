@@ -23,7 +23,7 @@
     "@angular/platform-browser": "14.2.5",
     "@angular/platform-browser-dynamic": "14.2.5",
     "@angular/router": "14.2.5",
-    "@porsche-design-system/components-angular": "2.16.2",
+    "@porsche-design-system/components-angular": "2.16.3-rc.0",
     "@porsche-design-system/utilities": "5.3.1",
     "@porschehn/navigation": "2.21.1",
     "rxjs": "^7.5.6",
