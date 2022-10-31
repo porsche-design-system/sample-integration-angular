@@ -47,7 +47,13 @@ import { ToastManager } from '@porsche-design-system/components-angular';
         <p-link-pure [stretch]="true"><a href="#hashTest" class="removeLinkStyle">Test PLinkPure</a></p-link-pure>
         <p-link-pure href="#propHashTest">Test propHash</p-link-pure>
       </p-grid-item>
-
+      <p-grid-item size="5">
+        <p-link-tile href="#" label="Some Label" description="Default">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII=" alt="Some alt text"
+          />
+        </p-link-tile>
+      </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
         <p-headline variant="headline-4">Tabs</p-headline>
