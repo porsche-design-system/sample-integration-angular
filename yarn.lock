@@ -347,6 +347,19 @@
   resolved "https://registry.yarnpkg.com/@assemblyscript/loader/-/loader-0.10.1.tgz#70e45678f06c72fa2e350e8553ec4a4d72b92e06"
   integrity sha512-H71nDOOL8Y7kWRLqf6Sums+01Q5msqBW2KhDUTemh1tvY04eSkSXrK0uj/4mmY0Xr16/3zyZmsrxN7CKuRbNRg==
 
+"@auth0/auth0-spa-js@1.22.0":
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.22.0.tgz#3e7b494efed9c1aea1744b4addb3393dc99e1508"
+  integrity sha512-y4/vd7dhAwD3ueYAZhuo06muv/scxq+lHnI2lsT5h/3gSLOOXjDE2rjVmMexeYw4t02oXwHpjphYPfL9hgUsuA==
+  dependencies:
+    abortcontroller-polyfill "^1.7.3"
+    browser-tabs-lock "^1.2.15"
+    core-js "^3.22.4"
+    es-cookie "^1.3.2"
+    fast-text-encoding "^1.0.3"
+    promise-polyfill "^8.2.3"
+    unfetch "^4.2.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1937,33 +1950,33 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-angular@2.18.0-rc.2":
-  version "2.18.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.18.0-rc.2.tgz#657022babf976e710522f4534740f09ce9a488df"
-  integrity sha512-DMD1b+71HQaOELPEIL0y6QaLXHCthtJqfJeDYDHE2hcGzsN9lRE4PiPfBlW/mNp1aIjMe6Hz7WuSRH/wzjVqnQ==
+"@porsche-design-system/components-angular@2.19.0-rc.2":
+  version "2.19.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.19.0-rc.2.tgz#119550669cd8250899cae12267bab2b06ddc9561"
+  integrity sha512-dXT3/zSHhrsnImBGjMlnb6BjZ3SXqcUMlicUB6EBNCHC1X+6TRMpeXL3g4CXB3q9FXcQO+Y/EBxGizKQ/n9/rg==
   dependencies:
-    "@porsche-design-system/components-js" "2.18.0-rc.2"
+    "@porsche-design-system/components-js" "2.19.0-rc.2"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.18.0-rc.2":
-  version "2.18.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.18.0-rc.2.tgz#9b6b9b842fe021d5bff4fc738801fd2ad9993920"
-  integrity sha512-a4q9wJiTKiiAFbKexaEvFAGClC3bhUJfN4Ji8ReSC55PnxJQIMoffupXoy01qDZhdsEQ/QvnjNIIQFmOv2pSQQ==
+"@porsche-design-system/components-js@2.19.0-rc.2":
+  version "2.19.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.19.0-rc.2.tgz#6e70a2546fed1cdfe4ea682aeb992e921da60cb7"
+  integrity sha512-Ek4lZyJVvx0DMAJYGWqffmJd2zFI+AtfJde5oOMoXpXrL5R+sfQA3I4X0U5ck9DxfC8M+svPT/pkgK2kRKZf0g==
 
-"@porsche-design-system/components-js@^2.16.3":
-  version "2.16.3"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.16.3.tgz#7cd3f87043d50728d3bd549878029e337f84ce29"
-  integrity sha512-SqTD3WPG2r3OsF008KTgqKJCfzgfcjTtV4kDn8c2MQknO2wZpaqs2gctIE7bah/mCC+09tygw8tb7/N6nuJXfA==
+"@porsche-design-system/components-js@^2.17.0":
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.18.0.tgz#498fe25950174014156deab7d54569d6253049b2"
+  integrity sha512-GXjApbCKzJM2HLaDvVo5S01LPF/sBXJPi6mFs4w190Het33fLNf7kzw9NZpxBVPFKmp8pCgNfjSjWT9hoZ+Myw==
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@porsche-design-system/prettier-config/-/prettier-config-1.0.1.tgz#6b0fc60d3d42c7b4d9c998bf7b685513a5488400"
   integrity sha512-IhoHGmsPoO4VBoCebNGejBNHJFdAldV3m8kAoO458MJeaQJODM2b1UFzvGeTXGOMIFH4pkshcjZcF36vQvsn9w==
 
-"@porsche-design-system/utilities@5.4.0-rc.0":
-  version "5.4.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/utilities/-/utilities-5.4.0-rc.0.tgz#9a005272442499c0e88d832835a75e8ccd645b07"
-  integrity sha512-7rmHttBULu+Y4AdIuX3mXzys0OoDPNmokvGBh/rEHQ6PBmfuUZaCJgbFHqOrDaQ0LYmyFnhlqiHoFswYeDdSOg==
+"@porsche-design-system/utilities@5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/utilities/-/utilities-5.4.0.tgz#92e0b3bf77eb8d6d387f7e4615d56892b4772ca2"
+  integrity sha512-D91Ll3prnm/eExmVyR/kQlE1FNia74weRqN7rh6Gw4JbAvzEbnIe0MHdt7JqJ8TRvXmBg8218f1oHFGp3vmMUg==
   dependencies:
     csstype "^3.1.1"
 
@@ -1984,17 +1997,18 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.0.1.tgz#849b3d31563bb9106c5a27d77dcb2f08d099d991"
   integrity sha512-ZyLEa3ERr3spclscodJGSTWuh1flyRnkONk3YBOWhFIkFiZ9hU+af2GklaTu+4HfzJK/bfPMPWfcJyck5DvgLg==
 
-"@porschehn/navigation@2.22.0":
-  version "2.22.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.22.0.tgz#5a6f22ef40c3902fc32dc2d77f465e46f12e2099"
-  integrity sha512-OwZE5PcePpROzMRBG1OtRzGSmgRvbUDChy4C1PGpnDA8n8OCxr8UjsylVGvfq/N1TDSxbGg9Wiif1I3HpLFgiw==
+"@porschehn/navigation@2.23.2":
+  version "2.23.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.23.2.tgz#494029d8292526fb60face834a0ecefb12f8127a"
+  integrity sha512-4603qriGnwhROtNMto2BMWV+oq211+LEc6qAXUOgk8ZbuLDay+fTOEmOa4dNgyxrrOReQzsa0OU4jmrnCm3rMQ==
   dependencies:
+    "@auth0/auth0-spa-js" "1.22.0"
     "@openid/appauth" "^1.3.1"
-    "@porsche-design-system/components-js" "^2.16.3"
+    "@porsche-design-system/components-js" "^2.17.0"
     "@porsche-design-system/utilities" "^5.3.1"
     "@porsche/globaldatalayer" "^4.0.0"
     "@porsche/globaldatalayer-events" "^0.1.18"
-    "@stencil/core" "2.18.1"
+    "@stencil/core" "2.20.0"
     "@stencil/store" "^2.0.1"
     uuid "^9.0.0"
 
@@ -2012,10 +2026,10 @@
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@stencil/core@2.18.1":
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.18.1.tgz#f45e99b7abe2a0fa90d3141363601a68df5c08a7"
-  integrity sha512-/fXkh1lwZ+X9JQCw50mPjhBogzEHOBvVC5pLoDLZqodVYK0DGWILM2YLV4dcIUBNEK8/HMDpO/Rq81/rS3mNOw==
+"@stencil/core@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.20.0.tgz#0e68b5b42e727233803291eb0367ab2b53f7f1f3"
+  integrity sha512-ka+eOW+dNteXIfLCRipNbbAlBEQjqJ2fkx3fxzlKgnNHEQMdZiuIjlWt63KzvOJStNeuADdQXo89BB1dC2VRUw==
 
 "@stencil/store@^2.0.1":
   version "2.0.1"
@@ -2402,6 +2416,11 @@ abbrev@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
+
+abortcontroller-polyfill@^1.7.3:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.5.tgz#6738495f4e901fbb57b6c0611d0c75f76c485bed"
+  integrity sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==
 
 accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.8:
   version "1.3.8"
@@ -2908,6 +2927,13 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+browser-tabs-lock@^1.2.15:
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/browser-tabs-lock/-/browser-tabs-lock-1.2.15.tgz#d5012e652e2a0cb4eba471b0a2300c2fa5d92788"
+  integrity sha512-J8K9vdivK0Di+b8SBdE7EZxDr88TnATing7XoLw6+nFkXMQ6sVBh92K3NQvZlZU91AIkFRi0w3sztk5Z+vsswA==
+  dependencies:
+    lodash ">=4.17.21"
+
 browserslist@4.21.4, browserslist@^4.14.5, browserslist@^4.21.3, browserslist@^4.21.4, browserslist@^4.9.1:
   version "4.21.4"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.4.tgz#e7496bbc67b9e39dd0f98565feccdcb0d4ff6987"
@@ -3410,6 +3436,11 @@ core-js-compat@^3.25.1:
   dependencies:
     browserslist "^4.21.4"
 
+core-js@^3.22.4:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
+  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
+
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -3853,6 +3884,11 @@ error-ex@^1.3.1:
   integrity sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
   dependencies:
     is-arrayish "^0.2.1"
+
+es-cookie@^1.3.2:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/es-cookie/-/es-cookie-1.4.0.tgz#6765b645d4e2fe9b0612bef6f6d18f49f8f016da"
+  integrity sha512-V4bHxyGBmwwiV+CKTLUPLmwhcutTxGEC5n4HWaUDSnTvkNvfIjkMw8qIVTVgPeNCWojgR5IUzFnGenNvCoKQ5A==
 
 es-module-lexer@^0.9.0:
   version "0.9.3"
@@ -4307,6 +4343,11 @@ fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
   integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
+
+fast-text-encoding@^1.0.3:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fast-text-encoding/-/fast-text-encoding-1.0.6.tgz#0aa25f7f638222e3396d72bf936afcf1d42d6867"
+  integrity sha512-VhXlQgj9ioXCqGstD37E/HBeqEGV/qOD/kmbVG8h5xKBYvM1L3lR1Zn4555cQ8GkYbJa8aJSipLPndE1k6zK2w==
 
 fast-url-parser@1.1.3:
   version "1.1.3"
@@ -5460,7 +5501,7 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
 
-lodash@^4.17.15, lodash@^4.17.21:
+lodash@>=4.17.21, lodash@^4.17.15, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6658,6 +6699,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==
+
+promise-polyfill@^8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
+  integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
 
 promise-retry@^2.0.1:
   version "2.0.1"
@@ -7928,6 +7974,11 @@ ua-parser-js@^0.7.30:
   version "0.7.31"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.31.tgz#649a656b191dffab4f21d5e053e27ca17cbff5c6"
   integrity sha512-qLK/Xe9E2uzmYI3qLeOmI0tEOt+TBBQyUIAh4aAgU05FVYzeZrKUdkAZfBNVGRaHVgV0TDkdEngJSw/SyQchkQ==
+
+unfetch@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
+  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
