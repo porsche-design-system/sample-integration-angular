@@ -1950,18 +1950,18 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-angular@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.20.0-rc.1.tgz#1c1e8ec9e896f594581b4c2e6a7f75c811a2c506"
-  integrity sha512-WoreH+cGnbkRd8dEUu/msrYZhc/Le9hz7mx+MJdTfyPMvD9fFNU4QHxWHGFgKPiu0KZmIM/GOurfPWKVNuNCeQ==
+"@porsche-design-system/components-angular@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.21.0-rc.0.tgz#a47f67eef9f863dab8d3fdbf6abe8bba06559433"
+  integrity sha512-RnIPlAWkeAfDyJhrPylxzYVlnNLVsUOQmxGwlIf2iHxYV3sgTJK24Zddkoceb8IQPLP8iOItCPessp+Gxu6hSg==
   dependencies:
-    "@porsche-design-system/components-js" "2.20.0-rc.1"
+    "@porsche-design-system/components-js" "2.21.0-rc.0"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.20.0-rc.1.tgz#1fff642b51168fd026d2b8c9217ce84f3a547761"
-  integrity sha512-vx8la5tb+G3jBryq7c3rcF8wFB1ZUY4lfinurZ29q7zqHUpFvOrhuNkCd6wT71UoQhh35ALFCnQJW/1Rm9pvyQ==
+"@porsche-design-system/components-js@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0-rc.0.tgz#812d2fe1998ffc1a278d6d5a9a7dccc366a2e107"
+  integrity sha512-GpS/Gfa9rmPSKAq7SMul6qKCxBi4QySMgRs9d67a/PKZTvb7QlcPuqX/oyghqNCueNK8W8XR+HJ3+N5IVn7NwA==
 
 "@porsche-design-system/components-js@^2.17.0":
   version "2.18.0"
@@ -7971,9 +7971,9 @@ typescript@~4.8.4:
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
 ua-parser-js@^0.7.30:
-  version "0.7.31"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.31.tgz#649a656b191dffab4f21d5e053e27ca17cbff5c6"
-  integrity sha512-qLK/Xe9E2uzmYI3qLeOmI0tEOt+TBBQyUIAh4aAgU05FVYzeZrKUdkAZfBNVGRaHVgV0TDkdEngJSw/SyQchkQ==
+  version "0.7.34"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.34.tgz#afb439e2e3e394bdc90080acb661a39c685b67d7"
+  integrity sha512-cJMeh/eOILyGu0ejgTKB95yKT3zOenSe9UGE3vj6WfiOwgGYnmATUsnDixMFvdU+rNMvWih83hrUP8VwhF9yXQ==
 
 unfetch@^4.2.0:
   version "4.2.0"
