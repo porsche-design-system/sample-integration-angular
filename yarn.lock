@@ -1950,18 +1950,18 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-angular@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.20.0-rc.1.tgz#1c1e8ec9e896f594581b4c2e6a7f75c811a2c506"
-  integrity sha512-WoreH+cGnbkRd8dEUu/msrYZhc/Le9hz7mx+MJdTfyPMvD9fFNU4QHxWHGFgKPiu0KZmIM/GOurfPWKVNuNCeQ==
+"@porsche-design-system/components-angular@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.21.0-rc.0.tgz#a47f67eef9f863dab8d3fdbf6abe8bba06559433"
+  integrity sha512-RnIPlAWkeAfDyJhrPylxzYVlnNLVsUOQmxGwlIf2iHxYV3sgTJK24Zddkoceb8IQPLP8iOItCPessp+Gxu6hSg==
   dependencies:
-    "@porsche-design-system/components-js" "2.20.0-rc.1"
+    "@porsche-design-system/components-js" "2.21.0-rc.0"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.20.0-rc.1.tgz#1fff642b51168fd026d2b8c9217ce84f3a547761"
-  integrity sha512-vx8la5tb+G3jBryq7c3rcF8wFB1ZUY4lfinurZ29q7zqHUpFvOrhuNkCd6wT71UoQhh35ALFCnQJW/1Rm9pvyQ==
+"@porsche-design-system/components-js@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0-rc.0.tgz#812d2fe1998ffc1a278d6d5a9a7dccc366a2e107"
+  integrity sha512-GpS/Gfa9rmPSKAq7SMul6qKCxBi4QySMgRs9d67a/PKZTvb7QlcPuqX/oyghqNCueNK8W8XR+HJ3+N5IVn7NwA==
 
 "@porsche-design-system/components-js@^2.17.0":
   version "2.18.0"
@@ -5481,9 +5481,9 @@ loader-utils@3.2.1:
   integrity sha512-ZvFw1KWS3GVyYBYb7qkmRM/WwL2TQQBxgCK62rlvm4WpVQ23Nb4tYjApUlfjrEGvOs7KHEsmyUn75OHZrJMWPw==
 
 loader-utils@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
-  integrity sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.4.tgz#8b5cb38b5c34a9a018ee1fc0e6a066d1dfcc528c"
+  integrity sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==
   dependencies:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
