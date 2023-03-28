@@ -1950,18 +1950,18 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-angular@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.20.0-rc.1.tgz#1c1e8ec9e896f594581b4c2e6a7f75c811a2c506"
-  integrity sha512-WoreH+cGnbkRd8dEUu/msrYZhc/Le9hz7mx+MJdTfyPMvD9fFNU4QHxWHGFgKPiu0KZmIM/GOurfPWKVNuNCeQ==
+"@porsche-design-system/components-angular@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-2.21.0-rc.0.tgz#a47f67eef9f863dab8d3fdbf6abe8bba06559433"
+  integrity sha512-RnIPlAWkeAfDyJhrPylxzYVlnNLVsUOQmxGwlIf2iHxYV3sgTJK24Zddkoceb8IQPLP8iOItCPessp+Gxu6hSg==
   dependencies:
-    "@porsche-design-system/components-js" "2.20.0-rc.1"
+    "@porsche-design-system/components-js" "2.21.0-rc.0"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.20.0-rc.1.tgz#1fff642b51168fd026d2b8c9217ce84f3a547761"
-  integrity sha512-vx8la5tb+G3jBryq7c3rcF8wFB1ZUY4lfinurZ29q7zqHUpFvOrhuNkCd6wT71UoQhh35ALFCnQJW/1Rm9pvyQ==
+"@porsche-design-system/components-js@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0-rc.0.tgz#812d2fe1998ffc1a278d6d5a9a7dccc366a2e107"
+  integrity sha512-GpS/Gfa9rmPSKAq7SMul6qKCxBi4QySMgRs9d67a/PKZTvb7QlcPuqX/oyghqNCueNK8W8XR+HJ3+N5IVn7NwA==
 
 "@porsche-design-system/components-js@^2.17.0":
   version "2.18.0"
@@ -4749,9 +4749,9 @@ html-escaper@^2.0.0:
   integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
 
 http-cache-semantics@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
-  integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz#abe02fcb2985460bf0323be664436ec3476a6d5a"
+  integrity sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==
 
 http-deceiver@^1.2.7:
   version "1.2.7"
