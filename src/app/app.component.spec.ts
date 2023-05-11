@@ -21,7 +21,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('p-headline').textContent).toContain(
+    expect(compiled.querySelector('p-heading').textContent).toContain(
       'Example usage of the Porsche-Design-System Angular'
     );
   });
