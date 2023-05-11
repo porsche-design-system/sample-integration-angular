@@ -7,8 +7,8 @@ import { routes } from './app-routing.module';
     <div class="pageLayout">
       <p-grid>
         <p-grid-item size="12">
-          <p-headline variant="headline-2" [align]="'center'"
-            >Example usage of the Porsche-Design-System Angular</p-headline
+          <p-heading size="medium" [align]="'center'"
+            >Example usage of the Porsche-Design-System Angular</p-heading
           >
         </p-grid-item>
         <p-grid-item size="12">

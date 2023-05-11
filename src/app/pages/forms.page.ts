@@ -1,26 +1,26 @@
-import {Component} from '@angular/core';
-import type {StepperState} from '@porsche-design-system/components-angular';
-import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-system/components-angular';
+import { Component } from '@angular/core';
+import type { StepperHorizontalItemState } from '@porsche-design-system/components-angular';
+import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@porsche-design-system/components-angular';
 
 @Component({
   selector: 'forms-page',
   template: `
     <p-grid>
       <p-grid-item size="12">
-        <p-headline variant="headline-3">Form Examples</p-headline>
+        <p-heading size="medium">Form Examples</p-heading>
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline variant="headline-4" data-test-id="selectHeadline">{{ selectInput }}</p-headline>
+        <p-heading size="medium" data-test-id="selectHeading">{{ selectInput }}</p-heading>
       </p-grid-item>
       <p-grid-item size="5">
-        <p-select-wrapper [label]="'Change Headline by changing Selected value'" [hideLabel]="false">
+        <p-select-wrapper [label]="'Change Heading by changing Selected value'" [hideLabel]="false">
           <select [name]="'PDS Select'" (change)="handleSelectChange($event)" [value]="selectInput">
-            <option value="Headline A">Headline A</option>
-            <option value="Headline B">Headline B</option>
-            <option value="Headline C">Headline C</option>
+            <option value="Heading A">Heading A</option>
+            <option value="Heading B">Heading B</option>
+            <option value="Heading C">Heading C</option>
           </select></p-select-wrapper
         >
       </p-grid-item>
@@ -59,7 +59,7 @@ import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-syst
         <p-button-group>
           <p-button
             [icon]="'arrow-head-left'"
-            [variant]="'tertiary'"
+            [variant]="'secondary'"
             [disabled]="getActiveStepIndex(steps) === 0"
             (click)="onNextPrevStep('prev')"
           >
@@ -79,19 +79,19 @@ import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-syst
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
-        <p-headline *ngIf="checkBox" variant="headline-4" data-test-id="checkboxHeadline">Checkbox Worked</p-headline>
-        <p-checkbox-wrapper [label]="'Check me for Headline'">
+        <p-heading *ngIf="checkBox" size="medium" data-test-id="checkboxHeading">Checkbox Worked</p-heading>
+        <p-checkbox-wrapper [label]="'Check me for Heading'">
           <input
             [type]="'checkbox'"
-            [name]="'Check me for Headline'"
+            [name]="'Check me for Heading'"
             (change)="handleCheckbox()"
             data-test-id="checkbox"
             [checked]="checkBox"
           />
         </p-checkbox-wrapper>
-        <p-headline *ngIf="radioButton" variant="headline-4">Radio Worked</p-headline>
-        <p-radio-button-wrapper [label]="'Click me for Headline'">
-          <input [type]="'radio'" [name]="'Click me for Headline'" (change)="handleRadio()" />
+        <p-heading *ngIf="radioButton" size="medium">Radio Worked</p-heading>
+        <p-radio-button-wrapper [label]="'Click me for Heading'">
+          <input [type]="'radio'" [name]="'Click me for Heading'" (change)="handleRadio()" />
         </p-radio-button-wrapper>
       </p-grid-item>
       <p-grid-item size="12">
@@ -106,7 +106,7 @@ import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-syst
         <p-text-field-wrapper label="Write here to Change Text beneath" hide-label="false">
           <input type="text" name="some-name" (keyup)="handleTextField($event)" />
         </p-text-field-wrapper>
-        <p-headline variant="headline-4">{{ textFieldHeadline }}</p-headline>
+        <p-heading size="medium">{{ textFieldHeading }}</p-heading>
         <p-text-field-wrapper>
           <span [slot]="'label'">Textfield with a <a [href]="'#slottedLink'">Slotted Link</a>.</span>
           <input [type]="'text'" [name]="'Slotted input'" />
@@ -116,10 +116,10 @@ import {SegmentedControlChangeEvent, StepChangeEvent} from '@porsche-design-syst
   `,
 })
 export class FormsPage {
-  selectInput = 'Headline A';
+  selectInput = 'Heading A';
   checkBox = false;
   radioButton = false;
-  textFieldHeadline = 'Change me';
+  textFieldHeading = 'Change me';
   textValue = '';
   currentValue = 1;
   steps: StepperHorizontalItemProps[] = [
@@ -140,7 +140,7 @@ export class FormsPage {
     'A form with a password input field could be displayed here.',
   ];
 
-  onSegmentedControlChange(e: CustomEvent<SegmentedControlChangeEvent>) {
+  onSegmentedControlChange(e: CustomEvent<SegmentedControlUpdateEvent>) {
     this.currentValue = e.detail.value as number;
   }
 
@@ -159,9 +159,9 @@ export class FormsPage {
   handleTextField(event: KeyboardEvent) {
     this.textValue = (event.target as HTMLInputElement).value;
     if (this.textValue === '') {
-      this.textFieldHeadline = 'Change me';
+      this.textFieldHeading = 'Change me';
     } else {
-      this.textFieldHeadline = this.textValue;
+      this.textFieldHeading = this.textValue;
     }
   }
   getActiveStepIndex(steps: StepperHorizontalItemProps[]): number {
@@ -183,7 +183,7 @@ export class FormsPage {
     this.steps = newState;
   }
 
-  onStepChange(e: CustomEvent<StepChangeEvent>): void {
+  onStepChange(e: CustomEvent<StepperHorizontalUpdateEvent>): void {
     const { activeStepIndex } = e.detail;
 
     const newState = [...this.steps];
@@ -198,6 +198,6 @@ export class FormsPage {
 }
 
 type StepperHorizontalItemProps = {
-  state?: StepperState;
+  state?: StepperHorizontalItemState;
   name: string;
 };

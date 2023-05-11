@@ -7,7 +7,7 @@ export default (targetOptions: TargetOptions, indexHtml: string): string => {
     partials.getInitialStyles({}),
     partials.getFontFaceStylesheet(),
     partials.getFontLinks(),
-    partials.getIconLinks({ icons: ['arrowHeadRight', 'plus'] }),
+    partials.getIconLinks({ icons: ['arrow-head-right', 'plus'] }),
     partials.getMetaTagsAndIconLinks({ appTitle: 'Sample Integration Angular' }),
   ].join('\n');
 

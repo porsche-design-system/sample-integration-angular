@@ -8,7 +8,7 @@ const SELECTABLE_COUNTS = [25, 50, 100];
   selector: 'performance',
   template: `<p-grid>
       <p-grid-item size="12">
-        <p-headline variant="headline-4">Choose Element and Count</p-headline>
+        <p-heading size="medium">Choose Element and Count</p-heading>
       </p-grid-item>
       <p-grid-item size="4"
         ><p-select-wrapper

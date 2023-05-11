@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {
-  AccordionChangeEvent,
-  PageChangeEvent,
-  TabChangeEvent,
+  AccordionUpdateEvent,
+  PaginationUpdateEvent,
+  TabsUpdateEvent,
 } from '@porsche-design-system/components-angular/lib/types';
 import { ToastManager } from '@porsche-design-system/components-angular';
 
@@ -11,7 +11,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
   template: `
     <p-grid>
       <p-grid-item size="12">
-        <p-headline variant="headline-4">Buttons</p-headline>
+        <p-heading size="medium">Buttons</p-heading>
         <p-divider class="divider"></p-divider>
         <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
       </p-grid-item>
@@ -19,7 +19,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
         <p-button-pure [disabled]="!isDisabled" (click)="onButtonPureClick()">Dismiss</p-button-pure>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperSmall">
-        <p-headline id="headline" variant="headline-4">{{ headlineText }}</p-headline>
+        <p-heading id="heading" size="medium">{{ headingText }}</p-heading>
       </p-grid-item>
       <p-grid-item size="12" class="contentWrapperSmall">
         <p-button (click)="openModal()">Open Modal</p-button>
@@ -37,7 +37,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Links</p-headline>
+        <p-heading size="medium">Links</p-heading>
         <p-divider class="divider"></p-divider>
         <p-link>
           <a href="https://www.porsche.com" class="removeLinkStyle">porsche.com</a>
@@ -50,15 +50,16 @@ import { ToastManager } from '@porsche-design-system/components-angular';
       <p-grid-item size="5">
         <p-link-tile href="#" label="Some Label" description="Default">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII=" alt="Some alt text"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII="
+            alt="Some alt text"
           />
         </p-link-tile>
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Tabs</p-headline>
+        <p-heading size="medium">Tabs</p-heading>
         <p-divider class="divider"></p-divider>
-        <p-tabs-bar [activeTabIndex]="activeTab" (tabChange)="handleTabChange($event)">
+        <p-tabs-bar [activeTabIndex]="activeTab" (update)="handleTabUpdate($event)">
           <button>Tab 1</button>
           <button>Tab 2</button>
           <button>Tab 3</button>
@@ -67,7 +68,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Icons</p-headline>
+        <p-heading size="medium">Icons</p-heading>
         <p-divider class="divider"></p-divider>
         <p-spinner size="small"></p-spinner>
       </p-grid-item>
@@ -77,7 +78,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Accordion</p-headline>
+        <p-heading size="medium">Accordion</p-heading>
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
@@ -86,7 +87,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
             heading="Some Heading"
             tag="h3"
             [open]="isAccordion1Open"
-            (accordionChange)="onAccordion1Change($event)"
+            (update)="onAccordion1Update($event)"
           >
             <p-text>{{ content }}</p-text>
             <p-text>{{ content }}</p-text>
@@ -95,7 +96,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
             heading="Some Heading"
             tag="h3"
             [open]="isAccordion2Open"
-            (accordionChange)="onAccordion2Change($event)"
+            (update)="onAccordion2Update($event)"
           >
             <p-text>{{ content }}</p-text>
             <p-text>{{ content }}</p-text>
@@ -104,13 +105,16 @@ import { ToastManager } from '@porsche-design-system/components-angular';
       </p-grid-item>
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">Popover</p-headline>
+        <p-heading size="medium">Popover</p-heading>
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="12">
         <p-text>
-          Lorem ipsum dolor sit amet, <p-popover>Some descriptive content</p-popover> consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<p-popover
+          Lorem ipsum dolor sit amet,
+          <p-popover>Some descriptive content</p-popover>
+          consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          <p-popover
             [description]="'Short info opened top'"
             [direction]="'top'"
           ></p-popover>
@@ -120,13 +124,13 @@ import { ToastManager } from '@porsche-design-system/components-angular';
 
       <p-grid-item size="12">
         <p-divider class="divider"></p-divider>
-        <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
+        <p-heading size="medium">You are on Page {{ activePage }} Page</p-heading>
         <p-divider class="divider"></p-divider>
         <p-pagination
           totalItemsCount="11"
           itemsPerPage="3"
           [activePage]="activePage"
-          (pageChange)="handlePageChange($event)"
+          (update)="handlePageUpdate($event)"
         ></p-pagination>
       </p-grid-item>
     </p-grid>
@@ -143,7 +147,7 @@ import { ToastManager } from '@porsche-design-system/components-angular';
   ],
 })
 export class CollectionPage {
-  headlineText = '';
+  headingText = '';
   activeTab = 0;
   activePage = 1;
   isDisabled = false;
@@ -157,20 +161,20 @@ export class CollectionPage {
 
   constructor(private toastManager: ToastManager) {}
 
-  onAccordion1Change(e: CustomEvent<AccordionChangeEvent>) {
+  onAccordion1Update(e: CustomEvent<AccordionUpdateEvent>) {
     this.isAccordion1Open = e.detail.open;
   }
-  onAccordion2Change(e: CustomEvent<AccordionChangeEvent>) {
+  onAccordion2Update(e: CustomEvent<AccordionUpdateEvent>) {
     this.isAccordion2Open = e.detail.open;
   }
 
   onButtonClick() {
-    this.headlineText = 'Headline appears through Button click';
+    this.headingText = 'Heading appears through Button click';
     this.isDisabled = !this.isDisabled;
   }
 
   onButtonPureClick() {
-    this.headlineText = '';
+    this.headingText = '';
     this.isDisabled = !this.isDisabled;
   }
 
@@ -179,7 +183,7 @@ export class CollectionPage {
   }
 
   queueToast() {
-    this.toastManager.addMessage({ text: `Some message ${this.toastCounter}`, state: 'neutral' });
+    this.toastManager.addMessage({ text: `Some message ${this.toastCounter}`, state: 'info' });
     this.toastCounter++;
   }
 
@@ -188,12 +192,12 @@ export class CollectionPage {
     this.isModalOpen = false;
   }
 
-  handlePageChange(ev: CustomEvent<PageChangeEvent>) {
+  handlePageUpdate(ev: CustomEvent<PaginationUpdateEvent>) {
     console.log(ev);
     this.activePage = ev.detail.page;
   }
 
-  handleTabChange(ev: CustomEvent<TabChangeEvent>) {
+  handleTabUpdate(ev: CustomEvent<TabsUpdateEvent>) {
     console.log(ev);
     this.activeTab = ev.detail.activeTabIndex;
   }
