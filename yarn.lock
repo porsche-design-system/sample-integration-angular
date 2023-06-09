@@ -1942,18 +1942,18 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-angular@3.1.0-rc.0":
-  version "3.1.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.1.0-rc.0.tgz#1a863231d02d4dd1656b283f4093fbd04149b165"
-  integrity sha512-/VlU3ZliO2E9tL1jqrLiRpGLMeGS+2w6JD+iRpKyI2Ux2tVsHZTFqrML6DKmk0eNylW7xYNjDXvASuBhd082dQ==
+"@porsche-design-system/components-angular@3.1.0-rc.2":
+  version "3.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.1.0-rc.2.tgz#635f3392ef3489fb1ffea3847b32b9831ce076e0"
+  integrity sha512-Tmdndjnh1JV7sDK+GmNn801gwZrtjlA6yLzqVdDLolPl0v/xeX3lypCywIng8NL2TZ7PDbqtuNHB2nYgpiea/A==
   dependencies:
-    "@porsche-design-system/components-js" "3.1.0-rc.0"
+    "@porsche-design-system/components-js" "3.1.0-rc.2"
     tslib "^2.5.0"
 
-"@porsche-design-system/components-js@3.1.0-rc.0":
-  version "3.1.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.1.0-rc.0.tgz#6ec27b759bbb9e0bdc41542c5f1e370cd4a7956c"
-  integrity sha512-y3dx4H5FiNeo4T/RQR3PuAfii9RK4vmSi+zYXFbxsxjNmRLtlGB88iNwjRTx0szUqixzZRAhU8jzPwbm8sTsEw==
+"@porsche-design-system/components-js@3.1.0-rc.2":
+  version "3.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.1.0-rc.2.tgz#e02eb8785f9ceb2a890f0d683347c1f4b341979d"
+  integrity sha512-QFA7ALfb9ciOfcrEpOywQmJRO0rK832sPRpdvH111RQC1PDkpk6zPsdeRc/1nFjm3gzmSRRdhCR9MVNQw8j/1w==
 
 "@porsche-design-system/components-js@npm:@porsche-design-system/components-js@2.21.0":
   version "2.21.0"
