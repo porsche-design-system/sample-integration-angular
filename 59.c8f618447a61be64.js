@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksample_integration_angular=self.webpackChunksample_integration_angular||[]).push([[59],{59:(o,s,n)=>{n.r(s),n.d(s,{phn_dealer_search_form_dropdown:()=>a});var r=n(965);const a=class{constructor(l){(0,r.r)(this,l)}render(){return(0,r.h)(r.H,null,(0,r.h)("slot",null))}};a.style=".sc-phn-dealer-search-form-dropdown-h{display:block}"}}]);
