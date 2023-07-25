@@ -26,7 +26,6 @@
     "@angular/router": "16.1.5",
     "@porsche-design-system/components-angular": "3.5.0-rc.0",
     "@porsche-design-system/utilities": "5.4.1",
-    "@porschehn/navigation": "3.1.4",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.0",
     "zone.js": "~0.13.1"
