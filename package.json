@@ -24,7 +24,7 @@
     "@angular/platform-browser": "16.1.5",
     "@angular/platform-browser-dynamic": "16.1.5",
     "@angular/router": "16.1.5",
-    "@porsche-design-system/components-angular": "3.4.0",
+    "@porsche-design-system/components-angular": "3.5.0-rc.0",
     "@porsche-design-system/utilities": "5.4.1",
     "@porschehn/navigation": "3.1.4",
     "rxjs": "^7.8.1",
