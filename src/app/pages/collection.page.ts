@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {
+import type {
   AccordionUpdateEvent,
   PaginationUpdateEvent,
   TabsUpdateEvent,
-} from '@porsche-design-system/components-angular/lib/types';
+} from '@porsche-design-system/components-angular';
 import { ToastManager } from '@porsche-design-system/components-angular';
 
 @Component({
@@ -83,21 +83,11 @@ import { ToastManager } from '@porsche-design-system/components-angular';
       </p-grid-item>
       <p-grid-item size="12">
         <div class="accordion-wrapper">
-          <p-accordion
-            heading="Some Heading"
-            tag="h3"
-            [open]="isAccordion1Open"
-            (update)="onAccordion1Update($event)"
-          >
+          <p-accordion heading="Some Heading" tag="h3" [open]="isAccordion1Open" (update)="onAccordion1Update($event)">
             <p-text>{{ content }}</p-text>
             <p-text>{{ content }}</p-text>
           </p-accordion>
-          <p-accordion
-            heading="Some Heading"
-            tag="h3"
-            [open]="isAccordion2Open"
-            (update)="onAccordion2Update($event)"
-          >
+          <p-accordion heading="Some Heading" tag="h3" [open]="isAccordion2Open" (update)="onAccordion2Update($event)">
             <p-text>{{ content }}</p-text>
             <p-text>{{ content }}</p-text>
           </p-accordion>
@@ -112,12 +102,8 @@ import { ToastManager } from '@porsche-design-system/components-angular';
         <p-text>
           Lorem ipsum dolor sit amet,
           <p-popover>Some descriptive content</p-popover>
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          <p-popover
-            [description]="'Short info opened top'"
-            [direction]="'top'"
-          ></p-popover>
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          <p-popover [description]="'Short info opened top'" [direction]="'top'"></p-popover>
           sed diam voluptua.
         </p-text>
       </p-grid-item>
