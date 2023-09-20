@@ -112,6 +112,20 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
           <input [type]="'text'" [name]="'Slotted input'" />
         </p-text-field-wrapper>
       </p-grid-item>
+      <p-grid-item size="6">
+        <p-pin-code [label]="'Default'"></p-pin-code>
+        <p-pin-code [label]="'Default'" [type]="'password'"></p-pin-code>
+      </p-grid-item>
+      <p-grid-item size="6">
+        <p-multi-select [name]="'name'" [label]="'Some Label'" [description]="'Some description'" [theme]="'light'" required>
+          <p-multi-select-option [value]="'a'">Option A</p-multi-select-option>
+          <p-multi-select-option [value]="'b'">Option B</p-multi-select-option>
+          <p-multi-select-option [value]="'c'">Option C</p-multi-select-option>
+          <p-multi-select-option [value]="'d'">Option D</p-multi-select-option>
+          <p-multi-select-option [value]="'e'">Option E</p-multi-select-option>
+          <p-multi-select-option [value]="'f'">Option F</p-multi-select-option>
+        </p-multi-select>
+      </p-grid-item>
     </p-grid>
   `,
 })
