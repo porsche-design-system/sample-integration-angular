@@ -12,6 +12,10 @@ describe('Collection', () => {
     }).compileComponents();
   }));
 
+  afterAll(() => {
+    TestBed.resetTestingModule();
+  });
+
   it('should display heading after button Click', () => {
     const fixture = TestBed.createComponent(CollectionPage);
     const compiled = fixture.nativeElement;
