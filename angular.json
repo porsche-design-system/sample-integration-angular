@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/sample-integration-angular",
             "index": "src/index.html",
-            "indexTransform": "./scripts/transformIndexHtml.ts",
+            "indexTransform": "./scripts/transformIndexHtml.js",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
