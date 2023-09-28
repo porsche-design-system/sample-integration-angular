@@ -10,13 +10,13 @@ module.exports = (targetOptions, indexHtml) => {
     partials.getFontLinks({ weights: ['regular', 'semi-bold', 'bold'] }),
     partials.getIconLinks({ icons: ['arrow-head-right', 'plus'] }),
     partials.getMetaTagsAndIconLinks({ appTitle: 'Sample Integration Angular' }),
-  ]
-    .join('\n')
-    .replace(/https:\/\/cdn\.ui\.porsche\.com\/porsche-design-system/g, 'http://localhost:3001');
+  ].join('\n');
 
-  const bodyPartials = [partials.getLoaderScript(), partials.getBrowserSupportFallbackScript(), partials.getCookiesFallbackScript()]
-    .join('\n')
-    .replace(/https:\/\/cdn\.ui\.porsche\.com\/porsche-design-system/g, 'http://localhost:3001');
+  const bodyPartials = [
+    partials.getLoaderScript(),
+    partials.getCookiesFallbackScript(),
+    partials.getBrowserSupportFallbackScript(),
+  ].join('\n');
 
   console.log('Injected partials via transformIndexHtml');
 
