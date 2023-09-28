@@ -7,19 +7,19 @@ const transformIndexHtml = require('./scripts/transformIndexHtml');
 
 const injectPartialsIntoKarmaContextHtml = () => {
   const packagePath = path.resolve(require.resolve('@angular-devkit/build-angular'), '..');
-  const [contextHtml] = globSync(packagePath + '/**/karma-context.html');
+  const [filePath] = globSync(packagePath + '/**/karma-context.html');
   const backupFilePath = contextHtml.replace(/\.html$/, '-original$&');
 
   // restore backup
   if (fs.existsSync(backupFilePath)) {
-    fs.copyFileSync(backupFilePath, contextHtml);
+    fs.copyFileSync(backupFilePath, filePath);
     fs.rmSync(backupFilePath);
   }
 
-  fs.copyFileSync(contextHtml, backupFilePath); // create backup
-  const fileContent = fs.readFileSync(contextHtml, 'utf8');
+  fs.copyFileSync(filePath, backupFilePath); // create backup
+  const fileContent = fs.readFileSync(filePath, 'utf8');
   const modifiedFileContent = transformIndexHtml({}, fileContent);
-  fs.writeFileSync(contextHtml, modifiedFileContent);
+  fs.writeFileSync(filePath, modifiedFileContent);
 };
 injectPartialsIntoKarmaContextHtml();
 
