@@ -1,21 +1,27 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
+const path = require("path");
 const fs = require("fs");
 const transformIndexHtml = require('./scripts/transformIndexHtml');
 
 
-function CustomMiddlewareFactory(config) {
-  const modifiedFile = config.customDebugFile.replace(/\.html$/, '-modified$&');
-  const fileContent = fs.readFileSync(config.customDebugFile, 'utf8');
+const injectPartialsIntoKarmaContextHtml = () => {
+  const packagePath = require.resolve('@angular-devkit/build-angular');
+  const filePath = path.resolve(packagePath, '../webpack/plugins/karma/karma-context.html');
+  const backupFilePath = filePath.replace(/\.html$/, '-original$&');
+
+  // restore backup
+  if (fs.existsSync(backupFilePath)) {
+    fs.copyFileSync(backupFilePath, filePath);
+    fs.rmSync(backupFilePath);
+  }
+
+  fs.copyFileSync(filePath, backupFilePath); // create backup
+  const fileContent = fs.readFileSync(filePath, 'utf8');
   const modifiedFileContent = transformIndexHtml({}, fileContent);
-  fs.writeFileSync(modifiedFile, modifiedFileContent);
-
-  config.customContextFile = modifiedFile;
-
-  return function (request, response, next) {
-    return next();
-  };
-}
+  fs.writeFileSync(filePath, modifiedFileContent);
+};
+injectPartialsIntoKarmaContextHtml();
 
 module.exports = function (config) {
   config.set({
@@ -27,9 +33,7 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma'),
-      { 'middleware:custom': ['factory', CustomMiddlewareFactory] },
     ],
-    middleware: ['custom'],
     customLaunchers: {
       ChromeHeadlessCI: {
         base: 'ChromeHeadless',
