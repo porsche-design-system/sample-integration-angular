@@ -4,10 +4,23 @@ const path = require("path");
 const fs = require("fs");
 const transformIndexHtml = require('./scripts/transformIndexHtml');
 
+const getAllFilesInDir = function (dirPath) {
+  const dirCont = fs.readdirSync(dirPath);
+  return dirCont
+    .map((file) => {
+      if (fs.statSync(dirPath + '/' + file).isDirectory()) {
+        return getAllFilesInDir(dirPath + '/' + file);
+      } else {
+        return path.join(dirPath, '/', file);
+      }
+    })
+    .flat(Infinity);
+};
 
 const injectPartialsIntoKarmaContextHtml = () => {
-  const packagePath = require.resolve('@angular-devkit/build-angular');
-  const filePath = path.resolve(packagePath, '../tools/webpack/plugins/karma/karma-context.html');
+  const packagePath = path.resolve(require.resolve('@angular-devkit/build-angular'), '..');
+  const dirCont = getAllFilesInDir(packagePath);
+  const [filePath] = dirCont.filter((filePath) => filePath.match(/karma-context\.html/));
   const backupFilePath = filePath.replace(/\.html$/, '-original$&');
 
   // restore backup
