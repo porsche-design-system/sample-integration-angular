@@ -7,7 +7,7 @@ const transformIndexHtml = require('./scripts/transformIndexHtml');
 
 const injectPartialsIntoKarmaContextHtml = () => {
   const packagePath = require.resolve('@angular-devkit/build-angular');
-  const filePath = path.resolve(packagePath, '../webpack/plugins/karma/karma-context.html');
+  const filePath = path.resolve(packagePath, '../tools/webpack/plugins/karma/karma-context.html');
   const backupFilePath = filePath.replace(/\.html$/, '-original$&');
 
   // restore backup
