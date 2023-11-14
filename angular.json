@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sample-integration-angular:build"
+            "buildTarget": "sample-integration-angular:build"
           }
         },
         "test": {
