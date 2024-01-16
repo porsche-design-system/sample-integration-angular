@@ -24,7 +24,7 @@
     "@angular/platform-browser": "17.0.4",
     "@angular/platform-browser-dynamic": "17.0.4",
     "@angular/router": "17.0.4",
-    "@porsche-design-system/components-angular": "3.9.0-rc.0",
+    "@porsche-design-system/components-angular": "3.10.0-rc.5",
     "@porsche-design-system/utilities": "5.4.1",
     "@porschehn/navigation": "3.3.0",
     "rxjs": "^7.8.1",
@@ -58,7 +58,7 @@
     "typescript": "~5.2.2"
   },
   "volta": {
-    "node": "18.18.1",
-    "yarn": "1.22.19"
+    "node": "20.10.0",
+    "yarn": "1.22.21"
   }
 }
