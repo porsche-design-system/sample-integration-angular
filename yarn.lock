@@ -2320,17 +2320,17 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@porsche-design-system/components-angular@3.11.0-rc.0":
-  version "3.11.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.11.0-rc.0.tgz#f4bd1b9017919f23569c9c4364ba2d8d2807113b"
-  integrity sha512-Rbb/nCQ3zFvYxX01qZ0gOpKkx4Mc11vTHnaywQXchraerwhzIFwa63NFCamGUH/+tD4JIxgVSlBRwpCj9XwZwA==
+"@porsche-design-system/components-angular@3.13.0-rc.2":
+  version "3.13.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.13.0-rc.2.tgz#e83c76d899c79629f5d85c819e7b725f575f07ef"
+  integrity sha512-m2t7IZgMt5RCYVhxGLZvifDU9Tvny4Bnbs9RGV6CMAoDhKN2WbpvRtMeKDEdzKxYT154C7KB6KlSbMFyPDA2gQ==
   dependencies:
-    "@porsche-design-system/components-js" "3.11.0-rc.0"
+    "@porsche-design-system/components-js" "3.13.0-rc.2"
 
-"@porsche-design-system/components-js@3.11.0-rc.0":
-  version "3.11.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.11.0-rc.0.tgz#593a8a9b00a85c1d2185f942a157216e42255d38"
-  integrity sha512-x71Q5nfFdCSNe21wV1ujsVXpfaqE685XZMeuDgrWibL1ze/W94xYYqKxV0dQnOi42kZLm1K2m9y12u9j2xZ7Xg==
+"@porsche-design-system/components-js@3.13.0-rc.2":
+  version "3.13.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.13.0-rc.2.tgz#46918c71b9e95732703db2991d98b0fc0cf0eb48"
+  integrity sha512-OhuBvM55QoFvMDPmqXYUd3vHo6L5q65oLCfkIEcdB8ZM7j1T0Oc+HBPieVr/jU90xrTfIH+fq64c5jqbgjI8bA==
 
 "@porsche-design-system/components-js@3.8.0":
   version "3.8.0"
@@ -2676,8 +2676,6 @@
   version "20.11.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.10.tgz#6c3de8974d65c362f82ee29db6b5adf4205462f9"
   integrity sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==
-  dependencies:
-    undici-types "~5.26.4"
 
 "@types/q@^0.0.32":
   version "0.0.32"
