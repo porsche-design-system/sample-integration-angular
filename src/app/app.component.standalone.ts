@@ -7,8 +7,8 @@ import { PorscheDesignSystemModule } from '@porsche-design-system/components-ang
   imports: [PorscheDesignSystemModule],
   template: `
     <p-divider class="divider"></p-divider>
-    <p-heading size="medium" [align]="'center'"
-      >Example Standalone Component with Porsche-Design-System Angular
+    <p-heading size="medium" [align]="'center'">
+      Example Standalone Component with Porsche-Design-System Angular
     </p-heading>
     <p-divider class="divider"></p-divider>
   `,
