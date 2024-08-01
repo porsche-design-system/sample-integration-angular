@@ -1957,22 +1957,22 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@porsche-design-system/components-angular@3.17.0-rc.1":
-  version "3.17.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.17.0-rc.1.tgz#06336e7a15b3c274c257b3eddaf0db9e50ec5399"
-  integrity sha512-mgmmBy9kB7NY64LY9071mUwWlATMhCjiDHTyM7nkcLl+Q8yX+8gFLTYa7YlRHTL+iBF1dMQrK+3KhyNz0YG0dg==
+"@porsche-design-system/components-angular@3.17.0":
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.17.0.tgz#8c8b8de89896f56dd6e13cf87c614ef4a00807f4"
+  integrity sha512-HuPxmI9QPvV/i8AwqIntLc+qkBwdgijOQQ5ieqLpOqzY0Xji5bkqt1yWiOzzkw7Sa5q2IxkW3vzbMuK1xJPQJw==
   dependencies:
-    "@porsche-design-system/components-js" "3.17.0-rc.1"
+    "@porsche-design-system/components-js" "3.17.0"
 
 "@porsche-design-system/components-js@3.16.0":
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.16.0.tgz#65209692383d55919b7adbb03bedc0cc9db1d57e"
   integrity sha512-sGwwwHqeYwegXI97yZ3UK7cVDN3Es0+HmfRG8JqoAkj8gJI6QnQpzE2yEJBr9lwVrhEEeUGqt6NeELREfkhfOA==
 
-"@porsche-design-system/components-js@3.17.0-rc.1":
-  version "3.17.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.17.0-rc.1.tgz#2779f012983bf75dba9c714f9d55c1b0571ca442"
-  integrity sha512-9Vk0n5ux5GckObWt/PUDtmgUrFbfxY3JEOCb7Bc6twdho/RFQeaEWUeFuAIHBWR9R3ixt2kevJeyx0k/GpYIbg==
+"@porsche-design-system/components-js@3.17.0":
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.17.0.tgz#957325965ea8c4d5f280d8d830e58e2ea03aaad3"
+  integrity sha512-FT/YYm36uneLM3tcC6RUDQen6cslAOBh/4Xpsok4DIq2E1NbNn6cI9rkJBXOUnNlKC+uKAJlLUxJ9T2MjeSFhQ==
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.1"
