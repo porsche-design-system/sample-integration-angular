@@ -282,7 +282,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@auth0/auth0-spa-js@^2.1.1":
+"@auth0/auth0-spa-js@^2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-2.1.3.tgz#aabf6f439e41edbeef0cf4766ad754e5b47616e5"
   integrity sha512-NMTBNuuG4g3rame1aCnNS5qFYIzsTUV5qTFPRfTyYFS1feS6jsCBR+eTq9YkxCp1yuoM2UIcjunPaoPl77U9xQ==
@@ -1940,15 +1940,15 @@
     proc-log "^4.0.0"
     which "^4.0.0"
 
-"@openid/appauth@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@openid/appauth/-/appauth-1.3.1.tgz#851e86507b95f9bbe1d05374eb62aaf9b2378f9b"
-  integrity sha512-e54kpi219wES2ijPzeHe1kMnT8VKH8YeTd1GAn9BzVBmutz3tBgcG1y8a4pziNr4vNjFnuD4W446Ua7ELnNDiA==
+"@openid/appauth@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@openid/appauth/-/appauth-1.3.2.tgz#d4deb26717e79fc291208df9eaf92eb1b7812877"
+  integrity sha512-NoOejniaqzOEbHg3RcBZtTriYqhqpQFgTC4lDNaRbgRCnpz6n8PlxWlCbh2N1K5qKawfxRP29/Wiho3FrXQ3Qw==
   dependencies:
-    "@types/base64-js" "^1.3.0"
-    "@types/jquery" "^3.5.5"
+    "@types/base64-js" "^1.3.2"
+    "@types/jquery" "^3.5.29"
     base64-js "^1.5.1"
-    follow-redirects "^1.13.3"
+    follow-redirects "^1.15.6"
     form-data "^4.0.0"
     opener "^1.5.2"
 
@@ -1964,10 +1964,10 @@
   dependencies:
     "@porsche-design-system/components-js" "3.17.0-rc.1"
 
-"@porsche-design-system/components-js@3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.12.0.tgz#ca8bb12e0a1fa856136f0448ee264a56138dd830"
-  integrity sha512-MurAXu0iE9Hv2ZToaPudIeTUWATpxR2GD8/EdWXhlnexZaLaCqrJE8bw7kwgLiWFuWacCDoLNeAZoFJ7DEQaOw==
+"@porsche-design-system/components-js@3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.16.0.tgz#65209692383d55919b7adbb03bedc0cc9db1d57e"
+  integrity sha512-sGwwwHqeYwegXI97yZ3UK7cVDN3Es0+HmfRG8JqoAkj8gJI6QnQpzE2yEJBr9lwVrhEEeUGqt6NeELREfkhfOA==
 
 "@porsche-design-system/components-js@3.17.0-rc.1":
   version "3.17.0-rc.1"
@@ -1986,30 +1986,28 @@
   dependencies:
     csstype "^3.1.1"
 
-"@porsche/globaldatalayer-events@0.4.1":
-  version "0.4.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer-events/-/@porsche/globaldatalayer-events-0.4.1.tgz#ec2e9741b106ad248bd9d36c63286b057fc29cb8"
-  integrity sha512-WgdyowIorFGq6iQlcf+0sj5jyJ7mzt1vaKE9mXEfkxqKw6isLu8gZVl2+XqxidtT2z8PJXabb6TU2X7S40E68w==
+"@porsche/globaldatalayer-events@0.6.6":
+  version "0.6.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer-events/-/@porsche/globaldatalayer-events-0.6.6.tgz#970c299b634ae68a628018f0b4a3c6e1a28f4143"
+  integrity sha512-3eqo9NJ9tVqnmw9cSneV0BYVvGj3LpuKgzCyJUxNNeGZSVIe6MY3UaVzFre1NtrSJ5yAAWqJkF0yXWnEZBAzNg==
 
-"@porsche/globaldatalayer@4.2.2":
-  version "4.2.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.2.2.tgz#a01b2bb171a9afc012d53b6085e9c194150d2c9e"
-  integrity sha512-RLu40NZpJo6RrJQBi4kc2LaUu03+IaW5QKf6C181oT+9vZaqAlgagPOWrtXj2pUeDF8UtoLlaMt+OzMZ6xl0Zw==
+"@porsche/globaldatalayer@4.3.2":
+  version "4.3.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.3.2.tgz#a9d72110527b07d81d12c411b14273347bdf13ec"
+  integrity sha512-mlVkBfK3XzTpTMp/ImloVz9R4dhehwPOEVV98mxZFCWUrfDB0fLrwpEAF5B7i5KcEJqkhOWWOD8/WktEFfwRoA==
 
-"@porschehn/navigation@3.3.7":
-  version "3.3.7"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.3.7.tgz#1652356532af1b8db49348ccbe5efccd616f99ce"
-  integrity sha512-gzzSkPLofF7AVE+ZZhRltWQTDXW645YtjuCUkjngom/MgedZYfklnCUcixdV0nGy5lMhVaNdfWwHRuh80A/BIA==
+"@porschehn/navigation@3.5.0":
+  version "3.5.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.5.0.tgz#001187b26dfac78d0165afdc74e9cd9986fb0bd5"
+  integrity sha512-ZMFMDAmuh2c8/dH93uUy4rTbuKOIyGW37vBOf05Q8mwIGtThTWJNYh8ExMFyQ2Lg+lSAiuBC0u9JrSTmXktYAQ==
   dependencies:
-    "@auth0/auth0-spa-js" "^2.1.1"
-    "@openid/appauth" "^1.3.1"
-    "@porsche-design-system/components-js" "3.12.0"
-    "@porsche/globaldatalayer" "4.2.2"
-    "@porsche/globaldatalayer-events" "0.4.1"
-    "@sentry/browser" "^7.99.0"
-    "@stencil/core" "^4.8.1"
-    "@stencil/store" "^2.0.11"
-    uuid "^9.0.0"
+    "@auth0/auth0-spa-js" "^2.1.3"
+    "@openid/appauth" "^1.3.2"
+    "@porsche-design-system/components-js" "3.16.0"
+    "@porsche/globaldatalayer" "4.3.2"
+    "@porsche/globaldatalayer-events" "0.6.6"
+    "@stencil/core" "4.19.2"
+    "@stencil/store" "^2.0.16"
 
 "@rollup/rollup-android-arm-eabi@4.18.0":
   version "4.18.0"
@@ -2180,77 +2178,6 @@
     "@angular-devkit/schematics" "18.1.3"
     jsonc-parser "3.3.1"
 
-"@sentry-internal/feedback@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry-internal/feedback/-/feedback-7.108.0.tgz#7033352abd304f1383ec47640e056a0dfd5132b7"
-  integrity sha512-8JcgZEnk1uWrXJhsd3iRvFtEiVeaWOEhN0NZwhwQXHfvODqep6JtrkY1yCIyxbpA37aZmrPc2JhyotRERGfUjg==
-  dependencies:
-    "@sentry/core" "7.108.0"
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry-internal/replay-canvas@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry-internal/replay-canvas/-/replay-canvas-7.108.0.tgz#641133c19c0e1c423617b8d791f53d6cd0b0a862"
-  integrity sha512-R5tvjGqWUV5vSk0N1eBgVW7wIADinrkfDEBZ9FyKP2mXHBobsyNGt30heJDEqYmVqluRqjU2NuIRapsnnrpGnA==
-  dependencies:
-    "@sentry/core" "7.108.0"
-    "@sentry/replay" "7.108.0"
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry-internal/tracing@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry-internal/tracing/-/tracing-7.108.0.tgz#d1e660701fb860cfae72b6ebfa8fb267533421fa"
-  integrity sha512-zuK5XsTsb+U+hgn3SPetYDAogrXsM16U/LLoMW7+TlC6UjlHGYQvmX3o+M2vntejoU1QZS8m1bCAZSMWEypAEw==
-  dependencies:
-    "@sentry/core" "7.108.0"
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry/browser@^7.99.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-7.108.0.tgz#b95810bb6572b63781f253615896f5afb1a3a5c0"
-  integrity sha512-FNpzsdTvGvdHJMUelqEouUXMZU7jC+dpN7CdT6IoHVVFEkoAgrjMVUhXZoQ/dmCkdKWHmFSQhJ8Fm6V+e9Aq0A==
-  dependencies:
-    "@sentry-internal/feedback" "7.108.0"
-    "@sentry-internal/replay-canvas" "7.108.0"
-    "@sentry-internal/tracing" "7.108.0"
-    "@sentry/core" "7.108.0"
-    "@sentry/replay" "7.108.0"
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry/core@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-7.108.0.tgz#a27e8d6f85f59c5730ce86071474f15ac899fde0"
-  integrity sha512-I/VNZCFgLASxHZaD0EtxZRM34WG9w2gozqgrKGNMzAymwmQ3K9g/1qmBy4e6iS3YRptb7J5UhQkZQHrcwBbjWQ==
-  dependencies:
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry/replay@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry/replay/-/replay-7.108.0.tgz#baa679bd19b4e3729e607d3f84cff5048aeb3415"
-  integrity sha512-jo8fDOzcZJclP1+4n9jUtVxTlBFT9hXwxhAMrhrt70FV/nfmCtYQMD3bzIj79nwbhUtFP6pN39JH1o7Xqt1hxQ==
-  dependencies:
-    "@sentry-internal/tracing" "7.108.0"
-    "@sentry/core" "7.108.0"
-    "@sentry/types" "7.108.0"
-    "@sentry/utils" "7.108.0"
-
-"@sentry/types@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.108.0.tgz#5ceb959c4dabe511fc441fec8c2465f2d624900f"
-  integrity sha512-bKtHITmBN3kqtqE5eVvL8mY8znM05vEodENwRpcm6TSrrBjC2RnwNWVwGstYDdHpNfFuKwC8mLY9bgMJcENo8g==
-
-"@sentry/utils@7.108.0":
-  version "7.108.0"
-  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-7.108.0.tgz#0231042956aed2ef35809891592238530349dfd9"
-  integrity sha512-a45yEFD5qtgZaIFRAcFkG8C8lnDzn6t4LfLXuV4OafGAy/3ZAN3XN8wDnrruHkiUezSSANGsLg3bXaLW/JLvJw==
-  dependencies:
-    "@sentry/types" "7.108.0"
-
 "@sigstore/bundle@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@sigstore/bundle/-/bundle-2.3.2.tgz#ad4dbb95d665405fd4a7a02c8a073dbd01e4e95e"
@@ -2307,15 +2234,15 @@
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@stencil/core@^4.8.1":
-  version "4.13.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.13.0.tgz#31654b9c601ce8b74194903fe28ed4bcb66b576e"
-  integrity sha512-gg+gtBWekQ08mDja8GVAUHNu+rrFhQaKZDvfhnS3l/5JbYiJddTimuDPPhuc0sR0JZL1iRdJTJSa+JbvmnQ1cQ==
+"@stencil/core@4.19.2":
+  version "4.19.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.19.2.tgz#02d377aa0133fa211f5e4c1ace4baa329ed1cde2"
+  integrity sha512-ZdnbHmHEl8E5vN0GWDtONe5w6j3CrSqqxZM4hNLBPkV/aouWKug7D5/Mi6RazfYO5U4fmHQYLwMz60rHcx0G4g==
 
-"@stencil/store@^2.0.11":
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.15.tgz#30ca5f3e7b0e862f20c6368794918fb2daf0318e"
-  integrity sha512-mIrvtqYbwLry8YRrD5JF4no+YK7L2Mcud4vAgsw7llObuxK9TR4B5S1Y3XgTeGts5eLrA6dhNKX8k/Qr+fQtyA==
+"@stencil/store@^2.0.16":
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.16.tgz#9a035bd56e66e73531af2803c3d30f4177ebe4a9"
+  integrity sha512-ET3EByKlmNyTA8O+tcp5YWePOiVnPIiuoiIaxTrf3zFFVo7JWVsVoak9IE0UTn3MkIM0ubR9lgxvi70uN588/A==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.11"
@@ -2350,7 +2277,7 @@
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^9.0.4"
 
-"@types/base64-js@^1.3.0":
+"@types/base64-js@^1.3.2":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@types/base64-js/-/base64-js-1.3.2.tgz#9e94abe3c521f4127f2e6a8b537b63bbc04d0956"
   integrity sha512-Q2Xn2/vQHRGLRXhQ5+BSLwhHkR3JVflxVKywH0Q6fVoAiUE8fFYL2pE5/l2ZiOiBDfA8qUqRnSxln4G/NFz1Sg==
@@ -2462,10 +2389,10 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/jquery@^3.5.5":
-  version "3.5.29"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.29.tgz#3c06a1f519cd5fc3a7a108971436c00685b5dcea"
-  integrity sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg==
+"@types/jquery@^3.5.29":
+  version "3.5.30"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.30.tgz#888d584cbf844d3df56834b69925085038fd80f7"
+  integrity sha512-nbWKkkyb919DOUxjmRVk8vwtDb0/k8FKncmUKFi+NY+QXqWltooxTrswvz4LspQwxvLdvzBN1TImr6cw3aQx2A==
   dependencies:
     "@types/sizzle" "*"
 
@@ -4469,7 +4396,7 @@ flatted@^3.2.7:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
 
-follow-redirects@^1.0.0, follow-redirects@^1.13.3:
+follow-redirects@^1.0.0, follow-redirects@^1.15.6:
   version "1.15.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
   integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
@@ -8110,11 +8037,6 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-uuid@^9.0.0:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
-  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
