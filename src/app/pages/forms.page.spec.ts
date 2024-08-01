@@ -1,11 +1,11 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
 import { By } from '@angular/platform-browser';
 import { FormsPage } from './forms.page';
 
 describe('Forms', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, PorscheDesignSystemModule],
       declarations: [FormsPage],
