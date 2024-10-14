@@ -1957,22 +1957,22 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@porsche-design-system/components-angular@3.19.0-rc.4":
-  version "3.19.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.19.0-rc.4.tgz#a32f837f7de04e9ae78c9858e6d5305df124b3ee"
-  integrity sha512-Ez3mKcLNi39Pfd46M/P1CS5wh6MZiNIQLT6Vb5i8GDXiuN5/h0KKKkhVygruXsl8VCM7hua5oIImjmg7Fp/mow==
+"@porsche-design-system/components-angular@3.19.0":
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.19.0.tgz#528e9e9428a6e2136416f9737fb225b7a874c3eb"
+  integrity sha512-zHenquVs/pN5lKMg2p+j7qBG4JSquBgO6p48q4txow235FsVCS8gOqWPZFZfaxpqKhxU6W0MFwuj9vuzm3sYOA==
   dependencies:
-    "@porsche-design-system/components-js" "3.19.0-rc.4"
+    "@porsche-design-system/components-js" "3.19.0"
 
 "@porsche-design-system/components-js@3.16.0":
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.16.0.tgz#65209692383d55919b7adbb03bedc0cc9db1d57e"
   integrity sha512-sGwwwHqeYwegXI97yZ3UK7cVDN3Es0+HmfRG8JqoAkj8gJI6QnQpzE2yEJBr9lwVrhEEeUGqt6NeELREfkhfOA==
 
-"@porsche-design-system/components-js@3.19.0-rc.4":
-  version "3.19.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.19.0-rc.4.tgz#fe7679a81f17ada27fc3af4121274e1a4b02640c"
-  integrity sha512-+jtYpqpi72eHmYqqPFzwZg4QSbYhb6N1CdfqYI36flkfK2CdGNmeF2dlOqQKc9DO+Smmm5N3nXaT1klBpHU3gw==
+"@porsche-design-system/components-js@3.19.0":
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.19.0.tgz#6b2ba96089b43eb3065b64d8faf2f07466d1144d"
+  integrity sha512-6iTZDMHveqt2AXYCZndb2vM/OOVye9YGRB7b3HS0198SF839Dyxs970yYmcrWA3CqMSq6E3V/Bjbxz1esk8QBg==
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.1"
@@ -8304,6 +8304,7 @@ wildcard@^2.0.0:
   integrity sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
