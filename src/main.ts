@@ -17,6 +17,4 @@ platformBrowserDynamic()
 
 bootstrapApplication(AppComponentStandalone).catch((err) => console.error(err));
 
-applyPolyfills().then(() => {
-  definePorscheNavigation(window);
-});
+definePorscheNavigation(window);
