@@ -24,9 +24,8 @@
     "@angular/platform-browser": "18.2.11",
     "@angular/platform-browser-dynamic": "18.2.11",
     "@angular/router": "18.2.11",
-    "@porsche-design-system/components-angular": "3.21.0",
+    "@porsche-design-system/components-angular": "3.23.0-rc.0",
     "@porsche-design-system/utilities": "5.4.1",
-    "@porschehn/navigation": "3.6.12",
     "rxjs": "^7.8.1",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.0"
