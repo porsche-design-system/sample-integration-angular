@@ -7,8 +7,8 @@ import type {
 import { ToastManager } from '@porsche-design-system/components-angular';
 
 @Component({
-  selector: 'collection-page',
-  template: `
+    selector: 'collection-page',
+    template: `
     <p-grid>
       <p-grid-item size="12">
         <p-heading size="medium">Buttons</p-heading>
@@ -121,8 +121,8 @@ import { ToastManager } from '@porsche-design-system/components-angular';
       </p-grid-item>
     </p-grid>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .footer {
         padding: 2rem 0 0;
       }
@@ -130,7 +130,8 @@ import { ToastManager } from '@porsche-design-system/components-angular';
         max-width: 800px;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class CollectionPage {
   headingText = '';

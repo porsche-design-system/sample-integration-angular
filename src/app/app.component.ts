@@ -2,8 +2,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { routes } from './app-routing.module';
 
 @Component({
-  selector: 'app-root',
-  template: `
+    selector: 'app-root',
+    template: `
     <div class="pageLayout">
       <p-grid>
         <p-grid-item size="12">
@@ -29,8 +29,9 @@ import { routes } from './app-routing.module';
       <p-toast></p-toast>
     </div>
   `,
-  styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+    styleUrls: ['./app.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class AppComponent {
   public routes = routes;

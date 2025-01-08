@@ -5,8 +5,8 @@ const SELECTABLE_ELEMENTS: SelectableElement[] = ['text', 'checkbox', 'button'];
 const SELECTABLE_COUNTS = [25, 50, 100];
 
 @Component({
-  selector: 'performance',
-  template: `<p-grid>
+    selector: 'performance',
+    template: `<p-grid>
       <p-grid-item size="12">
         <p-heading size="medium">Choose Element and Count</p-heading>
       </p-grid-item>
@@ -42,6 +42,7 @@ const SELECTABLE_COUNTS = [25, 50, 100];
         </ng-container>
       </p-grid-item>
     </p-grid>`,
+    standalone: false
 })
 export class PerformancePage {
   public selectableElements = SELECTABLE_ELEMENTS;
