@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'phn-header-page',
-  template: `
+    selector: 'phn-header-page',
+    template: `
     <phn-header env="preview" locale="de-DE" style="position: absolute; left: 0; right: 0;"></phn-header>
 
     <div style="padding-top: 150px">
@@ -19,5 +19,6 @@ import { Component } from '@angular/core';
       </div>
     </div>
   `,
+    standalone: false
 })
 export class PhnHeaderPage {}

@@ -3,8 +3,8 @@ import type { StepperHorizontalItemState } from '@porsche-design-system/componen
 import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@porsche-design-system/components-angular';
 
 @Component({
-  selector: 'forms-page',
-  template: `
+    selector: 'forms-page',
+    template: `
     <p-grid>
       <p-grid-item size="12">
         <p-heading size="medium">Form Examples</p-heading>
@@ -128,6 +128,7 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
       </p-grid-item>
     </p-grid>
   `,
+    standalone: false
 })
 export class FormsPage {
   selectInput = 'Heading A';
