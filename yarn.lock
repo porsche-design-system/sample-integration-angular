@@ -2219,17 +2219,17 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@porsche-design-system/components-angular@3.24.0-rc.0":
-  version "3.24.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.24.0-rc.0.tgz#db8d7c02aac8ff5d8db85e6a37824d8d3877194d"
-  integrity sha512-OYMqmLa7EJdf0jJmCSVtVWw4uRYbOCgnCmupX6zgwH6fgQ8RetXBAnpApkhvVwMXhwIlVOfkvySjl6Xt/sp8Sg==
+"@porsche-design-system/components-angular@3.24.0":
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.24.0.tgz#75b5ea2aeb6896b34b07e0af6a3fe98ec7201c8e"
+  integrity sha512-l7gEXeT/Jlx56G46nVw/iLXqzN2FmcH3LeGH9t0tODn9iDM3jZXADbjH/JtGPnmI2HtgEtwNF+JgWHWaew4tOQ==
   dependencies:
-    "@porsche-design-system/components-js" "3.24.0-rc.0"
+    "@porsche-design-system/components-js" "3.24.0"
 
-"@porsche-design-system/components-js@3.24.0-rc.0":
-  version "3.24.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.24.0-rc.0.tgz#26d9941d0ad233d2484e7cb9028594929ec6d386"
-  integrity sha512-73pdr6H2HF/2Lvy9DJI/7mzqs7GoR/POc1/jlP4CTewevts2jawNlJidiiigQqiRxoPUg6nDZ6ppG60GIP/oQQ==
+"@porsche-design-system/components-js@3.24.0":
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.24.0.tgz#ae2afa0157b2942eb3f76cea240efb3e3c65cc45"
+  integrity sha512-eGzVRnbhZypkxLP9fBIS9nVnz4P9DRfUIEO90wLQ3j8lipXICrkJ+N8KI8vdEAzuY+PYXK0kEcyjwFLNq7BAcA==
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.1"
