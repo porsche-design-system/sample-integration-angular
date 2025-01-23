@@ -32,11 +32,6 @@ export const routes: ExtendedRoute[] = [
     component: fromPages.PhnHeaderPage,
     name: 'Phn Header',
   },
-  {
-    path: 'utilities',
-    component: fromPages.UtilitiesPage,
-    name: 'Utilities',
-  },
 ];
 
 @NgModule({
