@@ -129,9 +129,6 @@ SEE LICENSE IN LICENSE
 @porsche-design-system/components-js
 SEE LICENSE IN LICENSE
 
-@porsche-design-system/utilities
-SEE LICENSE IN LICENSE
-
 rxjs
 Apache-2.0
                                Apache License
