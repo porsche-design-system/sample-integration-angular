@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
-import * as fromPages from './pages';
+import * as pages from './pages';
 
 export type ExtendedRoute = Route & {
   name?: string;
@@ -14,23 +14,28 @@ export const routes: ExtendedRoute[] = [
   },
   {
     path: 'collection',
-    component: fromPages.CollectionPage,
+    component: pages.CollectionPage,
     name: 'Collection Page',
   },
   {
     path: 'forms',
-    component: fromPages.FormsPage,
+    component: pages.FormsPage,
     name: 'Forms',
   },
   {
     path: 'performance',
-    component: fromPages.PerformancePage,
+    component: pages.PerformancePage,
     name: 'Performance',
   },
   {
     path: 'phn-header',
-    component: fromPages.PhnHeaderPage,
+    component: pages.PhnHeaderPage,
     name: 'Phn Header',
+  },
+  {
+    path: 'ag-grid',
+    component: pages.AgGridPage,
+    name: 'AG Grid',
   },
 ];
 

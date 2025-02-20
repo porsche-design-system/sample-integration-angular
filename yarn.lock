@@ -2219,17 +2219,17 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@porsche-design-system/components-angular@3.26.0-rc.0":
-  version "3.26.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.26.0-rc.0.tgz#cdaf0101b69418110d1b0d7125a5408c6b941cbc"
-  integrity sha512-gT0euSkea0hlRPQQj3z8/cxaANjbWUK7I2QYbFsQz85Ep0JyRK/pgh4RQyzZlfSumhRtNxyX3U402optJOtiNw==
+"@porsche-design-system/components-angular@3.27.0-rc.4":
+  version "3.27.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-angular/-/components-angular-3.27.0-rc.4.tgz#0fdde460fa658320e56780a5eb8afbe4319fff0c"
+  integrity sha512-AwG8lFNgct04BPQUskZTlEwcULew/+v2v1aAZBv1QDA7mwCnwx+8aWpdIAX7+kV51TVqzBwnekRNV2OIeCXbuw==
   dependencies:
-    "@porsche-design-system/components-js" "3.26.0-rc.0"
+    "@porsche-design-system/components-js" "3.27.0-rc.4"
 
-"@porsche-design-system/components-js@3.26.0-rc.0":
-  version "3.26.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.26.0-rc.0.tgz#09939ffa07b94be475d393584ffe2f30b896be4e"
-  integrity sha512-+dCKc4CVbrIG6MlxumT1Md1GHo/51lMXbvXYFpamM2M/jAkgydhdclr6IxkkQW5z5XO+WsrVU+/Z2otOTJU5iA==
+"@porsche-design-system/components-js@3.27.0-rc.4":
+  version "3.27.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.27.0-rc.4.tgz#598f5d1b135fad688e2f0b59d1d88805475d0ecc"
+  integrity sha512-ujZ4R6O3u2y59l3IW4oVR2DvCtEGGsskcoRVJ5+vRGe+yxwtK3AJqyJ+JlOnSSyeRDzaVGj1orMW+IHe4x0VuQ==
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.1"
@@ -2955,6 +2955,26 @@ adm-zip@^0.5.2:
   version "0.5.12"
   resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.5.12.tgz#87786328e91d54b37358d8a50f954c4cd73ba60b"
   integrity sha512-6TVU49mK6KZb4qG6xWaaM4C7sA/sgUMLy/JYMOzkcp3BvVLpW0fXDFQiIzAuxFCt/2+xD7fNIiPFAoLZPhVNLQ==
+
+ag-charts-types@11.0.4:
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/ag-charts-types/-/ag-charts-types-11.0.4.tgz#6118b44bad65673111210783ef0fa07114a233c5"
+  integrity sha512-K/Mi7FXvSCoABLSrqQ70k1QrIL5R6RNCt2NAppOxMEir+DVFPqKZtghruobc2MGVUUKkT9MCn6Dun+fL6yZjfA==
+
+ag-grid-angular@33.0.4:
+  version "33.0.4"
+  resolved "https://registry.yarnpkg.com/ag-grid-angular/-/ag-grid-angular-33.0.4.tgz#0fa97bd27ae1808084e9490059373b71687dcd3a"
+  integrity sha512-TRQgw+bETwmSvsidenuqrgHUhAVVGdNKjRNartIUi0frCTRPbz26LIjLRbC4ywiOWmj0dOIErb0HZxypAaGp4g==
+  dependencies:
+    ag-grid-community "33.0.4"
+    tslib "^2.3.0"
+
+ag-grid-community@33.0.4:
+  version "33.0.4"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-33.0.4.tgz#9db28519b65e0da68edb170e13bba0c84204a7f4"
+  integrity sha512-iBD8g8bNIl95w9CzCQpDid+eTdmOoT39204sPUOhE9eE50vfoDHIaF5U4fRYQHbLsT4bwbXfQYdsqBAOLJL24w==
+  dependencies:
+    ag-charts-types "11.0.4"
 
 agent-base@^4.3.0:
   version "4.3.0"

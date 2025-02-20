@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { PorscheDesignSystemModule } from '@porsche-design-system/components-angular';
 import * as fromPages from './pages';
 import { FormsModule } from '@angular/forms';
+import {AgGridAngular} from 'ag-grid-angular';
 
 @NgModule({
   declarations: [AppComponent, ...fromPages.pages],
-  imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, PorscheDesignSystemModule, FormsModule, AgGridAngular],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
