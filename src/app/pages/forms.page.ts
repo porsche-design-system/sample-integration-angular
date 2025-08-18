@@ -79,7 +79,7 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
       </p-grid-item>
       <p-grid-item size="12">
         <p-heading *ngIf="checkBox" size="medium" data-test-id="checkboxHeading">Checkbox Worked</p-heading>
-        <p-checkbox [name]="'Check me for Heading'" [label]="'Check me for Heading'" (update)="handleCheckbox()" data-test-id="checkbox" [checked]="checkBox">
+        <p-checkbox [name]="'Check me for Heading'" [label]="'Check me for Heading'" (click)="handleCheckbox()" data-test-id="checkbox" [checked]="checkBox">
         </p-checkbox>
         <p-heading *ngIf="radioButton" size="medium">Radio Worked</p-heading>
         <p-radio-button-wrapper [label]="'Click me for Heading'">
