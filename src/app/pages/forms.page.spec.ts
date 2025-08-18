@@ -16,7 +16,7 @@ describe('Forms', () => {
     const fixture = TestBed.createComponent(FormsPage);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    const checkBoxEl = compiled.querySelector('p-checkbox-wrapper > input');
+    const checkBoxEl = compiled.querySelector('p-checkbox > input');
     checkBoxEl.click();
     fixture.detectChanges();
     expect(fixture.debugElement.query(By.css('p-heading[data-test-id=checkboxHeading]'))).toBeTruthy();

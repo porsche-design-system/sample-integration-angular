@@ -16,12 +16,11 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
         <p-heading size="medium" data-test-id="selectHeading">{{ selectInput }}</p-heading>
       </p-grid-item>
       <p-grid-item size="5">
-        <p-select-wrapper [label]="'Change Heading by changing Selected value'" [hideLabel]="false">
-          <select [name]="'PDS Select'" (change)="handleSelectChange($event)" [value]="selectInput">
-            <option value="Heading A">Heading A</option>
-            <option value="Heading B">Heading B</option>
-            <option value="Heading C">Heading C</option>
-          </select></p-select-wrapper
+        <p-select [name]="'PDS Select'" [label]="'Change Heading by changing Selected value'" [hideLabel]="false" (update)="handleSelectChange($event)" [value]="selectInput">
+          <p-select-option value="Heading A">Heading A</p-select-option>
+          <p-select-option value="Heading B">Heading B</p-select-option>
+          <p-select-option value="Heading C">Heading C</p-select-option>
+        </p-select
         >
       </p-grid-item>
       <p-grid-item size="12">
@@ -80,15 +79,8 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
       </p-grid-item>
       <p-grid-item size="12">
         <p-heading *ngIf="checkBox" size="medium" data-test-id="checkboxHeading">Checkbox Worked</p-heading>
-        <p-checkbox-wrapper [label]="'Check me for Heading'">
-          <input
-            [type]="'checkbox'"
-            [name]="'Check me for Heading'"
-            (change)="handleCheckbox()"
-            data-test-id="checkbox"
-            [checked]="checkBox"
-          />
-        </p-checkbox-wrapper>
+        <p-checkbox [name]="'Check me for Heading'" [label]="'Check me for Heading'" (update)="handleCheckbox()" data-test-id="checkbox" [checked]="checkBox">
+        </p-checkbox>
         <p-heading *ngIf="radioButton" size="medium">Radio Worked</p-heading>
         <p-radio-button-wrapper [label]="'Click me for Heading'">
           <input [type]="'radio'" [name]="'Click me for Heading'" (change)="handleRadio()" />
@@ -98,19 +90,15 @@ import { SegmentedControlUpdateEvent, StepperHorizontalUpdateEvent } from '@pors
         <p-divider class="divider"></p-divider>
       </p-grid-item>
       <p-grid-item size="6">
-        <p-textarea-wrapper [label]="'PDS Textarea'" [hideLabel]="false">
-          <textarea></textarea>
-        </p-textarea-wrapper>
+        <p-textarea name="pds-textarea" [label]="'PDS Textarea'" [hideLabel]="false">
+        </p-textarea>
       </p-grid-item>
       <p-grid-item size="6">
-        <p-text-field-wrapper label="Write here to Change Text beneath" hide-label="false">
-          <input type="text" name="some-name" (keyup)="handleTextField($event)" />
-        </p-text-field-wrapper>
+        <p-input-text name="some-name" label="Write here to Change Text beneath" (keyup)="handleTextField($event)"></p-input-text>
         <p-heading size="medium">{{ textFieldHeading }}</p-heading>
-        <p-text-field-wrapper>
-          <span [slot]="'label'">Textfield with a <a [href]="'#slottedLink'">Slotted Link</a>.</span>
-          <input [type]="'text'" [name]="'Slotted input'" />
-        </p-text-field-wrapper>
+        <p-input-text [name]="'Slotted input'">
+          <span [slot]="'label'">Input Text with a <p-link-pure [href]="'#slottedLink'">Slotted Link</p-link-pure>.</span>
+        </p-input-text>
       </p-grid-item>
       <p-grid-item size="6">
         <p-pin-code [label]="'Default'"></p-pin-code>
