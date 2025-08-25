@@ -119,6 +119,32 @@ import { ToastManager } from '@porsche-design-system/components-angular';
           (update)="handlePageUpdate($event)"
         ></p-pagination>
       </p-grid-item>
+
+      <p-grid-item size="12">
+        <p-multi-select name="name" label="Some Label" description="Some description" theme="light" required compact>
+          <p-multi-select-option value="a">Option A</p-multi-select-option>
+          <p-multi-select-option value="b">Option B</p-multi-select-option>
+          <p-multi-select-option value="c">Option C</p-multi-select-option>
+          <p-multi-select-option value="d">Option D</p-multi-select-option>
+          <p-multi-select-option value="e">Option E</p-multi-select-option>
+          <p-multi-select-option value="f">Option F</p-multi-select-option>
+        </p-multi-select>
+      </p-grid-item>
+
+      <p-grid-item size="12">
+        <p-input-date label="Some Date" value="2025-08-13"></p-input-date>
+        <p-input-email label="Some Email" value="user@example.com" indicator="true"></p-input-email>
+        <p-input-number label="Some Number" value="42"></p-input-number>
+        <p-input-password label="Some Password" value="secret123" toggle="true"></p-input-password>
+        <p-input-search label="Some Search" value="Search term" indicator="true"></p-input-search>
+        <p-input-tel label="Some Tel" value="+1-234-567-8901" indicator="true"></p-input-tel>
+        <p-input-text label="Some Text" value="Sample text"></p-input-text>
+        <p-input-time label="Some Time" value="14:30"></p-input-time>
+        <p-input-url label="Some Url" value="https://example.com" indicator="true"></p-input-url>
+      </p-grid-item>
+      <p-grid-item size="12">
+        <p-flag></p-flag>
+      </p-grid-item>
     </p-grid>
   `,
     styles: [

@@ -5,28 +5,25 @@ const SELECTABLE_ELEMENTS: SelectableElement[] = ['text', 'checkbox', 'button'];
 const SELECTABLE_COUNTS = [25, 50, 100];
 
 @Component({
-    selector: 'performance',
-    template: `<p-grid>
+  selector: 'performance',
+  template: `<p-grid>
       <p-grid-item size="12">
         <p-heading size="medium">Choose Element and Count</p-heading>
       </p-grid-item>
       <p-grid-item size="4"
-        ><p-select-wrapper
-          ><select [value]="element" (change)="onElementChange($event)">
-            <option *ngFor="let element of selectableElements" [value]="element">{{ element }}</option>
-          </select></p-select-wrapper
+        ><p-select [value]="element" (update)="onElementChange($event)">
+        <p-select-option *ngFor="let element of selectableElements" [value]="element">{{ element }}</p-select-option>
+      </p-select
         ></p-grid-item
       >
       <p-grid-item size="4"
-        ><p-select-wrapper
-          ><select (change)="onCountChange($event)" [value]="count">
-            <option *ngFor="let count of selectableCounts" [value]="count">{{ count }}</option>
-          </select></p-select-wrapper
+        ><p-select (update)="onCountChange($event)" [value]="count.toString()">
+        <p-select-option *ngFor="let count of selectableCounts" [value]="count.toString()">{{ count }}</p-select-option>
+      </p-select
         ></p-grid-item
       >
       <p-grid-item size="4"
-        ><p-checkbox-wrapper label="Render"
-          ><input type="checkbox" (change)="onShouldRender($event)" checked /></p-checkbox-wrapper
+        ><p-checkbox label="Render" (update)="onShouldRender($event)" [checked]="this.shouldRender"></p-checkbox
       ></p-grid-item>
     </p-grid>
     <p-grid style="margin-top: 2rem;">
@@ -34,15 +31,13 @@ const SELECTABLE_COUNTS = [25, 50, 100];
         <ng-container *ngFor="let elementOnPage of elementsOnPage; let i = index">
           <ng-container [ngSwitch]="element">
             <p-text *ngSwitchCase="'text'">{{ content + i }}</p-text>
-            <p-checkbox-wrapper *ngSwitchCase="'checkbox'" [label]="content + i">
-              <input type="checkbox" />
-            </p-checkbox-wrapper>
+            <p-checkbox *ngSwitchCase="'checkbox'" [label]="content + i" name="checkbox-{{ i }}"></p-checkbox>
             <p-button *ngSwitchCase="'button'" variant="primary">{{ content + i }}</p-button>
           </ng-container>
         </ng-container>
       </p-grid-item>
     </p-grid>`,
-    standalone: false
+  standalone: false,
 })
 export class PerformancePage {
   public selectableElements = SELECTABLE_ELEMENTS;
